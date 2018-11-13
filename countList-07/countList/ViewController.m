@@ -27,7 +27,7 @@
 
 - (void)links {
   //! 链表反转
-  // InitAddresses();
+   InitAddresses();
   
   //! 链表中环检测；
   // createRingLink();
