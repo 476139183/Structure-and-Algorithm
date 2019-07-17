@@ -26,7 +26,7 @@ public func loadTextures() -> Textures {
 }
 
 class ViewController: UIViewController {
-    private let imageView = UIImageView()
+    private let coreAnimationView = CoreAnimationView()
     private let panGesture = UIPanGestureRecognizer()
     private let tapGesture = UITapGestureRecognizer()
     private let textures = loadTextures()
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
             return
         }
 
-        setUpImageView()
+        setUpCoreAnimationView()
 
         let displayLink = CADisplayLink(target: self, selector: #selector(update))
         displayLink.add(to: .main, forMode: .common)
@@ -85,27 +85,21 @@ class ViewController: UIViewController {
         }
         lastFrameTime = displayLink.timestamp
 
-        let width = Int(imageView.bounds.width), height = Int(imageView.bounds.height)
-        var renderer = Renderer(width: width, height: height, textures: textures)
-        renderer.draw(world)
-
-        imageView.image = UIImage(bitmap: renderer.bitmap)
+        coreAnimationView.draw(world)
     }
 
     @objc func fire(_ gestureRecognizer: UITapGestureRecognizer) {
         lastFiredTime = CACurrentMediaTime()
     }
 
-    func setUpImageView() {
-        view.addSubview(imageView)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        imageView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        imageView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
-        imageView.contentMode = .scaleAspectFit
-        imageView.backgroundColor = .black
-        imageView.layer.magnificationFilter = .nearest
+    func setUpCoreAnimationView() {
+        view.addSubview(coreAnimationView)
+        coreAnimationView.translatesAutoresizingMaskIntoConstraints = false
+        coreAnimationView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        coreAnimationView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        coreAnimationView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        coreAnimationView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
+        coreAnimationView.backgroundColor = .black
     }
 }
 
