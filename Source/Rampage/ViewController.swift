@@ -12,6 +12,7 @@ import Engine
 private let joystickRadius: Double = 40
 private let maximumTimeStep: Double = 1 / 20
 private let worldTimeStep: Double = 1 / 120
+private let savePath = "~/Documents/quicksave.json"
 
 public func loadMap() -> Tilemap {
     let jsonURL = Bundle.main.url(forResource: "Map", withExtension: "json")!
@@ -52,6 +53,15 @@ class ViewController: UIViewController {
         view.addGestureRecognizer(tapGesture)
         tapGesture.addTarget(self, action: #selector(fire))
         tapGesture.delegate = self
+
+        try? restoreState()
+        NotificationCenter.default.addObserver(
+            forName: UIApplication.willResignActiveNotification,
+            object: nil,
+            queue: .main
+        ) { _ in
+            try? self.saveState()
+        }
     }
 
     private var inputVector: Vector {
@@ -106,6 +116,18 @@ class ViewController: UIViewController {
         imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = .black
         imageView.layer.magnificationFilter = .nearest
+    }
+
+    func saveState() throws {
+        let data = try JSONEncoder().encode(world)
+        let url = URL(fileURLWithPath: (savePath as NSString).expandingTildeInPath)
+        try data.write(to: url, options: .atomic)
+    }
+
+    func restoreState() throws {
+        let url = URL(fileURLWithPath: (savePath as NSString).expandingTildeInPath)
+        let data = try Data(contentsOf: url)
+        world = try JSONDecoder().decode(World.self, from: data)
     }
 }
 
