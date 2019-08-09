@@ -86,10 +86,8 @@ class ViewController: UIViewController {
         lastFrameTime = displayLink.timestamp
 
         let width = Int(imageView.bounds.width), height = Int(imageView.bounds.height)
-        var renderer = Renderer(width: width, height: height, textures: textures)
-        renderer.draw(world)
-
-        imageView.image = UIImage(bitmap: renderer.bitmap)
+        let bitmap = Bitmap(width: width, height: height, world: world, textures: textures)
+        imageView.image = UIImage(bitmap: bitmap)
     }
 
     @objc func fire(_ gestureRecognizer: UITapGestureRecognizer) {

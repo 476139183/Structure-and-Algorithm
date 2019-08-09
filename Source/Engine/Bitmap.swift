@@ -87,9 +87,9 @@ public extension Bitmap {
     }
 
     mutating func drawImage(_ source: Bitmap, at point: Vector, size: Vector) {
-        let start = Int(point.x), end = Int(point.x + size.x)
+        let start = max(0, Int(point.x)), end = Int(point.x + size.x)
         let stepX = Double(source.width) / size.x
-        for x in max(0, start) ..< min(width, end) {
+        for x in start ..< max(start, min(width, end)) {
             let sourceX = (Double(x) - point.x) * stepX
             let outputPosition = Vector(x: Double(x), y: point.y)
             drawColumn(Int(sourceX), of: source, at: outputPosition, height: size.y)
