@@ -217,6 +217,6 @@ int find(int[] array, int n, int x) {
 
 当然还有我的邀请码，毕竟笔记肯定没有老师讲的好
 
-![邀请码](/Images/WechatCode.png)
+![邀请码](/Images/WechatCode.jpeg)
 =======
 我的[文章链接](https://476139183.github.io)
