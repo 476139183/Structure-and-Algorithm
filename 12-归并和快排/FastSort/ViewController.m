@@ -21,9 +21,9 @@
   
   
   //! 归并排序
-//  setMerge();
+  setMerge();
   //! 快速排序
-  setQuick();
+//  setQuick();
   
   
   // Do any additional setup after loading the view, typically from a nib.
