@@ -80,7 +80,7 @@
 
 抛开软件与硬件相关的因素，我们发现，输入规模能够影响到算法的时间，如下代码
 
-```
+```c
  int cal(int n) {
    int sum = 0;
    int i = 1;
@@ -98,7 +98,7 @@ T(n)=(2n+2)*unit_time
 
 我们再看一段代码
 
-```
+```c
  int cal(int n) {
    int sum = 0;
    int i = 1;
@@ -160,7 +160,7 @@ T(n)=(2n+2)*unit_time
 
 事实上，代码的逻辑并不单纯，也会有很多条件束缚，导致无法直接推导时间复杂度，如下代码所示：
 
-```
+```c
 // n 表示数组 array 的长度
 int find(int[] array, int n, int x) {
   int i = 0;
