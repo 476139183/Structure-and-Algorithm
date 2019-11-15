@@ -47,7 +47,7 @@ void quick_sort (int arr[],int p, int r) {
   }
   
   int q;
-  
+  ///////
   q = partition(arr, p, r);
   quick_sort(arr, p,q-1);
   quick_sort(arr, q+1, r);
