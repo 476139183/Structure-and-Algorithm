@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="xek-vn-1We">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--JosephVC-->
+        <scene sceneID="tQ0-ql-XnP">
+            <objects>
+                <viewController id="xek-vn-1We" customClass="JosephVC" customModule="链表" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="eBs-IX-vBm">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PcY-79-zDA">
+                                <rect key="frame" x="8" y="271" width="434" height="19"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="用循环链表模型约瑟夫问题，把 41 个人自杀的顺序编号输出" id="t4T-BA-Q6G">
+                                    <font key="font" metaFont="system" size="15"/>
+                                    <color key="textColor" name="unemphasizedSelectedTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jvJ-Ue-Ap1">
+                                <rect key="frame" x="20" y="79" width="88" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="FIi-Vs-k6u"/>
+                                    <constraint firstAttribute="width" constant="88" id="dm6-FP-78a"/>
+                                </constraints>
+                                <buttonCell key="cell" type="roundRect" title="创建环形链表" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ydM-Qb-1jK">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="label" size="12"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="I29-m2-JI1">
+                                <rect key="frame" x="163" y="79" width="39" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="I6V-7f-ydR"/>
+                                    <constraint firstAttribute="height" constant="18" id="mhX-A1-Njh"/>
+                                </constraints>
+                                <buttonCell key="cell" type="roundRect" title="输出" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ejp-Gc-8U5">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="label" size="12"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jvJ-Ue-Ap1" secondAttribute="bottom" constant="80" id="2yv-Hg-oiu"/>
+                            <constraint firstItem="I29-m2-JI1" firstAttribute="centerY" secondItem="jvJ-Ue-Ap1" secondAttribute="centerY" id="3vD-JJ-4sA"/>
+                            <constraint firstAttribute="trailing" secondItem="PcY-79-zDA" secondAttribute="trailing" constant="10" id="7jW-nP-mtL"/>
+                            <constraint firstItem="PcY-79-zDA" firstAttribute="leading" secondItem="eBs-IX-vBm" secondAttribute="leading" constant="10" id="G3L-su-4Eq"/>
+                            <constraint firstItem="I29-m2-JI1" firstAttribute="leading" secondItem="jvJ-Ue-Ap1" secondAttribute="trailing" constant="55" id="NZu-lZ-xQt"/>
+                            <constraint firstItem="jvJ-Ue-Ap1" firstAttribute="leading" secondItem="eBs-IX-vBm" secondAttribute="leading" constant="20" id="bqj-KS-DfV"/>
+                            <constraint firstItem="PcY-79-zDA" firstAttribute="top" secondItem="eBs-IX-vBm" secondAttribute="top" constant="10" id="jn5-cB-Avj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="cdn-vW-UR5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="18"/>
+        </scene>
+    </scenes>
+</document>
