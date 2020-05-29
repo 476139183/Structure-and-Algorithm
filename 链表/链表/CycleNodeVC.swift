@@ -10,31 +10,23 @@ import Cocoa
 
 class CycleNodeVC: NSViewController {
     
-  
+  let count = 10;
   var head : Node?
-    
-  override func viewDidLoad() {
-     
-    super.viewDidLoad()
-    
-  }
   
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
   
   @IBAction func crearyNomal(_ sender: Any) {
-    
-    head =  Node.createFast(10)
+    head =  Node.createFast(count)
     head?.printList()
-    
   }
-  
   
   @IBAction func creatCycle(_ sender: Any) {
     
     head = Node(data: 1)
     
     var tempNode : Node!
-    
-    let count = 10
     
     let temp = arc4random()%(UInt32(count-1))+1
       
@@ -69,10 +61,8 @@ class CycleNodeVC: NSViewController {
     }
     
     aler.messageText = str
-
     aler.beginSheetModal(for: self.view.window!, completionHandler: nil)
   }
-
   
 }
 

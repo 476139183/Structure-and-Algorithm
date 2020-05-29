@@ -10,9 +10,7 @@ import Cocoa
 
 class SwapNodeVC: NSViewController {
 
-  
   var head : Node?
-
 
   override func viewDidLoad() {
     super.viewDidLoad()
