@@ -39,7 +39,7 @@ void quickSort (int arr[],int n) {
 }
 
 
-//!
+//! 递归函数，
 void quick_sort (int arr[],int p, int r) {
   
   if (p >= r) {
@@ -55,7 +55,7 @@ void quick_sort (int arr[],int p, int r) {
 }
 
 
-//
+// 分区函数
 int partition (int arr[], int p, int r) {
   
   int i,j;

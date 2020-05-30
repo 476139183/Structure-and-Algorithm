@@ -29,10 +29,6 @@ void setupBubble (void) {
     printf("%d,",arr[i]);
   }
   
-  
-  
-  
-  
 }
 
 /* 冒泡 把最大的浮到最上面
