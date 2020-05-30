@@ -17,6 +17,8 @@
 
 void bubbleSort (int arr[], int n);
 
+///! 交换函数
+void swap(int *a,int *b);
 
 void setupBubble (void) {
   
@@ -31,6 +33,32 @@ void setupBubble (void) {
   
 }
 
+/*交换排序*/
+void bubbleSort0(int arr[],int n) {
+  for (int i = 0; i < n; i++) {
+    for (int j = i + 1; j < n; j++) {
+      if (arr[i] > arr[j]) {
+        swap(&arr[i], &arr[j]);
+      }
+    }
+  }
+}
+
+
+void bubbleSort1(int arr[],int n) {
+  for (int i = 0; i < n-1; i++) {
+    /* j 是从后往前循环 */
+    for (int j = n - 2; j >= i; j--) {
+      /* 若前者大于后者*/
+      if (arr[j] > arr[j+1]) {
+        /* 交换 j 和 j+1 的值*/
+        swap(&arr[j], &arr[j+1]);
+      }
+    }
+  }
+}
+
+
 /* 冒泡 把最大的浮到最上面
  循环n遍，
  把最大的放在最后面。
@@ -44,19 +72,17 @@ void bubbleSort (int arr[], int n) {
   if (n <= 1) {
     return;
   }
-  
+  bool flag = true;
   for (int i = 0; i < n; ++i) {
-    //! 提前退出冒泡循环的标志，判断有无数据交换
-    bool flag = false;
+    //! 提前退出冒泡循环的标志，判断有无数据交换，初始化为false
+    flag = false;
     for (int j = 0; j < n-i-1; ++j) {
       if (arr[j] > arr[j+1]) {
-        int temp = arr[j];
-        arr[j] = arr[j+1];
-        arr[j+1] = temp;
+        swap(&arr[j], &arr[j+1]);
+        /* 有数据交换，设置为 true */
         flag = true;
       }
     }
-    
     //! 遍历之后 无数据交换，提前退出
     if (!flag) {
       break;
@@ -65,6 +91,12 @@ void bubbleSort (int arr[], int n) {
   
 }
 
+void swap (int *a,int *b) {
+  int temp = *a;
+  *a = *b;
+  *b = temp;
+  
+}
 
 
 /*

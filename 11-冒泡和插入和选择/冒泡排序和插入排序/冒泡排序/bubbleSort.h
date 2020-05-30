@@ -11,6 +11,13 @@
 
 #include <stdio.h>
 
+///!
 void setupBubble (void) ;
+
+
+/// 交换排序
+void bubbleSort0(int arr[],int n);
+// 初级冒泡排序
+void bubbleSort1(int arr[],int n);
 
 #endif /* bubbleSort_h */

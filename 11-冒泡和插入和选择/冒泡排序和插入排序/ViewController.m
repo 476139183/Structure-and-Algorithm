@@ -23,7 +23,7 @@
   
   
   //! 冒泡排序
-//  setupBubble();
+  setupBubble();
   
   //! 插入排序
 //  setupInsert();
