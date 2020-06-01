@@ -13,6 +13,10 @@ class JosephTwoVC: NSViewController {
     override func viewDidLoad() {
       super.viewDidLoad()
       
+      print("约瑟夫进阶问题")
+
+      
+      
     }
     
 }

@@ -22,7 +22,6 @@
 		373B7A492480F96300B7188B /* CycleNodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373B7A472480F96300B7188B /* CycleNodeVC.swift */; };
 		37ADA9C5248499490066A0FC /* JosephTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ADA9C3248499490066A0FC /* JosephTwoVC.swift */; };
 		37ADA9C924849DDD0066A0FC /* MagicianVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ADA9C724849DDD0066A0FC /* MagicianVC.swift */; };
-		37ADA9CD2484A9350066A0FC /* FibonacciVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ADA9CB2484A9350066A0FC /* FibonacciVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +43,6 @@
 		373B7A472480F96300B7188B /* CycleNodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleNodeVC.swift; sourceTree = "<group>"; };
 		37ADA9C3248499490066A0FC /* JosephTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JosephTwoVC.swift; sourceTree = "<group>"; };
 		37ADA9C724849DDD0066A0FC /* MagicianVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicianVC.swift; sourceTree = "<group>"; };
-		37ADA9CB2484A9350066A0FC /* FibonacciVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +86,6 @@
 				373B7A432480D97600B7188B /* ReverseListVC.swift */,
 				373B7A452480F64800B7188B /* SwapNodeVC.swift */,
 				373B7A472480F96300B7188B /* CycleNodeVC.swift */,
-				37ADA9CB2484A9350066A0FC /* FibonacciVC.swift */,
 				373B7A222480AB5C00B7188B /* Assets.xcassets */,
 				373B7A3D2480B68E00B7188B /* SingleNode.storyboard */,
 				373B7A242480AB5C00B7188B /* Main.storyboard */,
@@ -174,7 +171,6 @@
 				373B7A212480AB5B00B7188B /* ViewController.swift in Sources */,
 				37ADA9C924849DDD0066A0FC /* MagicianVC.swift in Sources */,
 				373B7A312480AD7A00B7188B /* JosephVC.swift in Sources */,
-				37ADA9CD2484A9350066A0FC /* FibonacciVC.swift in Sources */,
 				373B7A3B2480B06400B7188B /* SingleCreateVC.swift in Sources */,
 				373B7A352480AE3400B7188B /* SingleNodeVC.swift in Sources */,
 				373B7A1F2480AB5B00B7188B /* AppDelegate.swift in Sources */,

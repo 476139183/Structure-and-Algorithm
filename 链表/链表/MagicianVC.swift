@@ -14,7 +14,9 @@ class MagicianVC: NSViewController {
       super.viewDidLoad()
       
       print("魔术师发牌问题:")
+      
       let n = 13
+      
       //1 创建一个单循环链表
       var head = creatCycle(n)
       
@@ -22,7 +24,6 @@ class MagicianVC: NSViewController {
       magician(head: head)
 
       for _ in 0 ..< n {
-        
         print("♥️\(head.data)")
         head = (head.next)!
       }
@@ -75,9 +76,9 @@ fileprivate extension MagicianVC {
         p = p.next!
         if p.data != 0 {
           //！ 如果这个位置有牌了，那么就到下一个位置，相当于这个牌已经被我们翻出了，所以忽略这张牌,也就是角标不变
-          j -= 1
+        } else {
+          j += 1
         }
-        j += 1
       }
       
       if p.data == 0 {
@@ -89,12 +90,10 @@ fileprivate extension MagicianVC {
         }
       }
       
-      
     }
     
     
   }
-  
   
   
 }
