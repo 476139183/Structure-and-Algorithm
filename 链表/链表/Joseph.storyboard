@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--JosephVC-->
+        <!--约瑟夫问题-->
         <scene sceneID="tQ0-ql-XnP">
             <objects>
-                <viewController id="xek-vn-1We" customClass="JosephVC" customModule="链表" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="约瑟夫问题" id="xek-vn-1We" customClass="JosephVC" customModule="链表" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="eBs-IX-vBm">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -22,36 +22,81 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jvJ-Ue-Ap1">
-                                <rect key="frame" x="20" y="79" width="88" height="19"/>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ge-vX-iFm">
+                                <rect key="frame" x="10" y="41" width="430" height="220"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="2O7-iY-Nes">
+                                    <rect key="frame" x="0.0" y="0.0" width="430" height="220"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="yB6-S6-m7F">
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="220"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="430" height="220"/>
+                                            <size key="maxSize" width="430" height="10000000"/>
+                                            <attributedString key="textStorage">
+                                                <fragment>
+                                                    <mutableString key="content">据说著名犹太历史学家 Josephus 有如下故事：                          
+在罗马人占领桥塔帕特后，39个犹太人与Josephus及他朋友躲到一个洞中，               
+39个犹太人决定宁愿死也不要被敌人抓到，于是决定了一个自杀方式，         
+41个人排成一个圆圈，由第一个人开始报数，每报数到第3人，该人必须自杀，         
+然后再由下一个重新报数，直到所有人都自杀身亡。          
+然而 Josephus和他朋友并不想这样，于是假意遵从，
+将自己和朋友安排在第16个与第31个位置，逃过了这场死亡游戏</mutableString>
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="13" name="PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="FIi-Vs-k6u"/>
-                                    <constraint firstAttribute="width" constant="88" id="dm6-FP-78a"/>
+                                    <constraint firstAttribute="height" constant="220" id="nRa-bK-N0I"/>
                                 </constraints>
-                                <buttonCell key="cell" type="roundRect" title="创建环形链表" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ydM-Qb-1jK">
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="PN2-4h-GI5">
+                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="eAM-hm-ooR">
+                                    <rect key="frame" x="414" y="0.0" width="16" height="220"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pF-0Z-FHH">
+                                <rect key="frame" x="-2" y="0.0" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="再来一遍" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mfI-xu-fns">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="label" size="12"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="again:" target="xek-vn-1We" id="lBh-uc-KXb"/>
+                                </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="I29-m2-JI1">
-                                <rect key="frame" x="163" y="79" width="39" height="19"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="39" id="I6V-7f-ydR"/>
-                                    <constraint firstAttribute="height" constant="18" id="mhX-A1-Njh"/>
-                                </constraints>
-                                <buttonCell key="cell" type="roundRect" title="输出" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ejp-Gc-8U5">
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kwt-Ud-YeK">
+                                <rect key="frame" x="342" y="1" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="进阶问题" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="niz-1P-XSa">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="label" size="12"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="more:" target="xek-vn-1We" id="Spq-XU-u91"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="jvJ-Ue-Ap1" secondAttribute="bottom" constant="80" id="2yv-Hg-oiu"/>
-                            <constraint firstItem="I29-m2-JI1" firstAttribute="centerY" secondItem="jvJ-Ue-Ap1" secondAttribute="centerY" id="3vD-JJ-4sA"/>
+                            <constraint firstAttribute="trailing" secondItem="7ge-vX-iFm" secondAttribute="trailing" constant="10" id="6XB-kw-fbY"/>
                             <constraint firstAttribute="trailing" secondItem="PcY-79-zDA" secondAttribute="trailing" constant="10" id="7jW-nP-mtL"/>
+                            <constraint firstItem="7ge-vX-iFm" firstAttribute="leading" secondItem="eBs-IX-vBm" secondAttribute="leading" constant="10" id="CbQ-fu-F9r"/>
                             <constraint firstItem="PcY-79-zDA" firstAttribute="leading" secondItem="eBs-IX-vBm" secondAttribute="leading" constant="10" id="G3L-su-4Eq"/>
-                            <constraint firstItem="I29-m2-JI1" firstAttribute="leading" secondItem="jvJ-Ue-Ap1" secondAttribute="trailing" constant="55" id="NZu-lZ-xQt"/>
-                            <constraint firstItem="jvJ-Ue-Ap1" firstAttribute="leading" secondItem="eBs-IX-vBm" secondAttribute="leading" constant="20" id="bqj-KS-DfV"/>
+                            <constraint firstItem="7ge-vX-iFm" firstAttribute="top" secondItem="PcY-79-zDA" secondAttribute="bottom" constant="10" id="Nks-28-t59"/>
+                            <constraint firstAttribute="bottom" secondItem="7ge-vX-iFm" secondAttribute="bottom" constant="41" id="Voy-bS-Eac"/>
                             <constraint firstItem="PcY-79-zDA" firstAttribute="top" secondItem="eBs-IX-vBm" secondAttribute="top" constant="10" id="jn5-cB-Avj"/>
                         </constraints>
                     </view>
@@ -59,6 +104,150 @@
                 <customObject id="cdn-vW-UR5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="18"/>
+        </scene>
+        <!--约瑟夫进阶问题-->
+        <scene sceneID="PWU-dY-QOu">
+            <objects>
+                <viewController title="约瑟夫进阶问题" storyboardIdentifier="josephTwoVC" id="VFp-8A-bw5" customClass="JosephTwoVC" customModule="链表" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="6UZ-1F-azf">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgX-KL-LLU">
+                                <rect key="frame" x="20" y="40" width="410" height="240"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="ouN-4D-Ctz">
+                                    <rect key="frame" x="0.0" y="0.0" width="410" height="240"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="Izz-LW-8Wv">
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="240"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="410" height="240"/>
+                                            <size key="maxSize" width="428" height="10000000"/>
+                                            <attributedString key="textStorage">
+                                                <fragment content="与约瑟夫问题类似的算法题:">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" metaFont="user"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="编号为1～N的N个人按照顺时针方向围坐一圈，        ">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" metaFont="user"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="每人持有一个密码(正整数，可以自由输入)，">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" metaFont="user"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="开始人选按照顺时间方向自1开始顺序报数，">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" metaFont="user"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="报到M时停止。报M的人出列，将他的密码作为新的M值">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" metaFont="user"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="，重复之前的操作，直到所有人全部出列为止。">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="q2d-EZ-Z9Z"/>
+                                </constraints>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="1ZL-4d-Uop">
+                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="2el-L8-QXj">
+                                    <rect key="frame" x="394" y="0.0" width="16" height="240"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="TgX-KL-LLU" firstAttribute="leading" secondItem="6UZ-1F-azf" secondAttribute="leading" constant="20" id="1wK-YM-lRB"/>
+                            <constraint firstAttribute="bottom" secondItem="TgX-KL-LLU" secondAttribute="bottom" constant="40" id="1xO-yx-cjC"/>
+                            <constraint firstItem="TgX-KL-LLU" firstAttribute="top" secondItem="6UZ-1F-azf" secondAttribute="top" constant="20" id="H53-xu-Jxw"/>
+                            <constraint firstAttribute="trailing" secondItem="TgX-KL-LLU" secondAttribute="trailing" constant="20" id="XWT-m6-IMd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="Kkc-0l-5fM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496" y="18"/>
         </scene>
     </scenes>
 </document>

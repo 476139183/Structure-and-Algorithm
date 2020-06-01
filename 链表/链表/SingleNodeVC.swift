@@ -42,7 +42,8 @@ class SingleNodeVC: NSViewController,SingleCreateDelegate {
  
   @IBAction func reverseTwoList(_ sender: Any) {
     
-   let svc:SwapNodeVC = (storyboard?.instantiateController(identifier: "swapNodeVC"))! as SwapNodeVC
+ 
+    let svc:SwapNodeVC = (storyboard?.instantiateController(identifier: "swapNodeVC"))! as SwapNodeVC
     let head = currentHead?.copyList()
     svc.head = head
     self.presentAsModalWindow(svc);

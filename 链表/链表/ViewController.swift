@@ -22,6 +22,12 @@ class ViewController: NSViewController {
     }
   }
 
-
+  @IBAction func magician(_ sender: Any) {
+    
+     let svc:MagicianVC = (storyboard?.instantiateController(identifier: "magicianVC"))! as MagicianVC
+     self.presentAsModalWindow(svc);
+    
+  }
+  
 }
 
