@@ -842,6 +842,9 @@
                             <constraint firstItem="yk9-zO-UKU" firstAttribute="top" secondItem="Ir4-ih-2nP" secondAttribute="bottom" constant="10" id="tDq-yN-Rre"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="3cR-nA-Hyo" id="kjV-6U-oI7"/>
+                    </connections>
                 </viewController>
                 <customObject id="yLT-kC-xTF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -854,11 +857,92 @@
                     <view key="view" id="chn-UM-LEH">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6OR-eO-gis">
+                                <rect key="frame" x="18" y="274" width="283" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="279" id="Eeg-HI-FCm"/>
+                                    <constraint firstAttribute="height" constant="16" id="bSx-CZ-QHa"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="输入中缀表达式，可以将其转换为逆波兰表达式" id="NPm-1i-IBK">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0i7-al-BL1">
+                                <rect key="frame" x="20" y="243" width="410" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="iW6-RU-HeK"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="输入正确的中缀表达式，如1+(2-3)*4+10/5" drawsBackground="YES" id="DJu-Ds-B4W">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0Dy-re-Ijd">
+                                <rect key="frame" x="14" y="13" width="67" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1FB-wk-Sag"/>
+                                    <constraint firstAttribute="width" constant="55" id="Orr-aa-a0h"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="打印" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wjC-ad-efQ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="printInfix:" target="597-d2-v9w" id="BzD-Wb-8vK"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qcx-jo-tJ1">
+                                <rect key="frame" x="289" y="13" width="147" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="elT-bC-gKg"/>
+                                    <constraint firstAttribute="width" constant="135" id="tQ7-kj-Aab"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="传递给上一个界面" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cos-aJ-bxa">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="gotoPreVC:" target="597-d2-v9w" id="C8k-jS-uZc"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GyJ-zn-SqA">
+                                <rect key="frame" x="18" y="219" width="129" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="YZR-fi-W3c"/>
+                                    <constraint firstAttribute="height" constant="16" id="r7f-t7-DXt"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="示例:1+(2-3)*4+10/5" id="Gqr-5c-MwQ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="0Dy-re-Ijd" firstAttribute="leading" secondItem="chn-UM-LEH" secondAttribute="leading" constant="20" id="0Jm-Ej-Pl3"/>
+                            <constraint firstItem="6OR-eO-gis" firstAttribute="leading" secondItem="chn-UM-LEH" secondAttribute="leading" constant="20" id="4Ay-Y6-f2R"/>
+                            <constraint firstItem="0i7-al-BL1" firstAttribute="top" secondItem="6OR-eO-gis" secondAttribute="bottom" constant="10" id="822-zK-4vY"/>
+                            <constraint firstItem="GyJ-zn-SqA" firstAttribute="top" secondItem="0i7-al-BL1" secondAttribute="bottom" constant="8" id="EKj-MS-OJZ"/>
+                            <constraint firstAttribute="bottom" secondItem="0Dy-re-Ijd" secondAttribute="bottom" constant="20" id="ONI-RO-QBt"/>
+                            <constraint firstItem="6OR-eO-gis" firstAttribute="top" secondItem="chn-UM-LEH" secondAttribute="top" constant="10" id="VoB-fs-tiC"/>
+                            <constraint firstAttribute="trailing" secondItem="0i7-al-BL1" secondAttribute="trailing" constant="20" id="hjx-BL-j6d"/>
+                            <constraint firstItem="0i7-al-BL1" firstAttribute="leading" secondItem="chn-UM-LEH" secondAttribute="leading" constant="20" id="tjf-Hl-Tsa"/>
+                            <constraint firstAttribute="trailing" secondItem="Qcx-jo-tJ1" secondAttribute="trailing" constant="20" id="vJF-3g-k7k"/>
+                            <constraint firstAttribute="bottom" secondItem="Qcx-jo-tJ1" secondAttribute="bottom" constant="20" id="xqj-oA-G8q"/>
+                            <constraint firstItem="GyJ-zn-SqA" firstAttribute="leading" secondItem="chn-UM-LEH" secondAttribute="leading" constant="20" id="z4Q-VS-o3L"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="0i7-al-BL1" id="y5W-fn-ySz"/>
+                    </connections>
                 </viewController>
                 <customObject id="9Tb-Aa-rIy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-676" y="1048"/>
+            <point key="canvasLocation" x="-660" y="1056"/>
         </scene>
         <!--Binary-->
         <scene sceneID="NJu-Am-J0a">

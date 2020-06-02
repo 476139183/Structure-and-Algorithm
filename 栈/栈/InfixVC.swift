@@ -8,14 +8,154 @@
 
 import Cocoa
 
-class InfixVC: NSViewController {
 
-    override func viewDidLoad() {
-      super.viewDidLoad()
+protocol InfixDelegate {
+  func getInfix2RPN(outStr:String)
+}
+
+class InfixVC: NSViewController {
+  
+  @IBOutlet weak var inputTextField: NSTextField!
+  
+  var inputStr : String!
+  
+   //! 输出缓冲区
+   var outStr = String()
+
+  var delegate:InfixDelegate? = nil
+  
+  
+  override func viewDidLoad() {
+     
+    super.viewDidLoad()
+      
+    inputTextField.stringValue = "1+(2-3)*4+10/5"
+   
+  }
+  
+  @IBAction func printInfix(_ sender: Any) {
+    
+    if inputTextField.stringValue.isEmpty {
+      return
+    }
+    
+    inputStr = inputTextField.stringValue
+    printInfixLog()
+    
+  }
+  
+  @IBAction func gotoPreVC(_ sender: Any) {
+    
+    if outStr.count == 0 {
+      return
+    }
+    
+    if delegate != nil {
+      delegate?.getInfix2RPN(outStr: outStr)
+      self.view.window?.close()
+    }
+    
+  }
+  
+}
+
+
+fileprivate extension InfixVC {
+  
+  func printInfixLog() {
+    
+    //! 栈
+    let stack = Stack<Character>()
+    //！ 当前字符
+    var c : Character!
+    
+    //!
+    var e : Character!
+    
+    //! 数字缓存
+    var strBuffer = String()
+    
+    outStr.removeAll()
+   
+    
+    for index in inputStr.indices {
+      c = inputStr[index]
+      
+      if (c >= "0" && c <= "9")  {
+        //! 添加到缓冲区
+        strBuffer.append(c)
+        if c == inputStr.last {
+          //! 如果是最后一个元素，则直接添加到输出字符串中,否则等待
+          outStr.append(contentsOf: "\(strBuffer) ")
+          strBuffer.removeAll()
+        }
+        continue
+      } else {
+        // 如果是非数字，则先把之前的缓冲区添加到字符串中
+        if strBuffer.count > 0 {
+          outStr.append(contentsOf: "\(strBuffer) ")
+          strBuffer.removeAll()
+        }
+     
+      }
+      
+       
+      if (c == ")") {
+        //! 遇到右括号，则一直弹栈，直到遇到对应的右括号:也就是优先处理括号里面的数据
+        e = stack.pop()
+        while e != "(" {
+          outStr.append("\(e!) ")
+          e = stack.pop()
+        }
+        
+      } else if (c == "+" || c == "-") {
+        //! 优先级比较低 所以要弹出里面的数据
+        if stack.size() == 0 {
+          //！栈空则入栈
+          stack.push(c)
+        } else {
+          //! 否则按照将栈依次出栈，直到栈空 或者遇到右括号
+          repeat {
+            e = stack.pop()
+            if e == "(" {
+              stack.push(e)
+            } else {
+              //! 栈里面的 加 减 乘 除 优先出列
+              outStr.append("\(e!) ")
+            }
+            
+          } while (stack.size() > 0 && e != "(")
+          
+          //! 清空后，将这个等待的符号入栈
+          stack.push(c)
+          
+        }
+        
+      } else if (c == "*" || c == "/" || c == "(") {
+        
+        stack.push(c)
+        
+      } else {
+        
+        //! 输入错误
+        
+      }
       
       
     }
     
+    
+    //！ 如果栈有元素，则打印出来
+    while stack.size() > 0 {
+      outStr.append("\(stack.pop()) ")
+    }
+  
+    print("最终得到的逆波兰表达式:\(outStr)")
+    
+  }
+  
+  
+  
 }
 
 
@@ -45,6 +185,7 @@ class InfixVC: NSViewController {
  
  完整的输出是：
  
+ 1 2 3 - 4 * + 10 5 / +
  
  */
 

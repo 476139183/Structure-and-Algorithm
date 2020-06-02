@@ -12,7 +12,8 @@ class RPNVC: NSViewController {
   
   var inputStr:String!
   
-   
+  @IBOutlet weak var inputTextField: NSTextField!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -20,24 +21,28 @@ class RPNVC: NSViewController {
     //！ 支持带小数点的数据。
     //！ a+(b-c)*d  ---> a b c - d * +
     
-    inputStr = "5 6 7 + 8 * - 9 4 / +"
+//    inputStr =
+//    reversePolish()
+    
+    inputTextField.stringValue = "5 6 7 + 8 * - 9 4 / +"
+    
+  }
+  
+  @IBAction func printInput(_ sender: Any) {
+    
+    if inputTextField.stringValue.isEmpty {
+      return
+    }
+    
+    inputStr = inputTextField.stringValue
     reversePolish()
     
   }
   
-  
-  @IBAction func printInput(_ sender: Any) {
-    
-    if inputStr.count > 0 {
-      reversePolish()
-    }
-    
-  }
-  
-  
   @IBAction func gotoInfixVC(_ sender: Any) {
     
     let svc:InfixVC = (storyboard?.instantiateController(identifier: "infixVC"))! as InfixVC
+    svc.delegate = self
     self.presentAsModalWindow(svc);
     
   }
@@ -96,6 +101,18 @@ class RPNVC: NSViewController {
   }
 
     
+}
+
+extension RPNVC : InfixDelegate {
+  
+  func getInfix2RPN(outStr: String) {
+    // 将获取的逆波兰表达式显示出来
+    inputTextField.stringValue = outStr
+    
+  }
+  
+  
+  
 }
 
 

@@ -13,6 +13,11 @@ class ViewController: NSViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
   
+//    let c:Character =  "9"
+//    
+//    let k = isdigit(Int32(c.hexDigitValue))
+//    
+//    print(k)
     
   }
 
