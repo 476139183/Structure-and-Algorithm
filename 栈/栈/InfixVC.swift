@@ -141,15 +141,14 @@ fileprivate extension InfixVC {
         
       }
       
-      
     }
-    
     
     //！ 如果栈有元素，则打印出来
     while stack.size() > 0 {
       outStr.append("\(stack.pop()) ")
     }
   
+    print("当前的中缀表达式:\(inputStr!)")
     print("最终得到的逆波兰表达式:\(outStr)")
     
   }
