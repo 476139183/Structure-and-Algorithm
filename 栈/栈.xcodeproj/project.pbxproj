@@ -12,6 +12,12 @@
 		37356F352484D37B00F7306C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37356F342484D37B00F7306C /* Assets.xcassets */; };
 		37356F382484D37B00F7306C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37356F362484D37B00F7306C /* Main.storyboard */; };
 		37356F412484D49200F7306C /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37356F402484D49200F7306C /* Stack.swift */; };
+		37356F432484D81B00F7306C /* BinaryToDecimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37356F422484D81B00F7306C /* BinaryToDecimal.swift */; };
+		37356F482484E46E00F7306C /* BinaryToOctalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37356F472484E46E00F7306C /* BinaryToOctalVC.swift */; };
+		37356F4B2484E66100F7306C /* RPNVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37356F492484E66100F7306C /* RPNVC.swift */; };
+		37356F4E2485EA4000F7306C /* InfixVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37356F4D2485EA4000F7306C /* InfixVC.swift */; };
+		37356F502485F09C00F7306C /* tishi.png in Resources */ = {isa = PBXBuildFile; fileRef = 37356F4F2485F09C00F7306C /* tishi.png */; };
+		37356F532485F0EC00F7306C /* Binary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37356F512485F0EC00F7306C /* Binary.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,12 @@
 		37356F392484D37B00F7306C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37356F3A2484D37B00F7306C /* _.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _.entitlements; sourceTree = "<group>"; };
 		37356F402484D49200F7306C /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		37356F422484D81B00F7306C /* BinaryToDecimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryToDecimal.swift; sourceTree = "<group>"; };
+		37356F472484E46E00F7306C /* BinaryToOctalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryToOctalVC.swift; sourceTree = "<group>"; };
+		37356F492484E66100F7306C /* RPNVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPNVC.swift; sourceTree = "<group>"; };
+		37356F4D2485EA4000F7306C /* InfixVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfixVC.swift; sourceTree = "<group>"; };
+		37356F4F2485F09C00F7306C /* tishi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tishi.png; sourceTree = "<group>"; };
+		37356F522485F0EC00F7306C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "栈/Base.lproj/Binary.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +70,14 @@
 				37356F302484D37A00F7306C /* AppDelegate.swift */,
 				37356F322484D37A00F7306C /* ViewController.swift */,
 				37356F402484D49200F7306C /* Stack.swift */,
+				37356F422484D81B00F7306C /* BinaryToDecimal.swift */,
+				37356F472484E46E00F7306C /* BinaryToOctalVC.swift */,
+				37356F492484E66100F7306C /* RPNVC.swift */,
+				37356F4D2485EA4000F7306C /* InfixVC.swift */,
+				37356F4F2485F09C00F7306C /* tishi.png */,
 				37356F342484D37B00F7306C /* Assets.xcassets */,
 				37356F362484D37B00F7306C /* Main.storyboard */,
+				37356F512485F0EC00F7306C /* Binary.storyboard */,
 				37356F392484D37B00F7306C /* Info.plist */,
 				37356F3A2484D37B00F7306C /* _.entitlements */,
 			);
@@ -125,7 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				37356F352484D37B00F7306C /* Assets.xcassets in Resources */,
+				37356F532485F0EC00F7306C /* Binary.storyboard in Resources */,
 				37356F382484D37B00F7306C /* Main.storyboard in Resources */,
+				37356F502485F09C00F7306C /* tishi.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,9 +156,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37356F4E2485EA4000F7306C /* InfixVC.swift in Sources */,
 				37356F332484D37A00F7306C /* ViewController.swift in Sources */,
+				37356F4B2484E66100F7306C /* RPNVC.swift in Sources */,
 				37356F412484D49200F7306C /* Stack.swift in Sources */,
+				37356F482484E46E00F7306C /* BinaryToOctalVC.swift in Sources */,
 				37356F312484D37A00F7306C /* AppDelegate.swift in Sources */,
+				37356F432484D81B00F7306C /* BinaryToDecimal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +175,14 @@
 				37356F372484D37B00F7306C /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		37356F512485F0EC00F7306C /* Binary.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37356F522485F0EC00F7306C /* Base */,
+			);
+			name = Binary.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

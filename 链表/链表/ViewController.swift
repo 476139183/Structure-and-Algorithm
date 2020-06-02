@@ -12,8 +12,8 @@ class ViewController: NSViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    
 
-    // Do any additional setup after loading the view.
   }
 
   override var representedObject: Any? {
@@ -22,10 +22,12 @@ class ViewController: NSViewController {
     }
   }
 
+  
   @IBAction func magician(_ sender: Any) {
     
-     let svc:MagicianVC = (storyboard?.instantiateController(identifier: "magicianVC"))! as MagicianVC
-     self.presentAsModalWindow(svc);
+    let svc:MagicianVC = (storyboard?.instantiateController(identifier: "magicianVC"))! as MagicianVC
+     
+    self.presentAsModalWindow(svc);
     
   }
   

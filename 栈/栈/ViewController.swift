@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  栈
-//
+//  https://leetcode-cn.com/problems/implement-queue-using-stacks/solution/swift4-msarray-stack-array-degddeg-by-eyrefree/
 //  Created by 段雨田 on 2020/6/1.
 //  Copyright © 2020 段雨田. All rights reserved.
 //
@@ -12,8 +12,8 @@ class ViewController: NSViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    // Do any additional setup after loading the view.
+  
+    
   }
 
   override var representedObject: Any? {

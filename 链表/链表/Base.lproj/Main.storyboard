@@ -709,9 +709,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PZw-LA-PUB">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PZw-LA-PUB">
                                 <rect key="frame" x="186" y="181" width="76" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="roundRect" title="约瑟夫问题" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7So-M2-GZt">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="label" size="12"/>
@@ -720,9 +719,8 @@
                                     <segue destination="7vM-ym-1hX" kind="show" id="kEb-dB-gwE"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2MM-Pg-qWW">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2MM-Pg-qWW">
                                 <rect key="frame" x="334" y="181" width="100" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="roundRect" title="魔术师发牌问题" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7OA-yC-mMi">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="label" size="12"/>
@@ -731,9 +729,8 @@
                                     <action selector="magician:" target="XfG-lQ-9wD" id="U4L-ep-xiO"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bKU-bE-bSA">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bKU-bE-bSA">
                                 <rect key="frame" x="32" y="181" width="51" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="roundRect" title="单链表" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1ZM-8b-GuK">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="label" size="12"/>
@@ -743,6 +740,16 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="PZw-LA-PUB" firstAttribute="baseline" secondItem="bKU-bE-bSA" secondAttribute="baseline" id="3eT-sG-B9P"/>
+                            <constraint firstItem="2MM-Pg-qWW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PZw-LA-PUB" secondAttribute="trailing" symbolic="YES" id="3nL-Ru-Pbl"/>
+                            <constraint firstItem="bKU-bE-bSA" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="32" id="846-in-aXx"/>
+                            <constraint firstItem="PZw-LA-PUB" firstAttribute="baseline" secondItem="2MM-Pg-qWW" secondAttribute="baseline" id="QlN-fp-K9p"/>
+                            <constraint firstItem="PZw-LA-PUB" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="70" id="Rqg-TS-OPJ"/>
+                            <constraint firstAttribute="trailing" secondItem="2MM-Pg-qWW" secondAttribute="trailing" constant="46" id="Y7d-yS-Gkk"/>
+                            <constraint firstItem="PZw-LA-PUB" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="186" id="dvO-yb-PXL"/>
+                            <constraint firstItem="PZw-LA-PUB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bKU-bE-bSA" secondAttribute="trailing" constant="8" symbolic="YES" id="meb-1F-PTA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -943,6 +950,9 @@ Cg
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
                                     </subviews>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                                    </userDefinedRuntimeAttributes>
                                 </clipView>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="00m-ng-aEK"/>
@@ -955,6 +965,9 @@ Cg
                                     <rect key="frame" x="394" y="0.0" width="16" height="250"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                                </userDefinedRuntimeAttributes>
                             </scrollView>
                         </subviews>
                         <constraints>

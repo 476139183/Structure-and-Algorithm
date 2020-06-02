@@ -16,21 +16,26 @@ protocol SingleCreateDelegate {
 
 class SingleCreateVC: NSViewController {
 
-  @IBOutlet var customTextView: NSTextView!
+    
+  @IBOutlet var baseCustomTextView: YTBaseTextView!
   
   var delegate:SingleCreateDelegate? = nil
+  
   
   @IBOutlet weak var numberTextFile: NSTextField!
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    baseCustomTextView.placeholder = "输入示例：1,4,6,8,9,3,9  ⚠️这边并未做正确性校验"
    
   }
   
   
-  
-  
+  //！ 一键 快速创建
   @IBAction func createFast(_ sender: Any) {
+    
+    
     
     guard let number = Int(numberTextFile.stringValue) else {
       return
@@ -45,13 +50,14 @@ class SingleCreateVC: NSViewController {
   }
     
   
+  //！ 自定义创建
   @IBAction func createCustom(_ sender: Any) {
 
-    if  customTextView.string.isEmpty {
+    if  baseCustomTextView.string.isEmpty {
       return
     }
     
-    guard let arr = customTextView.string.components(separatedBy: ",") as [String]?,
+    guard let arr = baseCustomTextView.string.components(separatedBy: ",") as [String]?,
       arr.count > 0 else {
       return
     }

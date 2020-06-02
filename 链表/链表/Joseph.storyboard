@@ -66,13 +66,16 @@
                                     <rect key="frame" x="414" y="0.0" width="16" height="220"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                                </userDefinedRuntimeAttributes>
                             </scrollView>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pF-0Z-FHH">
                                 <rect key="frame" x="-2" y="0.0" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="再来一遍" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mfI-xu-fns">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="again:" target="xek-vn-1We" id="lBh-uc-KXb"/>
@@ -83,7 +86,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="进阶问题" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="niz-1P-XSa">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="more:" target="xek-vn-1We" id="Spq-XU-u91"/>
@@ -235,6 +238,9 @@ Cg
                                     <rect key="frame" x="394" y="0.0" width="16" height="240"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                                </userDefinedRuntimeAttributes>
                             </scrollView>
                         </subviews>
                         <constraints>

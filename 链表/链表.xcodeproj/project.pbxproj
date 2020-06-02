@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37356F55248622E100F7306C /* YTBaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37356F54248622E100F7306C /* YTBaseTextView.swift */; };
 		373B7A1F2480AB5B00B7188B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373B7A1E2480AB5B00B7188B /* AppDelegate.swift */; };
 		373B7A212480AB5B00B7188B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373B7A202480AB5B00B7188B /* ViewController.swift */; };
 		373B7A232480AB5C00B7188B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 373B7A222480AB5C00B7188B /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37356F54248622E100F7306C /* YTBaseTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTBaseTextView.swift; sourceTree = "<group>"; };
 		373B7A1B2480AB5B00B7188B /* 链表.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "链表.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		373B7A1E2480AB5B00B7188B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		373B7A202480AB5B00B7188B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				373B7A322480ADB400B7188B /* Node.swift */,
 				373B7A342480AE3400B7188B /* SingleNodeVC.swift */,
 				373B7A392480B06400B7188B /* SingleCreateVC.swift */,
+				37356F54248622E100F7306C /* YTBaseTextView.swift */,
 				373B7A432480D97600B7188B /* ReverseListVC.swift */,
 				373B7A452480F64800B7188B /* SwapNodeVC.swift */,
 				373B7A472480F96300B7188B /* CycleNodeVC.swift */,
@@ -179,6 +182,7 @@
 				373B7A492480F96300B7188B /* CycleNodeVC.swift in Sources */,
 				37ADA9C5248499490066A0FC /* JosephTwoVC.swift in Sources */,
 				373B7A332480ADB400B7188B /* Node.swift in Sources */,
+				37356F55248622E100F7306C /* YTBaseTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

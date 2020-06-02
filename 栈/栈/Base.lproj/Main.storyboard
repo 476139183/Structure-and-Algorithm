@@ -708,453 +708,165 @@
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="61X-F6-hgs">
+                                <rect key="frame" x="14" y="6" width="120" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="逆波兰表达式" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="B9E-Mx-pam">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="Kt6-J8-gFS" kind="modal" id="Pjf-rM-FsZ"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8w2-3s-mjj">
+                                <rect key="frame" x="146" y="6" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="进制转换" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ehh-5O-2WQ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="aV2-Wc-3iQ" kind="modal" id="K1I-ch-IOB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="EhU-En-zQQ">
+        <!--逆波兰表达式-->
+        <scene sceneID="POT-sv-rub">
             <objects>
-                <viewController id="Ahk-Ky-Hg8" sceneMemberID="viewController">
-                    <view key="view" id="WS4-g1-4gD">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                <viewController title="逆波兰表达式" id="Kt6-J8-gFS" customClass="RPNVC" customModule="栈" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="thJ-tM-sYU">
+                        <rect key="frame" x="0.0" y="0.0" width="473" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="amc-qJ-95V">
-                                <rect key="frame" x="18" y="270" width="414" height="20"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NJA-1n-ttD">
+                                <rect key="frame" x="18" y="275" width="437" height="15"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="uII-dB-k8X"/>
+                                    <constraint firstAttribute="width" constant="433" id="SX2-7S-4sn"/>
+                                    <constraint firstAttribute="height" constant="15" id="uMp-pI-Vaj"/>
                                 </constraints>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="题目：利用栈的数据结构特点，将二进制转换为十进制" id="1Vf-e3-oLM">
-                                    <font key="font" usesAppearanceFont="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="请按 逆波兰表达式输入 待计算的数据，数据与运算符之间用空格隔开" id="vpi-U1-RGR">
+                                    <font key="font" size="14" name=".PingFangSC-Regular"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6V-vH-uhM">
-                                <rect key="frame" x="20" y="60" width="410" height="200"/>
-                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="rNp-UQ-kV0">
-                                    <rect key="frame" x="0.0" y="0.0" width="410" height="200"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" spellingCorrection="YES" smartInsertDelete="YES" id="YBO-MZ-hoD">
-                                            <rect key="frame" x="0.0" y="0.0" width="410" height="200"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="410" height="200"/>
-                                            <size key="maxSize" width="430" height="10000000"/>
-                                            <attributedString key="textStorage">
-                                                <fragment content="分析：每一个二进制数转换成相应的十进制方法如下：">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment>
-                                                    <string key="content">
-(X</string>
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="n">
-                                                    <attributes>
-                                                        <font key="NSFont" size="11.667" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <integer key="NSSuperScript" value="-1"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="X">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="n-1">
-                                                    <attributes>
-                                                        <font key="NSFont" size="11.667" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <integer key="NSSuperScript" value="-1"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="......X">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="3">
-                                                    <attributes>
-                                                        <font key="NSFont" size="11.667" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <integer key="NSSuperScript" value="-1"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="X">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="2">
-                                                    <attributes>
-                                                        <font key="NSFont" size="11.667" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <integer key="NSSuperScript" value="-1"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="X">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="1">
-                                                    <attributes>
-                                                        <font key="NSFont" size="11.667" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <integer key="NSSuperScript" value="-1"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content=")">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="2">
-                                                    <attributes>
-                                                        <font key="NSFont" size="11.667" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <integer key="NSSuperScript" value="-1"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content=" = X">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="1">
-                                                    <attributes>
-                                                        <font key="NSFont" size="11.667" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <integer key="NSSuperScript" value="-1"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="*2">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="0">
-                                                    <attributes>
-                                                        <font key="NSFont" size="11.619999999999999" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <integer key="NSSuperScript" value="1"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content=" + X">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="2">
-                                                    <attributes>
-                                                        <font key="NSFont" size="11.667" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <integer key="NSSuperScript" value="-1"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="*2">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="1">
-                                                    <attributes>
-                                                        <font key="NSFont" size="11.619999999999999" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <integer key="NSSuperScript" value="1"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content=" + X">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="n">
-                                                    <attributes>
-                                                        <font key="NSFont" size="11.667" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <integer key="NSSuperScript" value="-1"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="*2">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="n-1">
-                                                    <attributes>
-                                                        <font key="NSFont" size="11.619999999999999" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <integer key="NSSuperScript" value="1"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment>
-                                                    <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="也就是从最低位开始，每一位去乘以对应位的积，既">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content=" ">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="第">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content=" n ">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="位去乘以">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content=" 2">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="n-1">
-                                                    <attributes>
-                                                        <font key="NSFont" size="11.619999999999999" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <integer key="NSSuperScript" value="1"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="，">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content=" ">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="然后全部加起来">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        </textView>
-                                    </subviews>
-                                </clipView>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3cR-nA-Hyo">
+                                <rect key="frame" x="20" y="240" width="433" height="21"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="请输入正确的逆波兰表达式，这里未做校验" drawsBackground="YES" id="c6q-Jk-JD1">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ir4-ih-2nP">
+                                <rect key="frame" x="14" y="33" width="67" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="hTl-r0-n1h"/>
+                                    <constraint firstAttribute="width" constant="55" id="9Ve-xL-KLU"/>
+                                    <constraint firstAttribute="height" constant="21" id="kVL-Lb-Mtc"/>
                                 </constraints>
-                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="MRp-GK-x75">
-                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="7aN-Rh-FvC">
-                                    <rect key="frame" x="394" y="0.0" width="16" height="200"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                            </scrollView>
+                                <buttonCell key="cell" type="push" title="输出" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="r8c-W2-pTh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="printInput:" target="Kt6-J8-gFS" id="jTD-H4-rh8"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yk9-zO-UKU">
+                                <rect key="frame" x="18" y="14" width="164" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="1NX-6Z-P2r"/>
+                                    <constraint firstAttribute="width" constant="160" id="2Jk-68-12X"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="输出当前波兰表达式的结果" id="9lp-Dq-m8W">
+                                    <font key="font" size="12" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U7M-N6-BL9">
+                                <rect key="frame" x="279" y="14" width="176" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="HFO-cU-FX0"/>
+                                    <constraint firstAttribute="height" constant="16" id="gbe-6d-Zgw"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="通过中缀表达式得到波兰表达式" id="3jB-cH-aKg">
+                                    <font key="font" size="12" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d7e-cC-RTA">
+                                <rect key="frame" x="20" y="216" width="306" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="示例：1 2 - 4 5 + *，输出结果是 -9" id="NLp-jQ-Kxf">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Oii-fe-lsP">
+                                <rect key="frame" x="326" y="33" width="133" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="ZdT-PY-Szn"/>
+                                    <constraint firstAttribute="height" constant="21" id="oOL-mH-aqe"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="获取波兰表达式" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ao7-51-8eQ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="gotoInfixVC:" target="Kt6-J8-gFS" id="j0C-uL-z81"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="amc-qJ-95V" firstAttribute="leading" secondItem="WS4-g1-4gD" secondAttribute="leading" constant="20" id="91X-MU-Ca0"/>
-                            <constraint firstItem="V6V-vH-uhM" firstAttribute="top" secondItem="amc-qJ-95V" secondAttribute="bottom" constant="10" id="BwI-id-1fM"/>
-                            <constraint firstAttribute="trailing" secondItem="amc-qJ-95V" secondAttribute="trailing" constant="20" id="EcS-kU-sMc"/>
-                            <constraint firstAttribute="trailing" secondItem="V6V-vH-uhM" secondAttribute="trailing" constant="20" id="Vgn-Sh-3wc"/>
-                            <constraint firstItem="amc-qJ-95V" firstAttribute="top" secondItem="WS4-g1-4gD" secondAttribute="top" constant="10" id="cTO-ZF-ZPq"/>
-                            <constraint firstItem="V6V-vH-uhM" firstAttribute="leading" secondItem="WS4-g1-4gD" secondAttribute="leading" constant="20" id="h3b-8M-NbD"/>
+                            <constraint firstItem="Oii-fe-lsP" firstAttribute="centerY" secondItem="Ir4-ih-2nP" secondAttribute="centerY" id="7di-p8-IJa"/>
+                            <constraint firstItem="yk9-zO-UKU" firstAttribute="leading" secondItem="thJ-tM-sYU" secondAttribute="leading" constant="20" id="8hk-UM-Ynx"/>
+                            <constraint firstAttribute="trailing" secondItem="Oii-fe-lsP" secondAttribute="trailing" constant="20" id="C7S-pn-drd"/>
+                            <constraint firstItem="U7M-N6-BL9" firstAttribute="centerY" secondItem="yk9-zO-UKU" secondAttribute="centerY" id="Fe0-Fs-xTZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Ir4-ih-2nP" secondAttribute="bottom" constant="40" id="HCw-3f-ywW"/>
+                            <constraint firstItem="NJA-1n-ttD" firstAttribute="top" secondItem="thJ-tM-sYU" secondAttribute="top" constant="10" id="Wqt-fS-5dX"/>
+                            <constraint firstAttribute="trailing" secondItem="U7M-N6-BL9" secondAttribute="trailing" constant="20" id="cub-0v-nPS"/>
+                            <constraint firstItem="Ir4-ih-2nP" firstAttribute="leading" secondItem="thJ-tM-sYU" secondAttribute="leading" constant="20" id="dfb-vy-5Nv"/>
+                            <constraint firstItem="NJA-1n-ttD" firstAttribute="leading" secondItem="thJ-tM-sYU" secondAttribute="leading" constant="20" id="lMx-oK-8I6"/>
+                            <constraint firstItem="yk9-zO-UKU" firstAttribute="top" secondItem="Ir4-ih-2nP" secondAttribute="bottom" constant="10" id="tDq-yN-Rre"/>
                         </constraints>
                     </view>
                 </viewController>
-                <customObject id="FnX-lH-NtB" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="yLT-kC-xTF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149" y="1059"/>
+            <point key="canvasLocation" x="-639.5" y="640"/>
+        </scene>
+        <!--中缀表达式转逆波兰表达式-->
+        <scene sceneID="SkA-d7-xUc">
+            <objects>
+                <viewController title="中缀表达式转逆波兰表达式" storyboardIdentifier="infixVC" id="597-d2-v9w" customClass="InfixVC" customModule="栈" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="chn-UM-LEH">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="9Tb-Aa-rIy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-676" y="1048"/>
+        </scene>
+        <!--Binary-->
+        <scene sceneID="NJu-Am-J0a">
+            <objects>
+                <controllerPlaceholder storyboardName="Binary" id="aV2-Wc-3iQ" sceneMemberID="viewController"/>
+                <customObject id="6sl-D1-pUf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67" y="1143"/>
         </scene>
     </scenes>
 </document>
