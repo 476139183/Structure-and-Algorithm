@@ -753,7 +753,7 @@
                                     <constraint firstAttribute="height" constant="15" id="uMp-pI-Vaj"/>
                                 </constraints>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="请按 逆波兰表达式输入 待计算的数据，数据与运算符之间用空格隔开" id="vpi-U1-RGR">
-                                    <font key="font" size="14" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="menu" size="14"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -788,7 +788,7 @@
                                     <constraint firstAttribute="width" constant="160" id="2Jk-68-12X"/>
                                 </constraints>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="输出当前波兰表达式的结果" id="9lp-Dq-m8W">
-                                    <font key="font" size="12" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="label" size="12"/>
                                     <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -800,7 +800,7 @@
                                     <constraint firstAttribute="height" constant="16" id="gbe-6d-Zgw"/>
                                 </constraints>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="通过中缀表达式得到波兰表达式" id="3jB-cH-aKg">
-                                    <font key="font" size="12" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="label" size="12"/>
                                     <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>

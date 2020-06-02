@@ -539,6 +539,9 @@
                                                 </fragment>
                                             </attributedString>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
                                         </textView>
                                     </subviews>
                                 </clipView>
