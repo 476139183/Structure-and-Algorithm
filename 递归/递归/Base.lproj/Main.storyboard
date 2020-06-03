@@ -714,10 +714,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="斐波拉契数" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Gs9-Og-DEr">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <segue destination="X7O-v2-iIB" kind="modal" id="2zj-Bg-XQd"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jc3-xl-4pt">
+                                <rect key="frame" x="371" y="13" width="80" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="汉诺塔" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QmP-r2-K8I">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="dCn-zS-uBd" kind="show" id="p50-8l-f7R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -726,6 +737,19 @@
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
+        </scene>
+        <!--汉诺塔问题-->
+        <scene sceneID="ccn-NY-tbx">
+            <objects>
+                <viewController title="汉诺塔问题" id="dCn-zS-uBd" customClass="HanoiVC" customModule="递归" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="fU6-BF-jNf">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="3rr-Uy-mFN" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="1061"/>
         </scene>
         <!--简单的斐波拉契数-->
         <scene sceneID="fdl-om-y5B">
@@ -738,7 +762,7 @@
                 </viewController>
                 <customObject id="bmA-fI-zlR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-56" y="1064"/>
+            <point key="canvasLocation" x="-127" y="1061"/>
         </scene>
     </scenes>
 </document>

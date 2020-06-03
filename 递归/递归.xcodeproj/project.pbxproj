@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37356F5724865D2300F7306C /* HanoiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37356F5624865D2300F7306C /* HanoiVC.swift */; };
 		37ADA9DC2484AEA70066A0FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ADA9DB2484AEA70066A0FC /* AppDelegate.swift */; };
 		37ADA9DE2484AEA70066A0FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ADA9DD2484AEA70066A0FC /* ViewController.swift */; };
 		37ADA9E02484AEA80066A0FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37ADA9DF2484AEA80066A0FC /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37356F5624865D2300F7306C /* HanoiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanoiVC.swift; sourceTree = "<group>"; };
 		37ADA9D82484AEA70066A0FC /* 递归.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "递归.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37ADA9DB2484AEA70066A0FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37ADA9DD2484AEA70066A0FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				37ADA9DB2484AEA70066A0FC /* AppDelegate.swift */,
 				37ADA9DD2484AEA70066A0FC /* ViewController.swift */,
 				37ADA9EB2484AEC30066A0FC /* FibonacciVC.swift */,
+				37356F5624865D2300F7306C /* HanoiVC.swift */,
 				37ADA9DF2484AEA80066A0FC /* Assets.xcassets */,
 				37ADA9E12484AEA80066A0FC /* Main.storyboard */,
 				37ADA9E42484AEA80066A0FC /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37356F5724865D2300F7306C /* HanoiVC.swift in Sources */,
 				37ADA9EC2484AEC30066A0FC /* FibonacciVC.swift in Sources */,
 				37ADA9DE2484AEA70066A0FC /* ViewController.swift in Sources */,
 				37ADA9DC2484AEA70066A0FC /* AppDelegate.swift in Sources */,

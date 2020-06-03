@@ -19,7 +19,6 @@ class FibonacciVC: NSViewController {
   }
   
   
-  
   //! 递归 斐波拉契
   func fib1(n : Int ) -> Int {
      
@@ -31,6 +30,8 @@ class FibonacciVC: NSViewController {
   }
    
   //! 迭代 斐波拉契
+  
+
   func fib2(n : Int ) -> Int {
    
     if n <= 1 {
