@@ -46,7 +46,7 @@ void selecttionSort (int arr[], int n) {
   for (int i = 0; i < n-1; ++i) {
     //！ 未排序最小值，默认取已排序的最后一个元素
     int temp = arr[point];
-   
+    int k = point;
     for (int j = point; j < n; ++j) {
       if (temp > arr[j]) {
         temp = arr[j];
