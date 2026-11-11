@@ -1,0 +1,13 @@
+{
+  "target": "Structure-and-Algorithm",
+  "groups": {
+    "development": [
+      "arts",
+      "RetroRampage",
+      "open-source-ios-apps"
+    ],
+    "algorithms": [
+      "homemade-machine-learning"
+    ]
+  }
+}
