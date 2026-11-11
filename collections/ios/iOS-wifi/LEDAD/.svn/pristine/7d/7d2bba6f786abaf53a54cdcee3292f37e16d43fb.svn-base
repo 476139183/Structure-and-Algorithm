@@ -1,0 +1,6 @@
+1、获取版本号，返回字符串
+http://www.ledmediasz.com/z_andro_brank/v_xcloudmanagerupgrade.txt
+2、从这两个地址下载升级程序包
+http://www.ledmediasz.com/xcloudmanagerupgrade/libv8.so
+http://www.ledmediasz.com/xcloudmanagerupgrade/ledcontrollerforlinux704.jar
+3、从之前升级的广播中获取版本号，如果从互联网获取的版本号比广播中的版本号高，则可以进行升级

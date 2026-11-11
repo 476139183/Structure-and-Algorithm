@@ -1,0 +1,14 @@
+{	
+	"language": "cn",
+	"plugins": [
+		"splitter",
+		"github",
+		"multipart",
+		"mathjax"
+	],
+	"pluginsConfig": {
+		"github": {
+			"url": "https://github.com/Desgard"
+		}
+	}
+}

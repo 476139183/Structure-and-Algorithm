@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>42F8D15A-2D02-42FE-8768-9291AE27618C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>XCloudManager</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D2C9A2B3-8320-49DD-A4FB-696E556D2195</key>
+		<string>https://192.168.1.187/svn/XCloudManager/iOS/Wify/trunk/X_Clould_Manager/ProjectSource/XCloudManager</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>XCloudManager.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D2C9A2B3-8320-49DD-A4FB-696E556D2195</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>D2C9A2B3-8320-49DD-A4FB-696E556D2195</key>
+		<string>https://192.168.1.187/svn/XCloudManager</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.1.187/svn/XCloudManager/iOS/Wify/trunk/X_Clould_Manager/ProjectSource/XCloudManager/XCloudManager.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D2C9A2B3-8320-49DD-A4FB-696E556D2195</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
+			<string>iOS/Wify/branches</string>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTagsRelativeLocationKey</key>
+			<string>iOS/Wify/tags</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>iOS/Wify/trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D2C9A2B3-8320-49DD-A4FB-696E556D2195</string>
+			<key>IDESourceControlWCCName</key>
+			<string>XCloudManager</string>
+		</dict>
+	</array>
+</dict>
+</plist>

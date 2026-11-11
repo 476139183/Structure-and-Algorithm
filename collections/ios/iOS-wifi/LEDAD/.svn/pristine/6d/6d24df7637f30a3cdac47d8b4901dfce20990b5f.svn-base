@@ -1,0 +1,55 @@
+1 How to upload materials, close iLEDsign and
+ reset materials Modify brightness of 
+ iLEDsign:(标题)
+      Menu: Home page > Local Project
+    1.1 How to change video materials for signal
+     sign (it isn't support multi-sign)
+        a. Select the sign you want to change
+        b. Click fast upload
+        c. Please select one material or one group
+        d. Click Ok
+    1.2 How to change video materials for 
+    multi-sign when video-synchronization 
+    playing
+        a. Select multi-sign upload
+        b. Click Add
+	    c. Select materials (The number of
+	    selected materials must be larger than or
+	    equal to signs number)
+        d. Multi-sign playing
+        e. Video-synchronization (You can choose
+        the selected materials to play)
+    1.3 How to close iLEDsign (Support 
+    multi-sign close)
+        a. Select iLEDsign you want to close
+        b. Click icon of close
+    1.4 How to reset materials (Support 
+    multi-sign reset)
+        a. Select iLEDsign you want to reset
+        b. Click icon of reset
+    1.5 How to modify brightness of iLEDsign
+    (Support multi-sign brightness setting)
+        a. Select iLEDsign you want to reset
+        b. Drag brightness bar
+        c. OK
+
+(分段)2  How to setting iLEDsign system:(标题)
+      Menu: Home Page > Local Project
+    2.1 Modify iLEDsign name
+        a. Select iLEDsign
+        b. Click to modify name
+        c. OK
+    2.2 Backgroud of iLEDsign
+        a. Select iLEDsign
+        b. Enter zdec command
+        c. Add pictures
+        d. OK
+    2.3 Sign Test (red green blue and white)
+	a. Select iLEDsign
+    	b. Select screen model number
+    	c. Preview
+    	d. Cancel
+(分段)3 How to upgrade iLEDsign(标题)
+     Menu: Home Page > Local Project > 
+     Sign Upgrade
+

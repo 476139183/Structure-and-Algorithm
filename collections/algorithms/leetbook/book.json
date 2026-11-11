@@ -1,0 +1,12 @@
+{
+    "plugins": [
+        "katex",
+        "duoshuo"
+    ],
+   "pluginsConfig": {
+        "duoshuo": {
+            "short_name": "leetbook",
+            "theme": "default"
+        }
+    }
+}

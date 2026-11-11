@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0643B51B-7B89-45AC-A26C-BE4E8F89DAAB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>XCloudsManager</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B374FC6F-3505-4983-B23C-7235368A157E</key>
+		<string>https://192.168.1.99/svn/XcloudsManager/iOS</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>XCloudsManager.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B374FC6F-3505-4983-B23C-7235368A157E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>B374FC6F-3505-4983-B23C-7235368A157E</key>
+		<string>https://192.168.1.99/svn/XcloudsManager</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.1.99/svn/XcloudsManager/iOS/XCloudsManager.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B374FC6F-3505-4983-B23C-7235368A157E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B374FC6F-3505-4983-B23C-7235368A157E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>XcloudsManager</string>
+		</dict>
+	</array>
+</dict>
+</plist>

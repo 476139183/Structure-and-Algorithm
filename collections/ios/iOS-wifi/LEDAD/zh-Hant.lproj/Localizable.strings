@@ -1,0 +1,1343 @@
+/* 
+  Localizable.strings
+  XCloudManager
+
+  Created by LDY on 13-9-25.
+
+*/
+
+"Login_Account" = "賬號";
+"Login_Password" = "密碼";
+"Login_RememberAccount" = "記住帳號密碼";
+"Login_Login" = "登錄";
+
+"Root_OnlineCheck" = "在線檢測";
+"Root_ScreenSetting" = "屏幕設置";
+"Root_EnvironmentMonitoring" = "環境監測";
+"Root_AdvancedConfiguration" = "高級配置";
+"Root_UserManagement" = "用戶管理";
+"Root_VersionMessage" = "版本信息";
+"Root_ScreenOptions" = "屏體選項";
+"Root_PlaybackOptions" = "播放選項";
+
+
+
+"Soft_Version" = "版本";
+
+"Online_EnvironmentalDetector" = "環境檢測器";
+"Online_Illumination" = "照度";
+"Online_Humidity" = "濕度";
+"Online_InternalTemperature" = "內部溫度";
+"Online_ExternalTemperature" = "外部溫度";
+"Online_MultifunctionCard" = "多功能卡";
+"Online_SendCard" = "發送卡";
+"Online_XCloudsControlBox" = "祥雲控制盒";
+"Online_LaunchMailNotification" = "啟動郵件通知";
+"Online_ViewOnlineTestReport" = "查看在線檢測報告";
+"Online_E-mailNotificationSettings" = "郵件通知設置";
+
+"Online_SerialNumber" = "序號";
+"Online_PortNumber" = "端口號";
+
+"Online_FirmwareVersion" = "固件版本";
+"Online_HardwareState" = "硬件狀態";
+"Online_EnvironmentOutTemperature" = "外部溫度";
+"Online_EnvironmentInTemperature" = "內部溫度";
+"Online_EnvironmentIllumination" = "環境照度";
+"Online_EnvironmentHumidity" = "環境濕度";
+"Online_WrongBag_TotalBagNumber" = "錯誤包/總包數";
+"Online_DVIWorkState" = "DVI工作狀態";
+"Online_USBWorkState" = "USB工作狀態";
+"Online_InputFrameFrequency" = "輸入幀頻";
+"Online_InputDistinguishability" = "輸入分辨率";
+"Online_OutputFrameFrequency" = "输出幀頻";
+"Online_OutputDistinguishability" = "輸出分辨率";
+"Online_ReceiveCard" = "接收卡";
+"Online_ConnectionState" = "箱體監控卡連接狀態";
+"Online_BoxControlCard" = "箱體監控卡";
+"Online_EightPower" = "電源電壓";
+"Online_OneTemperature" = "溫度";
+"Online_OneHumidity" = "濕度";
+"Online_OneSmoke" = "煙霧";
+"Online_twoBoxDoor" = "箱體門";
+"Online_FourFanSpeed" = "風扇轉速";
+"Online_FourFanSwirch" = "風扇開關";
+"Online_Transmitting_Card_Information" = "發送卡信息";
+"Online_Receiver_card_number" = "接收卡數量";
+"Online_Receiver_card_details" = "接收卡詳細信息";
+"Online_accessory_equipment" = "附屬設備詳細信息";
+"Online_Empty_packet_logging" = "清空數據包紀錄";
+
+
+
+
+
+
+
+
+
+
+
+
+"User_UserLists" = "用戶列表";
+"User_UserAccount" = "用戶賬號";
+"User_UserPassword" = "用戶密碼";
+"User_ConfirmPassword" = "確認密碼";
+"User_UserAuthenticationAtStartup" = "啟動時用戶認證";
+"User_CancellationAccount" = "註銷賬號";
+"User_AddAccount" = "添加賬號";
+"User_ChangePassword" = "修改密碼";
+"User_DeleteAccount" = "刪除賬號";
+"User_Prompt" = "提示";
+"User_LogoffContent" = "註銷當前賬號將進入登錄界面!需輸入正確的賬號和密碼才能進入本軟件!";
+"User_SameUserName" = "用戶名已被註冊";
+"User_Null" = "有輸入為空";
+"User_Create_Success" = "賬號創建成功";
+"User_Password_NotTheSame" = "兩次輸入的密碼不一致";
+"User_Modify_Success" = "修改密碼成功";
+"User_Password_MofifyTheSame" = "修改后的密碼和之前一致";
+"User_Input_NewPassword" = "请输入新的密碼";
+"User_Input_PasswordWrong" = "输入的密碼同原始密碼不一致";
+"User_Password_Input" = "請輸入登錄密碼";
+"User_Delete_Success" = "刪除賬號成功";
+
+"Modify_OriginalPassword" = "原始密碼";
+"Modify_NewPassword" = "新的密碼";
+
+"Environment_CurrentIllumination" = "當前照度";
+"Environment_LEDScreenBrightness" = "LED屏亮度";
+"Environment_CurrentHumidity" = "當前濕度";
+"Environment_SamplingRate" = "採樣速度";
+"Environment_Sensitivity" = "靈敏度";
+"Environment_FansTurnValue" = "風扇開啟值";
+"Environment_FanOffValue" = "風扇關閉值";
+"Environment_AirConditioningOpenValues"  = "空調開啟值";
+"Environment_AirConditioningCloseValues" = "空調關閉值";
+"Environment_MaximumBrightnessValue" = "最大亮度值";
+"Environment_MinimumLuminanceValue" = "最小亮度值";
+"Environment_AllowAutomaticBrightnessControl" = "允許自動亮度控制";
+"Environment_AllowAutomaticControlOfFanAndAir-conditioning" = "允許自動風扇及空調控制";
+"Environment_ForcedToManually" = "強制手動";
+"Environment_LessMinValue0" = "輸入的值小於最小值\"0\"!请輸入\"0~50\"之間的數字!";
+"Environment_GreaterMAxValue" = "輸入的值為空!或大於最大值\"%d\"!请輸入\"0~%d\"之間的數字!";
+"Environment_InMaxValueLessInMin" = "輸入的\"最大亮度值%@\"小於,輸入的\"最小亮度值\",請確認後重新輸入!";
+
+"Environment_InMinValuMoreInMax" = "輸入的\"最小亮度值%@\"大於,輸入的\"最大亮度值\",請確認後重新輸入!";
+
+"Environment_InputNumber" = "請輸入數字";
+"Environment_InputNumberAmount" = "輸入範圍限制";
+"Environment_SpeedValue" = "請輸入固定值\"1\",\"5\",\"10\",\"30\",\"60\",\"300\",\"600\"中的一個值!";
+"Environment_Set_environmental_control_parameters" = "設置環境控制參數";
+"Environment_Access_to_environmental_control_parameters" = "獲取環境控制參數";
+"Environment_Apply" = "應用";
+
+
+
+"Screen_OpenTheBoxToAdjust" = "打開箱體調整";
+"Screen_Open_by_pointCorrection" = "打開逐點校正";
+"Screen_LockScreen" = "鎖定屏幕";
+"Screen_CloseScreen" = "關閉屏幕";
+"Screen_LevelStartingPoint" = "水平起點%@";
+"Screen_VerticalStartingPoint" = "垂直起點%@";
+"Screen_ScreenPositionSettings" = "屏幕位置設置";
+"Screen_Brightness" = "亮度";
+"Screen_Contrast" = "對比度";
+"Screen_ColorTemperatureSetting" = "色溫設置";
+"Screen_RGB_Manual_setting" = "RGB手動設置";
+"Screen_Save_LED_screen_display_setting_parameters" = "保存LED屏顯示設置參數";
+"Screen_Save" = "保存";
+
+
+
+
+
+"Expert_LoadData" = "加載";
+"Expert_SUB_file_information_transmission" = "SUB文件信息傳輸";
+"Expert_SUB_file_data_transfer" = "SUB文件數據傳輸";
+"Expert_SUB_issued_the_command_data" = "SUB數據保存";
+"Expert_SCN_file_information_transmission" = "SCN文件信息傳輸";
+"Expert_SCN_file_data_transfer" = "SCN文件數據傳輸";
+"Expert_SCN_issued_the_command_data" = "SCN數據保存";
+"Expert_Correction_file_information_transmission" = "逐點校正文件信息傳輸";
+"Expert_Correction_file_data_transfer" = "逐點校正文件數據傳輸";
+"Expert_Correction_issued_the_command_data" = "逐點校正數據保存";
+"Expert_Online_Upgrade_file_information_transmission" = "在線升級文件信息傳輸";
+"Expert_Online_Upgrade_file_data_transfer" = "在線升級文件數據傳輸";
+"Expert_Online_Upgrade_issued_the_command_data" = "在線升級數據保存";
+"Expert_get_record" = "獲取祥雲服務端控制歷史紀錄";
+
+
+
+"Disconnect" = "斷開鏈接";
+"NetworkCommunicationFailure" = "網絡通信故障";
+
+
+
+
+
+"Success" = "保存成功!";
+"Failed" = "保存失敗!";
+"Exception_data_correction" = "數據校正異常!";
+"On_a_command_is_being_executed" = "上一個命令正在執行!";
+"On_a_command_execution_error" = "上一个命令執行錯誤!";
+"Unknown_error" = "未知錯誤!";
+"No_sending_card" = "無發送卡!";
+"No_receiver_card" = "無接收卡！";
+"No_accessory_equipment" = "無附屬設備!";
+"No_sub_file_data" = "服務端無sub文件數據!";
+"No_scn_file_data" = "服務器端無SCN文件數據!";
+"Server_side_data_is_not_completely" = "服務器端數據不完全!";
+"No_calibration_file_data" = "服務器端無校正文件數據!";
+"No_online_upgrade_file" = "服務器端無在線升級文件!";
+"Password_wrong" = "密碼不正確，請重新輸入！";
+"User_wrong" = "輸入的賬號有誤,請確認後再輸入！";
+"Brightness_max100" = "\"亮度\"已達到最大值\"100\"";
+"Brightness_min0" = "\"亮度\"已達到最小值\"0\"";
+"Contrast_max100" = "\"对比度\"已達到最大值\"100\"";
+"Contrast_min0" = "\"对比度\"已達到最小值\"0\"";
+"R_max250" = "\"R\"已達到最大值\"255\"";
+"R_min0" = "\"R\"已達到最小值\"0\"";
+"Unknown" = "未知";
+"View_online_test_report" = "查看在線檢測報告";
+"Clear_History" = "清除記錄";
+"Normal" = "工作正常";
+"Abnormal" = "異常";
+"Already_Connect" = "已連接";
+
+"RvcardSeting" = "接收卡設置";
+"LedConnectSet" = "屏體連結設置";
+"Pixel_level_adjust" = "逐點校正";
+"Upgrade_Online" = "在線升級";
+
+
+"Load" = "加載";
+"Send" = "發送";
+"Save" = "保存";
+
+"Correction_mode" = "校正模式";
+"Correction_mode1" = "256*256 8bit亮度校正";
+"Correction_mode2" = "128*128 8bit色度校正";
+"Correction_mode3" = "96*96 16bit色度校正";
+"Correction_mode4" = "128*128 16bit色度校正";
+"Full_File" = "全屏校正文件";
+"Box_File" = "箱體校正文件";
+"Cabinet_position" = "箱體位置";
+"Row" = "行";
+"Col" = "列";
+
+"Screen_connection_files" = "屏體連結文件";
+"Please_add_files" = "請添加文件";
+"Please_add_files_Detail" = "請先連接電腦加入指定的文件";
+"Receiver_card_configuration_files" = "接收卡配置文件";
+"Correction_file" = "逐點校正文件";
+"txt_Documents" = "txt文檔";
+"vu_Documents" = "vu文檔";
+"lpbp_Documents" = "lpbp文檔";
+"Monitor_file" = "在線升級文件";
+"bit_Documents" = "bit文檔";
+"rbf_Documents" = "rbf文檔";
+
+"User_Name_Not_Ex" = "用戶名不存在!";
+"User_Delete_Admin" = "管理員賬號不可編輯!";
+"User_ChangePassword_Detail" = "密碼修改成功後!请重新登录!";
+"User_DeleteAccount_Detail" = "刪除賬號後不可找回!請謹慎操作!";
+"AlreadyConnected" = "已連接";
+"NotConnect" = "未連接";
+"Nothing" = "無";
+"Something" = "有";
+"Open" = "開";
+"Close" = "關";
+"Not_Matching" = "發送或反虧的信息類型不匹配";
+"XCloudConfig_Login_Config" = "登錄驗證";
+"XCloudConfig_CurrentVersion" = "當前版本信息";
+
+
+"ScreenOptions_TerminalName" = "LED終端名稱";
+"ScreenOptions_ScreenResolution" = "屏體分辨率";
+"ScreenOptions_address" = "IP地址";
+
+"Playback_BasicSettings" = "基本設置";
+"Playback_PlaySet" = "播放設置";
+"Playback_TextPlay" = "文本播放";
+"Playback_add" = "添加";
+"Playback_delete" = "刪除";
+"Playback_segment" = "定段播放";
+"Playback_from" = "從";
+"Playback_to" = "到";
+"Playback_time" = "定時播放";
+"Playback_at" = "在";
+"Playback_PlayWindowLocation" = "播放窗位置設置";
+"Playback_Original" = "原點";
+"Playback_Custom" = "自定義";
+"Playback_FullScreen" = "全屏";
+"Playback_OriginalSize" = "原始尺寸";
+"Playback_CustomSize" = "自定義大小";
+"Playback_PlayWindowSize" = "播放窗大小";
+"Playback_Play" = "播放";
+"Playback_Pause" = "暫停";
+"Playback_Restart" = "從頭開始";
+"Playback_PauseText" = "靜止文本";
+"Playback_Remove" = "去掉";
+"Playback_Speed" = "設置速度";
+"Playback_Size" = "設置大小";
+"Playback_TextContent" = "文本內容";
+"Playback_TimeSet" = "設置定時";
+"Playback_Date" = "日期";
+"Playback_hour" = "時間";
+"NoNewVersion" = "暫無新版本";
+"GotNewVersionUpdate" = "有新版本，是否升級！";
+"NSStringReloadButton"="再次檢查";
+"CheckUpdate" = "檢查更新";
+"NSString25" = "無網絡連接";
+"NSStringYes"="確定";
+"NSStringNO"="取消";
+
+//*********************************************************************
+"Tips" = "提示";
+"Root_LEDADEditer" = "廣告編輯";
+"Root_LEDADSheZhi" = "設置";
+"Root_LEDADKeFu" = "客服";
+"Soft_SoftVersion" = "軟件版本";
+"Root_LanguageSettings" = "語言設置";
+"adedit_tishi1" = "請重啓雲屏";
+"adedit_Uploaded_successfully"="上傳成功";
+"adedit_back" = "返回";
+"adedit_Loadthedefaultmaterial" = "加載默認素材";
+"adedit_LoadMultiscreendisplaysolutions" = "加載多編輯區域模式";
+"adedit_LoadSinglescreendisplaysolutions" = "加載单編輯區域模式";
+"adedit_Region" = "區域設置";
+"adedit_Item" = "添加項目";
+"adedit_Text" = "文本";
+"adedit_Project" = "項目";
+"adedit_Speed" = "速度:  ";
+"adedit_Size" = "字號:  ";
+"adedit_Presstosettextcolor" = "點擊設置文本顏色";
+"adedit_Presstosettextbackgroundcolor" = "點擊設置文本背景顏色";
+"adedit_SaveChange" = "保存更改";
+"adedit_ProName" = "項目名: ";
+"adedit_screenplaylist" = "雲屏項目";
+"adedit_screenpDetect" = "雲屏檢測";
+"adedit_selflianjie" = "當前連接：";
+"adedit_wifiIPsubmitbutton"="修改網關IP";
+"ScreenOptions_updateName" = "修改終端名稱";
+"ScreenOptions_saveName" = "保存終端名稱";
+"adedit_SaveProject" = "保存播放素材";
+"adedit_QuitPlay" = "退出播放";
+"adedit_DeleteProj" = "删除項目";
+"adedit_PublishProj" = "傳輸項目";
+"adedit_EditProj" = "編輯項目";
+"adedit_SaveProjandQuitEdit" = "保存更改";
+"adedit_RemoveList" = "清除待選列表";
+"adedit_AddList" = "添加待選列表";
+"adedit_CleanList" = "清除已選列表";
+"adedit_Duration" = "持續時間:  ";
+"adedit_Done" = "確定";
+"adedit_MasterScreenRegionLabel" = "主屏幕區域設定";
+"adedit_selectedRegion" = "被選擇區域編號:   ";
+"adedit_CancelPublish" = "取消傳輸";
+"adedit_xcoludsprompt" = "提示";
+"adedit_Pleaseselectanitem" = "請選擇一個播放項目";
+"adedit_Anerroroccurredwhenconvertingformats" = "格式轉換過程發生錯誤";
+"adedit_Nonetwork" = "無網絡連接,請連接";
+"adedit_Reconnect" = "重新連接";
+"adedit_Close" = "關閉";
+"adedit_chongqi" = "重啓雲屏";
+"adedit_Projectcannotbeempty" = "項目內容不能為空！";
+"adedit_saveprojectIMG_0024.mp4luntanerror" = "保存項目出錯！";
+"adedit_selectaneditregion" = "請在左側點擊一個可編輯區域!";
+"adedit_tishi" = "更多精彩在下一個版本，請敬請期待！！";
+"adedit_loaddefaultfinished" = "加载默認素材成功！";
+"adedit_defaultText" = "中慶專注於LED顯示應用（顯示屏、亮化燈飾、可調背光源、照明光源）中的控制技術，是全球獨一無二且領先的以[IC芯片+控制系統+應用設計]三位一體的整合解決方案提供商。";
+"adedit_repeatedloadingmaterial" = "是否重新加载默認素材！";
+"adedit_quitplayafterswitch" = "現在是模擬播放模式無法選擇，點擊【退出播放】按鈕后则可以操作！";
+"adedit_Complete_set" = "完成設置";
+"adedit_tuichu" = "已退出，請拔電源";
+"adedit_chongqi1" = "已重啓，請等待";
+"adedit_Last_Set" = "上次設置";
+"adedit_sendCompleted" = "項目傳輸完成！";
+"adedit_durationnotnull" = "持續時間不能為空!";
+"adedit_videodontsetduration" = "不允許手動設置視頻的duration!";
+"adedit_projectnamenotnull" = "項目名稱不能為空 !!";
+"adedit_Publishoperation" = "傳輸操作會更新服務器！";
+"adedit_selectanProject" = "請選擇一個要播放的項目！";
+"adedit_suretodelete" = "您確定要刪除嗎 ?";
+"adedit_closeColorPicker" = "關閉顏色拾取器";
+"adedit_Published" = "已傳輸";
+"adedit_closeBrightnessPicker" = "關閉亮度拾取器";
+"adedit_matrialloading" = "正在加載";
+"Successanddangqiangundong" = "保存更改成功！";
+"adedit_xmlfilePath_isnull" = "項目文件讀取出錯!";
+"adedit_netconnecterror" = "網絡連接出現錯誤!";
+"adedit_textRegioncanntselect" = "文字區域不能添加圖片!";
+"adedit_projecttransation" = "項目傳輸中,請等待！";
+"adedit_promptyes" = "確定";
+"adedit_promptno" = "取消";
+"adedit_textfont" = "選擇字體:";
+"adedit_isediting" = "請先點擊[保存更改]退出編輯之後再操作！";
+"Root_upgrade" = "升級雲屏";
+"adedit_dontupgrade" = "雲屏程序為最新版！";
+"adedit_clickupgrade" = "點擊[升級]按鈕去升級屏端程序！";
+"adedit_upgradefinish" = "升級程序完成！請關閉LED云屏的電源十秒之后打開以便完成升級！";
+"adedit_checkupdatepakcage" = "從雲端下載升級包";
+"adedit_upgradeprogram" = "上傳升級包到雲屏";
+"adedit_downloadupgradefileerror" = "下載升級包出錯!";
+"adedit_downloadupgradefilefinish" = "下载升級包完成!";
+"adedit_initpromptlabel" = "請連接到互聯網點擊檢測升級包";
+"adedit_upgradeneterror" = "升級雲屏時出現網絡錯誤";
+"adedit_internetconnecterror" = "連接到互聯網時出現錯誤!";
+"adedit_screenheighterror" = "屏幕的高度必須在1到1024之間！";
+"adedit_Projectnamecannotbeempty" = "項目名稱不能為空！";
+"adedit_Behind_scene" = "後景";
+"adedit_Before_scene" = "前景";
+"adedit_CleanBeforeList" = "清除已選列表";
+"adedit_CellOptionButton" = "更多";
+"adedit_moreivew_backbutton" = "返回列表";
+"adedit_moreivew_deletebutton" = "刪除界面";
+"adedit_moreivew_direction" = "動畫方向  ";
+"adedit_direction_up_to_down" = "上";
+"adedit_direction_right_to_left" = "右";
+"adedit_direction_down_to_up" = "下";
+"adedit_direction_left_to_right" = "左";
+"adedit_direction_up_to_noanimation" = "無動畫";
+"adedit_Projectcannotlittle2pic" = "前景和後景列表不能小於2张圖片";
+"adedit_Projectcannotbehindequitebefore" = "前景和後景列表數量必須相等";
+"adedit_defaultRegiontitle" = "設置為默認";
+"adedit_SearchPublishProj" = "搜索";
+"adedit_projectsavesuccess" = "項目保存成功！";
+"adedit_settingsucess" = "設置成功";
+"adedit_durationdonttoolittle" = "持續時間不能小於1秒！";
+"adedit_creategroup" = "創建分組";
+"adedit_inputgroupname" = "請輸入分組名稱";
+"adedit_groupxmlsavesuccess" = "分組保存成功";
+"adedit_continuous_play" = "連續播放";
+"adedit_playsendCompleted" = "連續播放命令發送成功";
+"adedit_yunpinMarket" = "廣告市場";
+"adedit_resetscreenbutton" = "重啓雲屏";
+"adedit_resetScreenMachine" = "開始重置屏幕裡的數據";
+"adedit_RestDataProject" = "重置";
+"adedit_uploadproject" = "上傳";
+"adedit_guanji"="安全退出";
+"adedit_background"="雲屏背景";
+"adedit_backguplod"="背景上傳";
+"adedit_downloadproject" = "下載播放項目";
+"adedit_downloadisCompleted"="下載項目完成";
+"adedit_downloadisfailed"="下載項目失敗";
+"adedit_uploadprojectcompleted"="上傳項目完成";
+"adedit_uploadprojectfailed"="上傳項目失敗，網絡故障";
+"adedit_rotation_45"="旋轉45角度";
+"adedit_brightness"="屏幕亮度";
+"adedit_grouppicdeletesuccess"="刪除成功";
+"adedit_grouppicdeletefailed"="删除失敗";
+"adedit_music_ctrl"="音頻";
+"ad_edit_alerady_selected_music"="已選擇的音頻文件名：";
+"ad_edit_duration_music"="播放時長(單位：秒)：";
+"ad_edit_text_area"="文本區域";
+"ad_edit_image_area"="圖像區域";
+"adedit_cleare_music"="清除音頻";
+"adedit_inexistenceUpdateFile"="升級文件本地不存在,請到網絡服務器下載升級文件！";
+"adedit_swipe_hiddenlist"="向右滑動隱藏列表";
+"adedit_saveediterror"="保存修改時出錯！";
+"adedit_deleteprojectsuccess"="刪除項目成功！";
+"adedit_deleteprojectfailed"="刪除項目失敗！";
+"adedit_promptclearImageList"="確定是否清除圖片列表！";
+"adedit_applyRegionbuttontitle"="應用";
+"adedit_inputdontisnull"="文本框不能为空";
+"adedit_publishprojecting"="傳輸項目中請等待！";
+"adedit_downobjecting"="下載項目請等待！";
+"adedit_musicpromptlast"="音頻文件已经保存到當前應用的文件夾下，點擊【音頻】查看";
+"adedit_musicpromptbefore"="名稱為";
+"adedit_video_editer_ctrl"="視頻";
+"adedit_tryChangeTransType"="點擊確定嘗試改變傳輸協議来傳輸項目";
+"adedit_addVideo"="項目";
+"adedit_setDefaultAppplyTitle"="設置默認寬高為";
+"adedit_SaveAndPublishButton"="下一步";
+"adedit_tongbu" = "多屏同步";
+"adedit_savezimu"="添加字幕";
+"adedit_loadingvideo"="讀取視頻中...";
+"adedit_selectvideo"="選取視頻";
+"adedit_selectphoto"="選取圖片";
+"adedit_cancelselect"="取消";
+"adedit_selectphotoprompt"="素材類型";
+"adedit_musicdelbutton"="删除";
+"adedit_tryRestScreenSuccess"="重置成功";
+"adedit_tryRestScreenfailed"="重置失敗";
+"adedit_clearButtontitle"="清理";
+"adedit_moreivew_Alpha"="Alpha";
+"adedit_touming"="透明";
+"adedit_butouming"="不透明";
+"adedit_upgradeerror"="升級出錯";
+"adedit_batterylow"="平板電腦電池電量低";
+"adedit_downloadbuttontitle"="下載2.0版";
+"adedit_upgradebuttontitle"="升級";
+"adedit_upgradetimeout"="升級包發送成功,但是未收到屏端反饋信息,升級失敗！";
+"adedit_resettimeout"="重置操作未收到屏端反饋信息,重置失敗！";
+"adedit_resetscreenprompt"="提示：首先連接到LED雲屏的WiFi，然後點擊重置按鈕，重置過程中請停留在此頁面內！";
+"adedit_downloadupgradepackage"="提示：首先連接到互聯網，然後點擊下載按鈕，下載過程中請停留在此頁面內！";
+"adedit_uploadupgradepackage"="提示：首先連接到LED雲屏的WiFi，然後點擊升級按鈕，升級過程中請停留在此頁面內！";
+"adedit_hide"="隱藏";
+"adedit_show"="顯示";
+"adedit_NoipError" = "無連接設備，請選擇一個雲屏設備連接！！！";
+"adedit_NOprject" = "雲屏沒有項目，請上傳";
+"adedit_png" = "kefu2";
+"adedit_localProjects"="本地播放項目列表";
+"adedit_wifipasswordbutton"="LED屏端WiFi密碼管理";
+"adedit_tishiupdate" = "請選擇一個終端";
+"adedit_wifipasswordsubmitbutton"="保存";
+"button_title_settings"="設置";
+"adedit_wifimanager"="屏端WiFi管理";
+"adedit_downloadbuttontitle11"="下載4.0版";
+"Button_Newest" = "最新設計";
+"Button_Industry" = "雲端項目";
+"Button_Account" = "登錄賬號";
+"Button_screenMarket" = "屏體市場";
+"Button_reAD" = "截取照片";
+"Button_Training" = "培訓視頻";
+"Button_Forum" = "論壇中心";
+"YunPing_SelectPhoto" = "選取圖片";
+"YunPing_Get160" = "生成160*640圖片";
+"YunPing_Get240" = "生成240*800圖片";
+"YunPing_SelectPhotoFromAlbum" = "從相冊選取";
+"YunPing_TakePhoto" = "拍照";
+"YunPing_ImageSaved" = "圖片已保存到相冊";
+"Yunping_NOImage" = "還没選區圖片";
+"Yunping_SelectImageFirst" = "請先選擇完圖片後在進行截圖操作";
+"NSString17" = "取消";
+"NSString36" = "登錄賬號";
+"NSString39" = "註冊";
+"NSString40" = "登錄";
+"NSStringTelSample" = "如13812345678";
+"NSString38" = "\"LED2Buy\"賬號密碼";
+"NSStringCompanyName"="*公司名稱";
+"NSStringMustWrite"="必填";
+"NSStringNickName"="暱稱:";
+"NSStringcompanynameLabel"="公司名稱:";
+"NSStringtelphoneLabel"="手機號碼:";
+"NSStringpasswordLabel"="密碼:";
+"NSStringconfirmpassLabel"="確認密碼:";
+"NSStringoptionalLabel"="選填";
+"NSStringemailLabel"="郵箱地址:";
+"NSStringcompanyaddressLabel"="地址:";
+"NSStringNickNamePlaceholder"="輸入暱稱";
+"NSStringcompanynameLabelPlaceholder"="輸入公司名稱";
+"NSStringtelphoneLabelPlaceholder"="輸入手機號碼";
+"NSStringpasswordLabelPlaceholder"="輸入密碼";
+"NSStringconfirmpassLabelPlaceholder"="輸入確認密碼";
+"NSStringemailLabelPlaceholder"="輸入郵箱地址";
+"NSStringcompanyaddressLabelPlaceholder"="輸入公司地址";
+"MJRefreshFooterPullToRefresh" = "上拉加載更多數據";
+"MJRefreshFooterReleaseToRefresh" = "鬆開加載更多數據";
+"MJRefreshFooterRefreshing" = "加載數據中...";
+"MJRefreshFooterEndLoad" = "沒有了";
+"MJRefreshHeaderPullToRefresh" = "下拉可以刷新";
+"MJRefreshHeaderReleaseToRefresh" = "鬆開立即刷新";
+"MJRefreshHeaderRefreshing" = "正在刷新";
+"MJRefreshLastTimeNotie" = "最後更新";
+"NSStringYouNotlogin"="您尚未登錄，請先登錄！";
+"NSStringYes"="確定";
+"NSStringOKButtonTitle" = "確定";
+"NSStringNO"="取消";
+"nsstringLogout"="退出登錄";
+"NSStringName"="姓名";
+"NSStringNamePlaceholder"="輸入姓名";
+"NSStringpasswordLengthPlaceholder"="密碼長度不小于6";
+"NSStringpasswordisEqualPlaceholder"="密碼與確認密碼不相等";
+"NSStringnameLengthPlaceholder"="姓名長度不小於兩個漢字";
+"NSStringphoneLabelPlaceholder"="輸入電話號碼";
+"shoujihaomabunengweikong"="手機號碼不能為空！";
+"youxiangbunengweikong"="郵箱不能為空";
+"NSStringPhoneNumError"="手機號碼不正確";
+"NSStringCompanynameLengthError"="公司名稱不能為空";
+"NSStringphoneLengthError"="電話號碼長度不正確";
+"NSStringServiceErrorRegFaild"="服務器忙，註冊失敗";
+"Mustbewithinrange" = "密碼的長度范圍不能小於8位大於16位";
+"Mustincludelowercasecharacter" = "密碼必須包含小寫字母";
+"Mustincludeuppercasecharacter" = "密碼必須包含大寫字母";
+"Mustincludedecimaldigitcharacter" = "密碼必須包含數字";
+"NSString24" = "提示";
+"NSString25" = "無網絡連接";
+"NSStringAccountNotNull"="賬號不能為空!";
+"NSStringPasswordNotNull"="密碼不能為空!";
+"LocalStringAccountFormatError"="賬號格式錯誤";
+"LocalStringGetBaseInfoError"="獲取賬號基本信息出錯";
+"NSStringRegSuccess"="註冊成功,驗證短信已發送到您的手機";
+"Yunping_logout" = "退出登錄";
+"Yunping_edit" = "修改資料";
+"YunPing_headimage" = "頭像";
+"YunPing_name" = "名字";
+"YunPing_tel" = "電話";
+"YunPing_qq" = "QQ";
+"YunPing_aboutdesigner" = "自我介紹";
+"GotNewVersion" = "有新版本，是否升級！";
+"Update" = "升級";
+"UpdateVersion" = "版本更新";
+"NoNewVersion" = "恭喜當前為最新版本";
+"Yunping_showDesigns" = "查看設計作品";
+"Button_project"="本地項目";
+"baocun" = "保存";
+"NSString18" = "拍照";
+"NSString19" = "從相冊選擇";
+"NSString11" = "郵箱格式不正確";
+"User_OK" = "刷新";
+"User_Cancel" = "取消";
+"Language_LanguageSettingsForSimplifiedChinese" = "%@/語言設定";
+"Language_LanguageSettingsMessageForSimplifiedChinese" = "\n%@\n\n   選擇'好的',本軟件會跳轉至主界面並且進入對應的語言環境!";
+"Language_OKForSimplifiedChinese" = "%@/好的";
+"Language_LanguageSettingsForTraditionalChinese" = "%@/語言設定";
+"Language_LanguageSettingsMessageForTraditionalChinese" = "\n%@\n\n   選擇'好的',本軟件會跳轉至主界面壁並且進入對應的語言環境!";
+"Language_OKForTraditionalChinese" = "%@/好的";
+"Language_LanguageSettingsForEnglish" = "%@/語言環境";
+"Language_LanguageSettingsMessageForeEnglish" = "\n%@\n\n   選擇'好的',本軟件會跳轉至主界面壁並且進入對應的語言環境!";
+"Language_OKForEnglish" = "%@/好的";
+"Language_LanguageSettingsForDeutsch" = "%@/語言設定";
+"Language_LanguageSettingsMessageForDeutsch" = "\n%@\n\n   敬請期待!";
+"Language_OKForDeutsch" = "%@/好的";
+"Language_LanguageSettingsForFrench" = "%@/語言設定";
+"Language_LanguageSettingsMessageForFrench" = "\n%@\n\n  敬請期待!";
+"Language_OKForFrench" = "%@/好的";
+"Language_LanguageSettingsForItaliana" = "%@/語言設定";
+"Language_LanguageSettingsMessageForItaliana" = "\n%@\n\n  敬请期待!";
+"Language_OKForItaliana" = "%@/好的";
+"Language_LanguageSettingsForEspanish" = "%@/語言設定";
+"Language_LanguageSettingsMessageForEspanish" = "\n%@\n\n   敬请期待!";
+"Language_OKForEspanish" = "%@/好的";
+"Language_LanguageSettingsForPycckNN" = "%@/語言設定";
+"Language_LanguageSettingsMessageForPycckNN" = "\n%@\n\n   敬请期待!";
+"Language_OKForPycckNN" = "%@/好的";
+"Language_LanguageSettingsForPortugues" = "%@/語言設定";
+"Language_LanguageSettingsMessageForPortugues" = "\n%@\n\n   敬请期待!";
+"Language_OKForPortugues" = "%@/好的";
+"Language_LanguageSettingsForJapanese" = "%@/語言設定";
+"Language_LanguageSettingsMessageForJapanese" = "\n%@\n\n   敬请期待!";
+"Language_OKForJapanese" = "%@/好的";
+"Language_LanguageSettingsForKorean" = "%@/語言設定";
+"Language_LanguageSettingsMessageForKorean" = "\n%@\n\n   敬请期待!";
+"Language_OKForKorean" = "%@/好的";
+"Language_LanguageSettingsForALB" = "%@/語言設定";
+"Language_LanguageSettingsMessageForALB" = "\n%@\n\n   敬请期待!";
+"Language_OKForALB" = "%@/好的";
+"adedit_kouling" = "請輸入口令";
+
+//4.1.0 中文繁体
+"Online_Refresh" = "刷新";
+"LED_Number" = "雲屏數量";
+"adedit_benci" = "本次設置";
+
+"write_video" = "請輸入視頻名稱";
+//*********************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//tabBarItems
+"NSStringHomepage" = "首頁";
+"NSStringAccount" = "帳戶";
+"NSStringCommunity" = "社區";
+"NSStringSetting" = "設置";
+
+
+//产品页面
+"NSStringTechnicalParameters" = "技術參數";
+"NSStringProductFeatures" = "產品特點";
+"NSStringClose" = "關閉";
+
+"NSString1" = "客戶管理";
+"NSString2" = "添加照片";
+"NSString4" = "公司";
+"NSString6" = "地址";
+"NSString8" = "郵箱";
+"NSString10" = "推送给客戶";
+"NSString12" = "有選項為空!請填寫完畢再註冊!";
+"NSString13" = "請輸入11位的手機號";
+"NSString15" = "請填寫用戶名";
+"NSString16" = "选择";
+"NSString17" = "取消";
+
+"NSString21" = "搜索";
+"NSString22" = "完成";
+"NSStringSaveEdit" = "提交";
+
+
+"NSString32" = "不了,謝謝";
+"NSString33" = "现在去評分";
+"NSString34" = "稍後再說";
+
+
+"NSString41" = "賬號有誤";
+"NSString42" = "登錄成功";
+//"NSString43" = "有视频刷新了";
+"NSString44" = "點擊登錄...";
+"NSString45" = "登錄賬號得到更多服務";
+"NSString48" = "下拉刷新";
+"NSString49" = "最后更新";
+"NSString50" = "上拉加载";
+"NSString51" = "正在刷新";
+"NSString52" = "正在加载";
+"NSString53" = "釋放刷新";
+"NSString54" = "釋放加载更多";
+"NSString55" = "上拉加载更多";
+"NSString56" = "没有了哦";
+"NSString57" = "今天";
+"NSString58" = "昨天";
+"NSString59" = "前天";
+"NSString60" = "6~16位的密碼";
+"NSString62" = "兩次輸入的密碼不同!請正確輸入!";
+
+
+
+
+
+
+"NSString63" = "註冊成功，驗證信息已發送當前所填郵箱";
+"NSString64" = "聯繫我們";
+"NSString65" = "服務熱線";
+
+"NSString67" = "銷售人員列表";
+"NSString68" = "獲取銷售人員詳細信息";
+
+"NSString71" = "對不起,當前設備不支持拨撥號.";
+"NSString73" = "技術支持";
+
+"NSString81" = "推送的內容";
+"NSString82" = "授權登錄";
+
+"NotAuth" = "尚未授權";
+"UserInfo" = "用戶信息";
+"GotNewVersion" = "有新版本，是否升級！";
+"Update" = "升級";
+"SinaWeibo" = "新浪微博";
+"TencentWeibo" = "騰訊微博";
+"CheckUpdate" = "檢查更新";
+"Version" = "V2.1.2";
+"NoNewVersion" = "暫無新版本";
+"GotNewVersionUpdate" = "有新版本，是否升級！";
+"PerformDate" = "yyyy年MM月dd日";
+"PerformDates" = "yyyy-MM-dd hh:mm";
+"PerformDateAndTime" = "yyyy-MM-dd hh:mm:ss";
+"PushRegister" = "推送註冊";
+"VideoTitle" = "標題:---";
+"VideoLength" = "時長:---";
+"VideoSize" = "大小:---";
+"VideoTitles" = "%@";
+"VideoLengths" = "時長:%@";
+"VideoSizes" = "大小:%@";
+"VideoSegment" = "第%d段";
+"SaleManagement" = "銷售管理";
+"AddCustomer" = "新增客戶";
+"MyCustomer" = "我的客戶";
+"SearchServersRecord" = "查看服務申請紀錄";
+"SearchComplaint" = "查看投訴";
+"AddressList" = "公司通訊錄";
+"PersonalInfo" = "個人信息";
+"CustomerList" = "客戶列表";
+"DetailInformation" = "詳細信息";
+"PushApp" = "推送App";
+"RepairButton" = "維修單號";
+"ApplicationRecord" = "申請紀錄";
+
+"ServersCenter" = "服務中心";
+"RepairCenter" = "維修中心";
+"LiveSupport" = "現場支持";
+"RemoteSupport" = "遠程支持";
+"MyFreinds" = "我的好友";
+
+
+"MyFavorites" = "我的收藏";
+"MyDownload" = "我的下載";
+"MySalesperson" = "我的銷售員";
+"VCard" = "電子名片";
+
+"ServiceDescription" = "服務說明";
+"MaintenanceApplication" = "服務申請";
+"MaintenanceRecords" = "查看服務紀錄";
+
+
+///////////////////////////////////////////////////
+//需修改部分
+"ContactZQ" = "聯繫\"LED2Buy\"";
+"ZQSpecial" = "\"LED2Buy\"一下";
+"StartApp" = "使用\"LED2Buy\"";
+"NSString23" = "關於\"LED2Buy\"";
+"NSString28" = "給\"LED2Buy\"評分";
+"NSString30" = "為\"LED2Buy\"評分";
+"NSString31" = "如果您覺得\"LED2Buy\"很好用,可否為其評一個分數?評分過程只需花費很少的時間.感謝您的支持!";
+"NSString35" = "LED2Buy";
+"NSString37" = "如name@example.com";
+"NSString66" = "15989871168";
+"NSString70" = "manager@chipshow.com";
+"NSString74" = "深圳市LED2Buy子股份有限公司";
+"NSString75" = "電話:15989871168";
+"NSString76" = "傳真:0755-82975893";
+"NSString77" = "郵箱:manager@chipshow.com";
+"NSString78" = "地址:深圳市寶安區石岩街道寶石路寶石科技園C棟";
+"NSString79" = "\"LED2Buy\"概況";
+///////////////////////////////////////////////////
+
+
+"NSStringContactLabel" = "通訊錄";
+"NSStringDownloadLabel" = "離線下載";
+"NSStringMoreLabel" = "更多";
+"NSStringMemberCompany" = "會員企業";
+"NSStringCompanyApp" = "企業APP";
+"NSStringDownloadAPP" = "猛戳上方的圖標,立即下载該企業APP!您還可以通過下方的按鈕了解如何擁有自己的企業APP!";
+"NSStringNoAPP" = "TA還沒有自己企業的APP!猛戳下方的按鈕您將擁有自己的企業APP!";
+"NSStringMyCompanyApp" = "擁有自己的企業移動APP";
+"NSStringServiceReturnExecption" = "服務器異常，請稍候再試！";
+
+"NSStringPleaseLogin" = "請先登錄！";
+"Delete"="刪除";
+
+"ZdecMoreSettingLabel"="離線下載";
+"NSStringClearCacheLabel"="清除緩存";
+"NSStringCheckVerLabel"="檢查新版本";
+"NSStringLinkedLabel"="友情鏈接";
+"NSStringPingfenLabel"="給我們評分";
+"NSStringGongnengJieshaoLabel"="功能介紹";
+
+"NSStringNetExecption"="網絡異常";
+"NSStringClearCacheSuc"="清除緩存成功";
+
+"RecentMyFreinds"="最近聯繫人";
+"FriendsListIncludeSale"="好友列表";
+"NSStringConfirmAddFriendLabel"="確認添加";
+
+"NSStringReadMessageListFaildLabel"="讀取聊天記錄失敗！";
+"NSStringTaAddFriendsLabel"="TA添加你為好友";
+"NSStringJujueLabel"="拒絕";
+"NSStringConfirmLabel"="同意";
+"NSStringNetErrorConfirmFaildLabel"="網絡故障，拒絕失敗！";
+"NSStringFindPhotosFaild"="訪問圖片庫出錯";
+"NSStringUploadPhotoFaild"="上傳圖片失敗";
+
+"forwardMainGaridButton"="首頁";
+
+
+"NSStringSuccessCase"="成功案例";
+"NSStringNewsCenter"="新聞中心";
+"NSStringAboutString"="關於";
+
+"NSStringDeleteMessageList"="刪除記錄";
+"NSStringReadMessageListFaild"="讀取消息列表失敗!";
+"NSStringSendFaild"="網絡故障，發送消息失敗!";
+"Sendcontentscannotempty"="發送的內容不能為空！";
+
+"NSStringModifySuccess"="修改成功";
+"NSStringyuanmimahexinmimabuneng"="原密碼和新密嗎不能相同";
+"NsstringMyaccount"="我的賬號";
+
+"sz_zdec_map_img"="sz_zdec_map_img.png";
+"CompanyAddress"="公司地址";
+"button_image_back"="back.png";
+"nsstringRegisterButtonImage"="register.png";
+"NSStringNewMessageList"="有新消息!";
+"NSStringExit"="退出登錄";
+"NSStringModifyPass"="修改密碼";
+"NSStringFindFriend"="查找";
+"sellcenterButtonpng"="sellcenter.png";
+"servicecenterButtonpng"="servicecenter.png";
+
+"NSStringNewsTitle"="新聞";
+"NSStringCaseTitle"="案例";
+"NSStringProductTitle"="產品";
+"NSStringVideoTitle"="視頻";
+"NSStringDocTitle"="資料";
+"NSStringNoPermission"="對不起，您没有此服務的權限！";
+"NSStringAddFailed"="添加失敗";
+"NSStringSubmitApplication"="提交申請成功";
+"NSStringTimeStr"="時間";
+
+"NSStringRepairServiceTable"="維修申請表";
+"NSStringLoading"="加載中...";
+"NSStringselectOrientationLands"="選擇橫豎屏";
+"NSStringHorizontal"="橫屏";
+"NSStringVertical"="豎屏";
+
+
+//ServersMaintenanceApplicationViewController
+"NSStringContactTitle"="*聯繫人";
+"NSStringContactTel"="*電話";
+"NSStringJiJianDanHao"="*寄件單號";
+"NSStringTuiLiaoDanHao"="退料單號";
+"NSStringCanPinMingCheng"="產品名稱";
+"NSStringCanPinXingHao"="產品型號";
+"NSStringChuChanRiQi"="出產日期";
+"NSStringPCBBanHao"="PCB板號";
+"NSStringShuLiang"="數量";
+"NSStringXianXiangMiaoShu"="現象描述";
+"NSStringPrice"="購買價格（￥）";
+"NSStringXIANCHANGtable"="現場支持申請表";
+"NSStringYUANCHENtable"="遠程支持申請表";
+"NSStringFuWuDiDian"="服務地點";
+"NSStringXianChangZhaoPian"="現場照片";
+"NSStringTime"="時間";
+"NSStringCanPinMiaoShu"="產品描述";
+"NSStringWenTiMiaoShu"="問題描述";
+"NSStringSet"="設置";
+"NSStringLianXiRen"="聯繫人";
+
+//ServersRepairRecordListShowViewController
+"NSStringCompanyName1"="公司名稱";
+"NSStringContactTitle1"="聯繫人";
+"NSStringContactTel1"="電話";
+"NSStringJiJianDanHao1"="寄件單號";
+"NSStringWeiXiuJinDu"="維修進度";
+
+//ServersLiveSupportInformationViewController
+"NSStringNindemingzi"="您的名字";
+"NSStringnindedianhua"="您的電話";
+"NSStringxianchangzhaopian"="現場照片";
+"NSStringwentimiaoshu"="問題描述";
+
+//SalerMyCustomerViewController
+"NSStringCompany"="公司";
+"NSStringPosition"="職位";
+"NSStringUnlimited"="不限";
+
+//SalerMyCustomerDetailInfoShowViewController
+"NSStringEditButton"="editUserInfoButton.png";
+"NSStringSubmitButton"="submit.png";
+//SaleRepairRecordListShowViewController
+"NSStringRepairRecordList"="維修服務申請紀錄";
+"NSStringMaintenanceSchedule"="維修進度";
+"NSStringMaintenanceCosts"="維修費用";
+"NSStringfanchengkuaididan"="返程快遞單";
+//SaleLiveSupportInformationViewController
+"NSStringjishufuwushenqing"="技術服務申請";
+"NSStringyuanchengfuwushenqing"="遠程服務申請";
+"NSStringRepairing"="正在處理";
+"NSStringRepaired"="已處理";
+"NSStringTechServiceSchedule"="服務進度";
+//SalerViewComplaintDetailViewController
+"NSStringClient"="客戶";
+"NSStringtusuneirong"="投訴內容";
+//SalerPersonalDetailInfoViewController
+"NSStringSignature"="個性簽名";
+
+"NSStringgongxiangmingpian"="共享名片";
+
+
+"gongsimingchengbunengweikong"="公司名不能為空";
+"lianxirenbunengweikong"="聯繫人不能為空";
+"dianhuabunengweikong"="電話不能為空";
+"jidiandanhaobunengweikong"="寄件單號不能為空";
+"NsstringDanhao"="單號";
+"NSStringReadMessageFaildList"="網絡錯誤";
+
+"NSStringOfflineDownloadSuccess"="離線下載完成";
+"NSStringOfflineDownloadFailed"="網絡中斷，請點擊下載列表繼續下載";
+"NSStringOfflineDownloadFail"="網絡中斷，點擊繼續";
+"NSStringOfflinedownload"="離線下載文字";
+
+"NSStringComplainteNotNull"="投訴內容不能為空";
+
+"NSStringusernameNotFaild"="用戶名不能為空！";
+
+"NSStringDeleteMessageListFaild"="刪除聊天記錄失敗！";
+"NSStringMessageListLoading"="消息列表加載中...";
+
+
+"NSStringNewserviceApplyList"="有新服務申請";
+"NSStringNewComplainList"="有新投訴";
+"NSStringDeleteNoti"="確定刪除聊天記錄嗎？";
+"NSStringcomplaintStr"="我要投訴";
+"nsstringdownloadnews1"="下載新聞";
+"nsstringdownloadnews2"="下載案例";
+"nsstringdownloadnews3"="下載菜單";
+"nsstringdownloadnews4"="下載一級菜單";
+"nsstringdownloadnews5"="下載新聞";
+//modify yxm2014年03月04日16:44:24
+"nsstringdownloadunarchive"="解壓數據";
+"NSStringapplyerCompanyLabel"="申請人公司";
+"NSStringapplyerLabel"="申請人";
+"NSStringapplyerPhoneLabel"="申請人電話";
+
+"NSStringTechServiceNumber"="技術服務單號";
+
+
+
+"NSStringComplaintToast"="感謝您的投訴，您的寶貴意見是我們前進的動力。我們將及時處理并回復！";
+"NSStringPersonInfomation"="個人資料";
+
+"NSStringInputPhoneOrEmail"="請輸入手機/郵箱";
+
+
+"NSStringAddFriendSuccess"="好友請求信息已發出";
+
+"NSStringTelPhone"="手機";
+"NSStringOfflinedownloadPhoto"="離線下載圖片";
+"NSStringOfflineDownloading"="下載中………";
+"toNextTimeLabel"="到";
+"NSSteingUpScrollIntoMain"="向上滑動進入首頁";
+"NSStringWebDownload"="下載";
+"NSStringWebCollect"="收藏";
+"NSStringWebShare"="分享";
+"NSStringWebPush"="推送";
+"NSStringInputMessagePlaceHolder"="輸入消息";
+"NSStringMessageSendButton"="發送";
+
+"NSStringPushPage"="推送頁面";
+"NSStringisSclectCustomer"="已選客戶";
+"NSStringSelectedContent"="已選內容";
+"NSStringConfirmPush"="確定推送";
+"NSStringPushSuccess"="推送成功";
+"NSStringPushList"="推送列表";
+
+"NSStringNotificationErrorFaild"="通知不可用";
+
+"NSStringMagazine" = "期刊";
+//分享下载
+"NSStringCollectSuccess"="收藏成功！";
+"NSStringSuccessfullycanceled"="取消收藏成功！";
+"NSStringDownloadDataSuccess"="下載數據成功!";
+
+"NSStringDownloading"="下載數據中!";
+
+"NSStringDownloaded"="已經在下載了!";
+
+
+//产品页面
+"NSStringTechnicalParameters" = "技術參數";
+"NSStringProductFeatures" = "產品特點";
+
+"NSStringShareButton" = "分享";
+"NSStringSelectButton" = "選項";
+
+"NSStringDownload" = "下載";
+"NSStringCollect" = "收藏";
+"NSStringCalculatorLabel" = "計算器";
+
+
+//计算器
+
+"gongzhi_danwei"="公制";
+"yingzhi_danwei"="英制";
+"danwei_xuanze"="單位選擇器";
+"Cabinet_Parameters" = "箱體參數";
+"Screen_Physical_Parameters" = "屏體物理參數";
+"Screen_Performance_Parameters" = "屏體性能參數";
+"Other_Parameters" = "其他參數";
+
+"Cabinet_Width" = "箱體寬度";
+"Cabinet_Height" = "箱體高度";
+"Cabinet_Resolution" = "箱體分辨率";
+"Cabinet_Weight" = "箱體重量";
+"Average_Power_Area" = "平均功耗";
+"Total_Power_Area" = "最大功耗";
+
+"Screen_Width" = "屏體寬度";
+"Screen_Height" = "屏體高度";
+"Screen_Area" = "屏體面積";
+"Pixels_Wide" = "橫向像素數";
+"Pixels_High" = "縱向像素數";
+"Aspect_Ratio" = "寬高比";
+"Total_Weight" = "總重量";
+
+"Pixel_Pitch" = "點間距";
+"Brightness" = "亮度";
+"Total_Power" = "總功耗";
+"Viewing_Angle" = "可視角度";
+"Minimum_Viewing_Distance" = "推薦最小觀看距離";
+"LED_Type" = "LED規格";
+"Pixel_Configuration" = "像素組成";
+
+"Pixel_Configuration" = "亮度控制級別";
+"Gray_Scale" = "灰度等級";
+"Refresh_Frequency" = "刷新率";
+"Input_Power_Frequency" = "供電頻率";
+"Input_Voltage" = "供電電壓";
+"Ingress_Protection" = "防護等級";
+"Weather_Rating" = "使用環境";
+"Operating_Temperature" = "運行環境溫度范圍";
+"Operating_Humidity" = "運行環境濕度范圍";
+
+"Cabinet_Width_Number" = "横向箱體數";
+"Cabinet_High_Number" = "竖向箱體數";
+
+"Total" = " 總計:";
+
+"NSStringCalculator" = "選屏計算器";
+
+//右侧下载收藏按钮
+"NSStringrightNews" = "新聞";
+"NSStringrightProduct" = "產品";
+"NSStringrightCase" = "案例";
+"NSStringrightPlan" = "方案";
+"NSStringrightVideo" = "視頻";
+
+"NSStringrightTools" = "我的工具";
+"NSStringrightFavorites" = "收藏夾";
+"NSStringrightMyFavorites" = "我的收藏";
+"NSStringrightMyDownloads" = "我的下載";
+
+//视频下载
+"NSStringDownloadSuccess" = "下載成功";
+"NSStringDownloadFailed" = "視頻下載失敗";
+"NSStringDownloadFailedMessage" = "請檢查網絡，重新下載";
+"NSStringPleaseSelectList" = "請選擇需要下載的視頻";
+
+"NSStringOtherlogin"="您的賬號在其他地方登錄了,已被迫下線！";
+
+"LocalStringModifyPasswodFaild"="修改失敗";
+
+"LocalStringNotiUserUse"="您有一个星期未使用%@了,快去看看有什么新的動態吧！";
+
+
+"LocalStringEditButtonTitle"="編輯";
+
+"LocalStringClickSelectPhoto"="點擊選區照片";
+
+"NSStringDownloaded" = "已下載";
+"NSStringFindFriendError" = "查找失敗";
+
+//发邮件
+"LocalStringDotSupportedSendMail"="當前系統版本不支持應用內發送郵件功能";
+"LocalStringNoSettingMailAccount"="用戶沒有設置郵件賬戶";
+"LocalStringMessageHasBeenSent"="郵件已發送";
+"NSStringGoToSetting"= "去設置";
+"NSStringClose" = "關閉";
+
+"NSStringNetworkError" = "網絡故障";
+"NSStringNetworkErrorMessage" = "網絡出現故障, 請檢查網絡無誤後繼續操作。";
+
+"NSStringDataError" = "數據請求異常";
+"NSStringSlide" = "向左向右滑動試試看";
+
+//详细页面参数
+"YunPing_type" = "類型";
+"YunPing_size" = "分辨率";
+"YunPing_designer" = "設計者";
+"YunPing_description" = "描述";
+
+"YunPing_PhysicalSize" = "物理尺寸";
+"YunPing_Weight" = "重量";
+"YunPing_Brightness" = "亮度";
+"YunPing_Power" = "功耗";
+"YunPing_Install" = "安裝方式";
+"YunPing_Price" = "價格";
+
+
+
+
+
+
+//详细页面参数
+"YunPing_type" = "類型";
+"YunPing_size" = "分辨率";
+"YunPing_designer" = "設計者";
+"YunPing_description" = "描述";
+
+"YunPing_PhysicalSize" = "物理尺寸";
+"YunPing_Weight" = "重量";
+"YunPing_Brightness" = "亮度";
+"YunPing_Power" = "功能";
+"YunPing_Install" = "安裝方式";
+"YunPing_Price" = "價格";
+
+
+"YunPing_headimage" = "頭像";
+"YunPing_name" = "名字";
+"YunPing_tel" = "電話";
+"YunPing_qq" = "QQ";
+"YunPing_aboutdesigner" = "自我介紹";
+
+//密码判断
+"Mustbewithinrange" = "密碼範圍長度不能小於8位大於16位";
+"Mustincludelowercasecharacter" = "密碼必須包含小寫字母";
+"Mustincludeuppercasecharacter" = "密碼必須包含大寫字母";
+"Mustincludedecimaldigitcharacter" = "密碼必須包含數字";
+
+
+
+//论坛
+"YunPing_Forum"="論壇中心";
+
+
+
+"Yunping_showDesigns" = "查看設計作品";
+
+"Yunping_comments" = "相關評論";
+"Yunping_NOcomments" = "暫無評論";
+"Yunping_saySomething" = "說點兒什麼";
+"Yunping_contentNil" = "評論內容不能為空";
+"Yunping_succeed" = "評論成功";
+"Yunping_failure" = "評論失敗";
+"Yunping_pleaseLoginFirst" = "請登錄後再評論";
+
+
+"current_screen_number" = "當前云屏數量";
+"Button_project"="本地項目";
+"Button_yunproject"="云備份";
+"Button_syproject"="使用教程 4.2.0";
+"Button_syproject1"="使用教程";
+"Button_szproject"="設置";
+"adedit_Item" = "添加項目";
+"adedit_addgroup" = "添加分組";
+"adedit_shoose" = "請選擇屏";
+"User_Prompt" = "提示";
+"NSStringYes"="確定";
+"adedit_Notgrouped" = "未分組";
+"newgroup" = "新建分組";
+"adedit_hide"="隱藏";
+"adedit_show"="顯示";
+"adedit_Done" = "確定";
+"adedit_Complete_set1" = "複位";
+"NSStringNO"="取消";
+"adedit_uploadproject" = "上傳";
+"adedit_ck" = "查看項目";
+"adedit_Hardware" = "硬件檢測";
+"adedit_LEDname" = "雲屏名稱";
+"adedit_Luminancestate" = "亮度";
+"adedit_cswz" = "視屏初始位置";
+"Soft_SoftVersionnow" = "新版本";
+"Online_HardwareVersion" = "硬件版本";
+"adedit_CPUtemperature" = "近期30分鍾cpu溫度";
+"adedit_Bootrecord" =  "開機曆史紀錄";
+"adedit_ledbak" = "修改雲屏背景";
+"adedit_ledkl" = "請輸入口令";
+"adedit_ledname" = "請輸入修改名稱";
+"adedit_qdyl" = "確定預覽";
+"adedit_qxyl" = "取消預覽";
+"adedit_back" = "返回";
+"adedit_cg" = "成功";
+"adedit_yy" = "語言";
+"adedit_sj" = "升級";
+"adedit_gy" = "關于";
+"adedit_yjxz" = "硬件包下載";
+"adedit_yjsj" = "硬件升級";
+"adedit_ypcz" = "雲屏重置";
+"adedit_ybfdl" = "雲備份登陸";
+"Login_Account" = "賬號";
+"Login_Password" = "密碼";
+"Login_yzm" = "驗證碼";
+"Login_AccountTS" = "請輸入賬號";
+"Login_PasswordTS" = "請輸入密碼";
+"Login_btn" = "登陸";
+"NSString39" = "注冊";
+"Login_ts" = "沒有賬號無法登陸?!";
+"Login_ts1" = "點擊這裏注冊";
+"Login_ts2" = "賬號沒有激活?馬上聯系管理員朱經理+86 18098929329 郵箱:cpzhu@zdec.com";
+"Login_ts3" = "溫馨提示";
+"NSString42" = "登陸成功";
+"NSString25" = "無網絡連接";
+"adedit_jhyp" = "激活云屏方案";
+"adedit_jhyp1" = "激活";
+"adedit_jhyp2" = "連屏方案";
+"adedit_jhyp3" = "第壹步：請在蘋果設置選擇雲屏";
+"adedit_jhyp4" = "(提示:選擇最左邊的雲屏視爲最佳狀態)";
+"adedit_jhyp5" = "連接狀態：已連接（請選擇其他雲屏）";
+"adedit_jhyp6" = "已激活：";
+"adedit_jhyp7" = "顯示路由器";
+"adedit_jhyp8" = "激活";
+"adedit_jhyp9" = "重啓";
+"adedit_jhyp10" = "重置";
+"adedit_jhyp11" = "下壹步";
+"adedit_jhyp12" = "綁定";
+"adedit_jhyp13" = "完成";
+"adedit_jhyp14" = "對不起,請檢查雲屏連接";
+"adedit_jhyp15" = "已連接";
+"adedit_jhyp16" = "請輸入方案名稱";
+"adedit_ypfa1" = "雲屏方案";
+"adedit_ypfa2" = "方案詳情";
+"adedit_dlpkz" = "多聯屏控制";
+"adedit_dlpkz1" = "第壹步：選擇雲屏方案";
+"adedit_dlpkz2" = "第二步：匹配";
+"adedit_dlpkz3" = "第三步";
+"adedit_dlpkz4" = "設置爲默認";
+"adedit_dlpkz5" = "取消聯屏";
+"adedit_dlpkz6" = "取消聯屏設置成功";
+"adedit_dlpkz7" = "請輸入需要激活的屏體個數";
+"adedit_syjc" = "使用教程";
+"adedit_syjc1" = "fanti";
+"adedit_fb" = "發布";
+"adedit_jqlp" = "近期連屏";
+"adedit_jqlp1" = "不存在屏";
+"adedit_jqlp2" = "多屏同步";
+"adedit_jqlp3" = "取消同步";
+"adedit_jqlp4" = "上傳素材";
+"adedit_zc1" = "確認密碼";
+"adedit_zc2" = "提交";
+"adedit_zc3" = "該賬號已經被注冊！";
+"adedit_zc4" = "注冊成功！請聯系管理員爲您激活賬號";
+"adedit_zc5" = "賬號或者密碼不可以出現空格";
+"adedit_zc6" = "用戶名不能爲空";
+"adedit_zc7" = "用戶名不得低于6位";
+"adedit_zc8" = "用戶名不得高于16位";
+"adedit_zc9" = "密碼不可以爲空";
+"adedit_zc10" = "密碼不得低于6位";
+"adedit_zc11" = "密碼不得高于16位";
+"adedit_zc12" = "密碼不可以爲空";
+"adedit_zc13" = "密碼不得低于6位";
+"adedit_zc14" = "密碼不得高于16位";
+"adedit_zc15" = "兩次輸入密碼不壹致";
+"adedit_zc16" = "請激活雲屏";
+"adedit_zc17" = "單屏快速上傳";
+"XCloudConfig_CurrentVersion" = "當前版本信息";
+"Login_ts4" = "用戶名不能爲空！";
+"Login_ts5" = "密碼不能爲空！";
+"Login_ts6" = "未注冊或用戶名或者密碼錯誤！";
+"Login_ts7" = "未激活！請聯系管理員";
+"adedit_zc18" = "當前版本";
+"adedit_zc19" = "語言環境";
+"adedit_zc20" = "新版本";
+"adedit_zc21" = "上傳雲備份成功";
+"adedit_zc22" = "素材名已存在";
+"adedit_zc23" = "上傳video失敗，請重新上傳";
+"adedit_zc24" = "上傳xml失敗，請重新上傳";
+"adedit_zc25" = "默認近期設置成功";
+"adedit_zc26" = "歡迎";
+"adedit_zc27" = "寫入文件出錯！";
+"adedit_zc28" = "寫入成功！！";
+"adedit_zc29" = ":雲素材";
+"adedit_zc30" = "雲方案";
+"adedit_zc31" = "新建組";
+"adedit_zc32" = "請您新建壹個組";
+"adedit_zc33" = "請輸入新建組的名字";
+"adedit_Close" = "關閉";
+"adedit_zc34" = "上傳xml成功";
+
+
+
+"adedit_wifi" = "修改登錄IP";
+"adedit_wifi1" = "IP設置P";
+"adedit_wifi2" = "多屏橋接";
+"adedit_wifi3" = "重啓路由器";
+"adedit_wifi4" = "重置路由器";
+"adedit_add" = "添加";
+"adedit_wifi5" = "網關IP";
+"adedit_wifi6" = "正在重置";
+"adedit_wifi7" = "重置成功";
+"adedit_wifi8" = "正在重啓";
+"adedit_wifi9" = "重置成功";
+"adedit_wifi10" = "正在修改，請等待15秒";
+"adedit_wifi11" = "請進蘋果設置查看當前wifi路由器是否爲192.168.0.1,否則刷新wifi列表重新連接wifi，直到是，再點擊綁定";
+"NSStringModifySuccess" = "修改成功";
+"adedit_wifi12" = "wifi密碼";
+"adedit_wifi13" = "IP池結束地址:";
+"adedit_wifi14" = ":IP池開始地址";
+"adedit_wifi15" = "請選擇雲屏方案";
+"adedit_wifi16" = "方案壹";
+"adedit_wifi17" = "方案二";
+"adedit_wifi18" = "方案三";
+"adedit_wifi19" = "其他方案";
+"adedit_wifi20" = "取消激活";
+"adedit_wifi21" = "請輸入雲屏數量";
+"adedit_wifi22" = "激活雲屏";
+"adedit_wifi23" = "退出";
+"adedit_wifi24" = "添加分組";
+"adedit_add1" = "圖片";
+"adedit_add2" = "視頻";
+"adedit_updata" = "預覽";
+"adedit_checkupdatepakcage" = "從雲端下載升級包";
+"adedit_url" = "http://www.ledmediasz.com/api_LED/LEDThirdStepAPI.aspx?columnsid=9728&module=16";
+

@@ -1,0 +1,3 @@
+platform:ios,'8.0'
+pod "CTAssetsPickerController","~> 2.3.0"
+pod 'MRProgress', '~> 0.7.0'

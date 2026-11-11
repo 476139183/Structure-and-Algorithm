@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:RAC-&#x7b2c;&#x4e00;&#x7ae0;/RAC-&#x7b2c;&#x4e00;&#x8bfe;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RAC-&#x7b2c;&#x4e8c;&#x7ae0;/RAC-&#x7b2c;&#x4e8c;&#x8bfe;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RAC-&#x7b2c;&#x4e09;&#x7ae0;/RAC-&#x7b2c;&#x4e09;&#x8bfe;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RAC-&#x7b2c;&#x56db;&#x7ae0;/RAC-&#x7b2c;&#x56db;&#x8bfe;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

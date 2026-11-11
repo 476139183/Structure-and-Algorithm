@@ -1,0 +1,1183 @@
+/* 
+  Localizable.strings
+  LEDAD
+
+  Created by LDY on 13-9-25.
+
+*/
+
+
+"Login_Account" = "账号";
+"Login_Password" = "密码";
+"Login_RememberAccount" = "记住账号密码";
+"Login_Login" = "登录";
+
+"Root_OnlineCheck" = "在线检测";
+"Root_ScreenSetting" = "屏幕设置";
+"Root_EnvironmentMonitoring" = "环境监控";
+"Root_AdvancedConfiguration" = "高级配置";
+"Root_UserManagement" = "用户管理";
+"Root_VersionMessage" = "版本信息";
+"Root_ScreenOptions" = "屏体选项";
+"Root_PlaybackOptions" = "播放选项";
+
+
+
+"Soft_Version" = "版本";
+
+"Online_EnvironmentalDetector" = "环境检测器";
+"Online_Illumination" = "照度";
+"Online_Humidity" = "湿度";
+"Online_InternalTemperature" = "内部温度";
+"Online_ExternalTemperature" = "外部温度";
+"Online_MultifunctionCard" = "多功能卡";
+"Online_SendCard" = "发送卡";
+"Online_XCloudsControlBox" = "祥云控制盒";
+"Online_LaunchMailNotification" = "启动邮件通知";
+"Online_ViewOnlineTestReport" = "查看在线检测报告";
+"Online_E-mailNotificationSettings" = "邮件通知设置";
+
+"Online_SerialNumber" = "序号";
+"Online_PortNumber" = "端口号";
+
+"Online_FirmwareVersion" = "固件版本";
+"Online_HardwareState" = "硬件状态";
+"Online_EnvironmentOutTemperature" = "外部温度";
+"Online_EnvironmentInTemperature" = "内部温度";
+"Online_EnvironmentIllumination" = "环境照度";
+"Online_EnvironmentHumidity" = "环境湿度";
+"Online_WrongBag_TotalBagNumber" = "错误包/总包数";
+"Online_DVIWorkState" = "DVI工作状态";
+"Online_USBWorkState" = "USB工作状态";
+"Online_InputFrameFrequency" = "输入帧频";
+"Online_InputDistinguishability" = "输入分辨率";
+"Online_OutputFrameFrequency" = "输出帧频";
+"Online_OutputDistinguishability" = "输出分辨率";
+"Online_ReceiveCard" = "接收卡";
+"Online_ConnectionState" = "箱体监控卡连接状态";
+"Online_BoxControlCard" = "箱体监控卡";
+"Online_EightPower" = "电源电压";
+"Online_OneTemperature" = "温度";
+"Online_OneHumidity" = "湿度";
+"Online_OneSmoke" = "烟雾";
+"Online_twoBoxDoor" = "箱体门";
+"Online_FourFanSpeed" = "风扇转速";
+"Online_FourFanSwirch" = "风扇开关";
+"Online_Transmitting_Card_Information" = "发送卡信息";
+"Online_Receiver_card_number" = "接收卡数量";
+"Online_Receiver_card_details" = "接收卡详细信息";
+"Online_accessory_equipment" = "附属设备详细信息";
+"Online_Empty_packet_logging" = "清空数据包记录";
+
+
+
+
+
+
+
+
+
+
+
+
+"User_UserLists" = "用户列表";
+"User_UserAccount" = "用户账号";
+"User_UserPassword" = "用户密码";
+"User_ConfirmPassword" = "确认密码";
+"User_UserAuthenticationAtStartup" = "启动时用户认证";
+"User_CancellationAccount" = "注销账号";
+"User_AddAccount" = "添加账号";
+"User_ChangePassword" = "修改密码";
+"User_DeleteAccount" = "删除账号";
+"User_Prompt" = "提示";
+"User_LogoffContent" = "注销当前账号将进入登录界面!需输入正确的账号和密码才能进入本软件!";
+"User_SameUserName" = "用户名已被注册";
+"User_Null" = "有输入为空";
+"User_Create_Success" = "账号创建成功";
+"User_Password_NotTheSame" = "两次输入的密码不一致";
+"User_Modify_Success" = "修改密码成功";
+"User_Password_MofifyTheSame" = "修改后的密码和之前一致";
+"User_Input_NewPassword" = "请输入新的密码";
+"User_Input_PasswordWrong" = "输入的密码同原始密码不一致";
+"User_Password_Input" = "请输入登录密码";
+"User_Delete_Success" = "删除账号成功";
+
+"Modify_OriginalPassword" = "原始密码";
+"Modify_NewPassword" = "新的密码";
+
+"Environment_CurrentIllumination" = "当前照度";
+"Environment_LEDScreenBrightness" = "LED屏亮度";
+"Environment_CurrentHumidity" = "当前湿度";
+"Environment_SamplingRate" = "采样速度";
+"Environment_Sensitivity" = "灵敏度";
+"Environment_FansTurnValue" = "风扇开启值";
+"Environment_FanOffValue" = "风扇关闭值";
+"Environment_AirConditioningOpenValues"  = "空调开启值";
+"Environment_AirConditioningCloseValues" = "空调关闭值";
+"Environment_MaximumBrightnessValue" = "最大亮度值";
+"Environment_MinimumLuminanceValue" = "最小亮度值";
+"Environment_AllowAutomaticBrightnessControl" = "允许自动亮度控制";
+"Environment_AllowAutomaticControlOfFanAndAir-conditioning" = "允许自动风扇及空调控制";
+"Environment_ForcedToManually" = "强制手动";
+"Environment_LessMinValue0" = "输入的值小于最小值\"0\"!请输入\"0~50\"之间的数字!";
+"Environment_GreaterMAxValue" = "输入的值为空!或大于最大值\"%d\"!请输入\"0~%d\"之间的数字!";
+"Environment_InMaxValueLessInMin" = "输入的\"最大亮度值%@\"小于,输入的\"最小亮度值\",请确认后重新输入!";
+
+"Environment_InMinValuMoreInMax" = "输入的\"最小亮度值%@\"大于,输入的\"最大亮度值\",请确认后重新输入!";
+
+"Environment_InputNumber" = "请输入数字";
+"Environment_InputNumberAmount" = "输入范围限制";
+"Environment_SpeedValue" = "请输入固定值\"1\",\"5\",\"10\",\"30\",\"60\",\"300\",\"600\"中的一个值!";
+"Environment_Set_environmental_control_parameters" = "设置环境控制参数";
+"Environment_Access_to_environmental_control_parameters" = "获取环境控制参数";
+"Environment_Apply" = "应用";
+
+
+
+"Screen_OpenTheBoxToAdjust" = "打开箱体调整";
+"Screen_Open_by_pointCorrection" = "打开逐点校正";
+"Screen_LockScreen" = "锁定屏幕";
+"Screen_CloseScreen" = "关闭屏幕";
+"Screen_LevelStartingPoint" = "水平起点%@";
+"Screen_VerticalStartingPoint" = "垂直起点%@";
+"Screen_ScreenPositionSettings" = "屏幕位置设置";
+"Screen_Brightness" = "亮度";
+"Screen_Contrast" = "对比度";
+"Screen_ColorTemperatureSetting" = "色温设置";
+"Screen_RGB_Manual_setting" = "RGB手动设置";
+"Screen_Save_LED_screen_display_setting_parameters" = "保存LED屏显示设置参数";
+"Screen_Save" = "保存";
+
+
+
+
+
+"Expert_LoadData" = "加载";
+"Expert_SUB_file_information_transmission" = "SUB文件信息传输";
+"Expert_SUB_file_data_transfer" = "SUB文件数据传输";
+"Expert_SUB_issued_the_command_data" = "SUB数据保存";
+"Expert_SCN_file_information_transmission" = "SCN文件信息传输";
+"Expert_SCN_file_data_transfer" = "SCN文件数据传输";
+"Expert_SCN_issued_the_command_data" = "SCN数据保存";
+"Expert_Correction_file_information_transmission" = "逐点校正文件信息传输";
+"Expert_Correction_file_data_transfer" = "逐点校正文件数据传输";
+"Expert_Correction_issued_the_command_data" = "逐点校正数据保存";
+"Expert_Online_Upgrade_file_information_transmission" = "在线升级文件信息传输";
+"Expert_Online_Upgrade_file_data_transfer" = "在线升级文件数据传输";
+"Expert_Online_Upgrade_issued_the_command_data" = "在线升级数据保存";
+"Expert_get_record" = "获取祥云服务端控制历史记录";
+
+
+
+"Disconnect" = "断开连接";
+"NetworkCommunicationFailure" = "网络通信故障";
+
+
+
+
+
+"Success" = "保存成功!";
+"Failed" = "保存失败!";
+"Exception_data_correction" = "数据校正异常!";
+"On_a_command_is_being_executed" = "上一个命令正在执行!";
+"On_a_command_execution_error" = "上一个命令执行错误!";
+"Unknown_error" = "未知错误!";
+"No_sending_card" = "无发送卡!";
+"No_receiver_card" = "无接收卡！";
+"No_accessory_equipment" = "无附属设备!";
+"No_sub_file_data" = "服务器端无sub文件数据!";
+"No_scn_file_data" = "服务器端无SCN文件数据!";
+"Server_side_data_is_not_completely" = "服务器端数据不完全!";
+"No_calibration_file_data" = "服务器端无校正文件数据!";
+"No_online_upgrade_file" = "服务器端无在线升级文件!";
+"Password_wrong" = "密码不正确，请重新输入！";
+"User_wrong" = "输入的账号有误,请确认后再输入！";
+"Brightness_max100" = "\"亮度\"已达到最大值\"100\"";
+"Brightness_min0" = "\"亮度\"已达到最小值\"0\"";
+"Contrast_max100" = "\"对比度\"已达到最大值\"100\"";
+"Contrast_min0" = "\"对比度\"已达到最小值\"0\"";
+"R_max250" = "\"R\"已达到最大值\"255\"";
+"R_min0" = "\"R\"已达到最小值\"0\"";
+"Unknown" = "未知";
+"View_online_test_report" = "查看在线检测报告";
+"Clear_History" = "清除记录";
+"Normal" = "工作正常";
+"Abnormal" = "异常";
+"Already_Connect" = "已连接";
+
+"RvcardSeting" = "接收卡设置";
+"LedConnectSet" = "屏体连接设置";
+"Pixel_level_adjust" = "逐点校正";
+"Upgrade_Online" = "在线升级";
+
+
+"Load" = "加载";
+"Send" = "发送";
+"Save" = "保存";
+
+"Correction_mode" = "校正模式";
+"Correction_mode1" = "256*256 8bit亮度校正";
+"Correction_mode2" = "128*128 8bit色度校正";
+"Correction_mode3" = "96*96 16bit色度校正";
+"Correction_mode4" = "128*128 16bit色度校正";
+"Full_File" = "全屏校正文件";
+"Box_File" = "箱体校正文件";
+"Cabinet_position" = "箱体位置";
+"Row" = "行";
+"Col" = "列";
+
+"Screen_connection_files" = "屏体连接文件";
+"Please_add_files" = "请添加文件";
+"Please_add_files_Detail" = "请先连接电脑加入指定的文件";
+"Receiver_card_configuration_files" = "接收卡配置文件";
+"Correction_file" = "逐点校正文件";
+"txt_Documents" = "txt文档";
+"vu_Documents" = "vu文档";
+"lpbp_Documents" = "lpbp文档";
+"Monitor_file" = "在线升级文件";
+"bit_Documents" = "bit文档";
+"rbf_Documents" = "rbf文档";
+
+"User_Name_Not_Ex" = "用户名不存在!";
+"User_Delete_Admin" = "管理员账号不可编辑!";
+"User_ChangePassword_Detail" = "密码修改成功后!请重新登录!";
+"User_DeleteAccount_Detail" = "删除账号后不可找回!请谨慎操作!";
+"AlreadyConnected" = "已连接";
+"NotConnect" = "未连接";
+"Nothing" = "无";
+"Something" = "有";
+"Open" = "开";
+"Close" = "关";
+"Not_Matching" = "发送或反馈的信息类型不匹配";
+"XCloudConfig_Login_Config" = "登录验证";
+"XCloudConfig_CurrentVersion" = "当前版本信息";
+
+
+"ScreenOptions_TerminalName" = "LED终端名称";
+"ScreenOptions_ScreenResolution" = "屏体分辨率";
+"ScreenOptions_address" = "IP地址";
+
+"Playback_BasicSettings" = "基本设置";
+"Playback_PlaySet" = "播放设置";
+"Playback_TextPlay" = "文本播放";
+"Playback_add" = "添加";
+"Playback_delete" = "删除";
+"Playback_segment" = "定段播放";
+"Playback_from" = "从";
+"Playback_to" = "到";
+"Playback_time" = "定时播放";
+"Playback_at" = "在";
+"Playback_PlayWindowLocation" = "播放窗位置设置";
+"Playback_Original" = "原点";
+"Playback_Custom" = "自定义";
+"Playback_FullScreen" = "全屏";
+"Playback_OriginalSize" = "原始尺寸";
+"Playback_CustomSize" = "自定义大小";
+"Playback_PlayWindowSize" = "播放窗大小";
+"Playback_Play" = "播放";
+"Playback_Pause" = "暂停";
+"Playback_Restart" = "从头开始";
+"Playback_PauseText" = "静止文本";
+"Playback_Remove" = "去掉";
+"Playback_Speed" = "设置速度";
+"Playback_Size" = "设置大小";
+"Playback_TextContent" = "文本内容";
+"Playback_TimeSet" = "设置定时";
+"Playback_Date" = "日期";
+"Playback_hour" = "时间";
+"NoNewVersion" = "暂无新版本";
+"GotNewVersionUpdate" = "有新版本，是否升级！";
+"NSStringReloadButton"="再次检查";
+"CheckUpdate" = "检查更新";
+"NSString25" = "无网络连接";
+"NSStringYes"="确定";
+"NSStringNO"="取消";
+
+
+//*********************************************************************
+"Tips" = "Pronto";
+"Root_LEDADEditer" = "Editoriale";
+"Root_LEDADSheZhi" = "Impostare";
+"Root_LEDADKeFu" = "Servizio Clienti";
+"Soft_SoftVersion" = "Software Version";
+"Root_LanguageSettings" = "Impostazioni lingua";
+"adedit_tishi1" = "PROCEDIMENTO Restart";
+"adedit_Uploaded_successfully"="Carica di successo";
+"adedit_back" = "Ritorno";
+"adedit_Loadthedefaultmaterial" = "Caricare il materiale di default";
+"adedit_LoadMultiscreendisplaysolutions" = "Caricare la modalità di modifica multipla";
+"adedit_LoadSinglescreendisplaysolutions" = "Modo area singola modifica Loaded";
+"adedit_Region" = "Località";
+"adedit_Item" = "Aggiungi elemento";
+"adedit_Text" = "Testo";
+"adedit_Project" = "Progetto";
+"adedit_Speed" = "Velocità:  ";
+"adedit_Size" = "Dimensione del carattere:  ";
+"adedit_Presstosettextcolor" = "Clicca su Imposta il colore del testo";
+"adedit_Presstosettextbackgroundcolor" = "Fare clic per impostare il colore di sfondo del testo";
+"adedit_SaveChange" = "Salva i cambiamenti";
+"adedit_ProName" = "Nome del progetto: ";
+"adedit_screenplaylist" = "Progetto PROCEDIMENTO";
+"adedit_screenpDetect" = "Rilevamento PROCEDIMENTO";
+"adedit_selflianjie" = "Collegamento corrente：";
+"adedit_wifiIPsubmitbutton"="Modificare il gateway IP";
+"ScreenOptions_updateName" = "Cambiare il nome del terminale";
+"ScreenOptions_saveName" = "Nome Salva Terminal";
+"adedit_SaveProject" = "Salva riprodurre i clip";
+"adedit_QuitPlay" = "Uscita Giocare";
+"adedit_DeleteProj" = "Rimuovi elemento";
+"adedit_PublishProj" = "Progetto Trasmissione";
+"adedit_EditProj" = "Modifica del progetto";
+"adedit_SaveProjandQuitEdit" = "Salva i cambiamenti";
+"adedit_RemoveList" = "Lista dei candidati Cancella";
+"adedit_AddList" = "Aggiungere un elenco di candidati";
+"adedit_CleanList" = "Lista di selezione trasparente";
+"adedit_Duration" = "Durata:  ";
+"adedit_Done" = "Determinare";
+"adedit_MasterScreenRegionLabel" = "L'impostazione principale area dello schermo";
+"adedit_selectedRegion" = "Numero di area selezionata:   ";
+"adedit_CancelPublish" = "Annulla trasmissione";
+"adedit_xcoludsprompt" = "Pronto";
+"adedit_Pleaseselectanitem" = "Selezionare un articolo gioco";
+"adedit_Anerroroccurredwhenconvertingformats" = "Errore formattazione di conversione";
+"adedit_Nonetwork" = "Nessuna connessione di rete, collegare";
+"adedit_Reconnect" = "Ricollegare";
+"adedit_Close" = "Fermare";
+"adedit_chongqi" = "PROCEDIMENTO Restart";
+"adedit_Projectcannotbeempty" = "Progetto non può essere vuoto！";
+"adedit_saveprojectIMG_0024.mp4luntanerror" = "Salva progetto Errore！";
+"adedit_selectaneditregion" = "Clicca su un'area modificabile a sinistra!";
+"adedit_tishi" = "Più emozionante versione successiva, restate sintonizzati！！";
+"adedit_loaddefaultfinished" = "Successo di carico materiale di default！";
+"adedit_defaultText" = "Per celebrare focalizzato sulle applicazioni di display a LED (display, illuminazione illuminazione, retroilluminazione regolabile, illuminazione) la tecnologia di controllo è unico al mondo e leader in [IC progettazione del sistema di controllo di chip] Trinity fornitore di soluzioni integrate.";
+
+
+
+
+
+
+
+
+
+
+"adedit_repeatedloadingmaterial" = "Sia per ri-caricare il materiale di default！";
+"adedit_quitplayafterswitch" = "Ora è la modalità di riproduzione analogica non può essere selezionato, fare clic sul pulsante [Esci play], è possibile utilizzare！";
+"adedit_Complete_set" = "Set completo";
+"adedit_tuichu" = "Ha smettere, staccare l'alimentazione elettric";
+"adedit_chongqi1" = "È stato riavviato, attendere";
+"adedit_Last_Set" = "Ultimo set";
+"adedit_sendCompleted" = "Trasferimento del progetto è completo！";
+"adedit_durationnotnull" = "Durata non può essere vuoto!";
+"adedit_videodontsetduration" = "Non permettere di impostare manualmente la durata del video!";
+"adedit_projectnamenotnull" = "Nome del progetto non può essere vuoto !!";
+"adedit_Publishoperation" = "Operazione di trasferimento aggiornerà il server！";
+"adedit_selectanProject" = "Si prega di selezionare un elemento da riprodurre un！";
+"adedit_suretodelete" = "Sei sicuro di voler cancellare?";
+"adedit_closeColorPicker" = "Chiudere il selettore colore";
+"adedit_Published" = "È stato trasferito";
+"adedit_closeBrightnessPicker" = "Chiudi luminosità pickup";
+"adedit_matrialloading" = "Caricamento";
+"Successanddangqiangundong" = "Salvare le modifiche con successo！";
+"adedit_xmlfilePath_isnull" = "Errore di file di progetto leggere!";
+"adedit_netconnecterror" = "Errore di connessione di rete!";
+"adedit_textRegioncanntselect" = "Area di testo non può aggiungere le immagini!";
+"adedit_projecttransation" = "Trasferimento del progetto, attendere！";
+"adedit_promptyes" = "Determinare";
+"adedit_promptno" = "Cancellare";
+"adedit_textfont" = "Selezionare il tipo di carattere:";
+"adedit_isediting" = "Si prega di fare clic su [Salva modifiche] per uscire di nuovo l'operazione di montaggio dopo！";
+"Root_upgrade" = "Aggiornamento PROCEDIMENTO";
+"adedit_dontupgrade" = "PROCEDIMENTO programma alla versione più recente！";
+"adedit_clickupgrade" = "Fare clic sul pulsante [Aggiornamento] aggiornare programma terminale schermo！";
+"adedit_upgradefinish" = "Il processo di aggiornamento è completo! Quindi spegnere il procedimento di potenza LED aperti dieci secondi per completare l'aggiornamento！";
+"adedit_checkupdatepakcage" = "Scaricare il pacchetto di aggiornamento dalla nube";
+"adedit_upgradeprogram" = "Carica pacchetto di aggiornamento per PROCEDIMENTO";
+"adedit_downloadupgradefileerror" = "Scarica l'errore pacchetto di aggiornamento!";
+"adedit_downloadupgradefilefinish" = "Scaricare il pacchetto di aggiornamento completo!";
+"adedit_initpromptlabel" = "Si prega di collegarsi a Internet, fare clic su Controlla pacchetto aggiornamento";
+"adedit_upgradeneterror" = "Si è verificato un errore di rete durante l'aggiornamento PROCEDIMENTO";
+"adedit_internetconnecterror" = "Si è verificato un errore durante la connessione a Internet!";
+"adedit_screenheighterror" = "Altezza dello schermo deve essere compreso tra 1-1024！";
+"adedit_Projectnamecannotbeempty" = "Nome del progetto non può essere vuoto！";
+"adedit_Behind_scene" = "Sfondo";
+"adedit_Before_scene" = "Prospettiva";
+"adedit_CleanBeforeList" = "Lista di selezione trasparente";
+"adedit_CellOptionButton" = "Di Più";
+"adedit_moreivew_backbutton" = "Torna alla lista";
+"adedit_moreivew_deletebutton" = "Rimuovi immagine";
+"adedit_moreivew_direction" = "Direzione Animazione  ";
+"adedit_direction_up_to_down" = "Su";
+"adedit_direction_right_to_left" = "Destra";
+"adedit_direction_down_to_up" = "Il Prossimo";
+"adedit_direction_left_to_right" = "Sinistra";
+"adedit_direction_up_to_noanimation" = "Nessuna animazione";
+"adedit_Projectcannotlittle2pic" = "Primo piano e la lista di fondo non può essere inferiore a 2 Foto";
+"adedit_Projectcannotbehindequitebefore" = "Di primo piano e di sfondo deve essere uguale al numero di elenco";
+"adedit_defaultRegiontitle" = "Imposta come predefinito";
+"adedit_SearchPublishProj" = "Cerca";
+"adedit_projectsavesuccess" = "Articolo salvato con successo！";
+"adedit_settingsucess" = "Impostazione Successo";
+"adedit_durationdonttoolittle" = "Durata non può essere inferiore ad un secondo！";
+"adedit_creategroup" = "Crea gruppo";
+"adedit_inputgroupname" = "Inserite un nome per il gruppo";
+"adedit_groupxmlsavesuccess" = "Gruppo salvato con successo";
+"adedit_continuous_play" = "Riproduzione continua";
+"adedit_playsendCompleted" = "Comando continuo gioco inviato con successo";
+"adedit_yunpinMarket" = "Pubblicità del mercato";
+"adedit_resetscreenbutton" = "PROCEDIMENTO Ripristina";
+"adedit_resetScreenMachine" = "Ripristino dei dati dello schermo in";
+"adedit_RestDataProject" = "Reset";
+"adedit_uploadproject" = "Carica";
+"adedit_guanji"="Uscita di Sicurezza";
+"adedit_background"="PROCEDIMENTO sfondo";
+"adedit_backguplod"="Carica sfondo";
+"adedit_downloadproject" = "Scarica Ascolta Progetto";
+"adedit_downloadisCompleted"="Scarica il progetto è completato";
+"adedit_downloadisfailed"="Fallimento Scarica progetto";
+"adedit_uploadprojectcompleted"="Caricate il progetto è completato";
+"adedit_uploadprojectfailed"="Upload fallimento del progetto, errore di rete";
+"adedit_rotation_45"="Angolo di rotazione 45";
+"adedit_brightness"="Luminosità dello schermo";
+"adedit_grouppicdeletesuccess"="Soppresso con successo";
+"adedit_grouppicdeletefailed"="Rimuovere fallimento";
+"adedit_music_ctrl"="audio";
+"ad_edit_alerady_selected_music"="Il nome del file audio selezionato：";
+"ad_edit_duration_music"="Gioca Durata (Unità: secondi)：";
+"ad_edit_text_area"="Area di testo";
+"ad_edit_image_area"="Area immagine";
+"adedit_cleare_music"="Cancella Audio";
+"adedit_inexistenceUpdateFile"="I file di aggiornamento non esistono, passare al server Web per scaricare il file di aggiornamento！";
+"adedit_swipe_hiddenlist"="Presentazione nascondere la lista";
+"adedit_saveediterror"="Modifiche salvataggio Errore！";
+"adedit_deleteprojectsuccess"="Rimuovere Progetto Successo！";
+"adedit_deleteprojectfailed"="Rimuovere fallimento di un progetto！";
+"adedit_promptclearImageList"="Determinare se cancellare l'elenco delle immagini！";
+"adedit_applyRegionbuttontitle"="Applicazione";
+"adedit_inputdontisnull"="Le caselle di testo non possono essere vuoti";
+"adedit_publishprojecting"="Si prega di attendere per progetti di trasporto！";
+"adedit_downobjecting"="Scarica Progetto Attendere！";
+"adedit_musicpromptlast"="I file audio vengono salvati nel file nella cartella dell'applicazione corrente, fare clic su [Audio] View";
+"adedit_musicpromptbefore"="Il nome";
+"adedit_video_editer_ctrl"="Video";
+"adedit_tryChangeTransType"="Fare clic su OK per cercare di cambiare il protocollo di trasporto per il trasferimento del progetto";
+"adedit_addVideo"="Aggiungere a";
+"adedit_setDefaultAppplyTitle"="Impostare la larghezza e l'altezza di default per il";
+"adedit_SaveAndPublishButton"="Il Prossimo";
+"adedit_tongbu" = "Sincronizzazione multi-schermo";
+"adedit_savezimu"="Add subtitle";
+"adedit_loadingvideo"="Legge il video...";
+"adedit_selectvideo"="Selezionate un video";
+"adedit_selectphoto"="Seleziona immagine";
+"adedit_cancelselect"="Cancellare";
+"adedit_selectphotoprompt"="Tipi di creatività";
+"adedit_musicdelbutton"="Cancellare";
+"adedit_tryRestScreenSuccess"="Ripristina successo";
+"adedit_tryRestScreenfailed"="Ripristino non riuscito";
+"adedit_clearButtontitle"="Mettere in ordine";
+"adedit_moreivew_Alpha"="Alpha";
+"adedit_touming"="Trasparente";
+"adedit_butouming"="Opaco";
+"adedit_upgradeerror"="Errore di aggiornamento";
+"adedit_batterylow"="Batteria Tablet è basso";
+"adedit_downloadbuttontitle"="Scarica la versione 2.0";
+"adedit_upgradebuttontitle"="Aggiornamento";
+"adedit_upgradetimeout"="Pacchetto di aggiornamento inviato con successo, ma non ha！";
+"adedit_resettimeout"="ricevuto un feedback schermo lato, l'aggiornamento non riesce！";
+"adedit_resetscreenprompt"="Suggerimento: prima connettersi a DELIBERAZIONI LED di Wi-Fi, quindi fare clic sul pulsante Ripristina, processo di reset, si prega di rimanere all'interno di questa pagina！";
+"adedit_downloadupgradepackage"="Suggerimento: prima di connettersi a Internet, e quindi fare clic sul pulsante di download, il processo di download si prega di rimanere all'interno di questa pagina！";
+"adedit_uploadupgradepackage"="Suggerimento: prima connettersi a DELIBERAZIONI LED di Wi-Fi, quindi fare clic sul pulsante Aggiorna il processo di aggiornamento, si prega di rimanere all'interno di questa pagina！";
+"adedit_hide"="Nascondere";
+"adedit_show"="Display";
+"adedit_NoipError" = "Nessun dispositivo di collegamento, selezionare un dispositivo collegato PROCEDIMENTO！！！";
+"adedit_NOprject" = "PROCEDIMENTO nessun progetto, carica";
+"adedit_png" = "kefu3";
+"adedit_localProjects"="Local elenco di elementi di riproduzione";
+"adedit_wifipasswordbutton"="Fine schermo LED gestione delle password WiFi";
+"adedit_tishiupdate" = "Scegliere un terminale";
+"adedit_wifipasswordsubmitbutton"="Salva";
+"button_title_settings"="Impostare";
+"adedit_wifimanager"="WiFi gestione terminali schermo";
+"adedit_downloadbuttontitle11"="Scarica la versione 4.0";
+"Button_Newest" = "Ultimo disegno";
+"Button_Industry" = "Progetto Nube";
+"Button_Account" = "Accedi Account";
+"Button_screenMarket" = "Schermo di mercato";
+"Button_reAD" = "Intercettazione Foto";
+"Button_Training" = "Video di formazione";
+"Button_Forum" = "Centro Forum";
+"YunPing_SelectPhoto" = "Seleziona immagine";
+"YunPing_Get160" = "Genera 160 * 640 foto";
+"YunPing_Get240" = "Genera 240 * 800 foto";
+"YunPing_SelectPhotoFromAlbum" = "Seleziona da album";
+"YunPing_TakePhoto" = "Fotografia";
+"YunPing_ImageSaved" = "Le immagini vengono salvate nell'album";
+"Yunping_NOImage" = "Non ancora selezionata una foto";
+"Yunping_SelectImageFirst" = "Si prega di selezionare un'immagine dopo le operazioni di completamento durante gli screenshot";
+"NSString17" = "Cancellare";
+"NSString36" = "Conto Accedi";
+"NSString39" = "Registered";
+"NSString40" = "Login";
+"NSStringTelSample" = "Come 13812345678";
+"NSString38" = "\"LED2Buy\"Password account";
+"NSStringCompanyName"="*Nome Della Ditta";
+"NSStringMustWrite"="Richiesto";
+"NSStringNickName"="Soprannome:";
+"NSStringcompanynameLabel"="Nome Della Ditta:";
+"NSStringtelphoneLabel"="Numero di telefono:";
+"NSStringpasswordLabel"="Password:";
+"NSStringconfirmpassLabel"="Conferma Password:";
+"NSStringoptionalLabel"="Opzionale";
+"NSStringemailLabel"="Indirizzo e-mail:";
+"NSStringcompanyaddressLabel"="Indirizzo:";
+"NSStringNickNamePlaceholder"="Inserisci Nickname";
+"NSStringcompanynameLabelPlaceholder"="Inserire il nome della società";
+"NSStringtelphoneLabelPlaceholder"="Inserire il numero di telefono";
+"NSStringpasswordLabelPlaceholder"="Inserire la password";
+"NSStringconfirmpassLabelPlaceholder"="Inserisci il codice di conferma";
+"NSStringemailLabelPlaceholder"="Inserisci l'indirizzo email";
+"NSStringcompanyaddressLabelPlaceholder"="Inserisci indirizzo";
+"MJRefreshFooterPullToRefresh" = "Carica più dati su LAC";
+"MJRefreshFooterReleaseToRefresh" = "Carica più rilascio di dati";
+"MJRefreshFooterRefreshing" = "Caricamento dei dati ...";
+"MJRefreshFooterEndLoad" = "Senza";
+"MJRefreshHeaderPullToRefresh" = "Scendete per aggiornare";
+"MJRefreshHeaderReleaseToRefresh" = "Rilascio aggiornare subito";
+"MJRefreshHeaderRefreshing" = "Rinfrescante";
+"MJRefreshLastTimeNotie" = "Ultimo aggiornamento";
+"NSStringYouNotlogin"="Non sei loggato, effettua il login！";
+"NSStringYes"="Determinare";
+"NSStringOKButtonTitle" = "Determinare";
+"NSStringNO"="Cancellare";
+"nsstringLogout"="Uscire";
+"NSStringName"="Nome e cognome";
+"NSStringNamePlaceholder"="Inserisci il tuo nome";
+"NSStringpasswordLengthPlaceholder"="La lunghezza della password è non inferiore a 6";
+"NSStringpasswordisEqualPlaceholder"="Password e Confirm password non sono uguali";
+"NSStringnameLengthPlaceholder"="Non lunghezza del nome meno di due caratteri";
+"NSStringphoneLabelPlaceholder"="Inserire il numero di telefono";
+"shoujihaomabunengweikong"="È richiesto il numero di telefono";
+"youxiangbunengweikong"="E-mail non può essere vuoto";
+"NSStringPhoneNumError"="Il numero di telefono è corretto";
+"NSStringCompanynameLengthError"="Nome azienda non può essere vuoto";
+"NSStringphoneLengthError"="Numero di telefono errato lunghezza";
+"NSStringServiceErrorRegFaild"="Server è occupato, la registrazione non riesce";
+"Mustbewithinrange" = "Lunghezza della password deve essere di almeno 8 più di 16";
+"Mustincludelowercasecharacter" = "Le password devono includere lettere minuscole\r";
+"Mustincludeuppercasecharacter" = "La password deve contenere lettere maiuscole\r";
+"Mustincludedecimaldigitcharacter" = "La password deve contenere numeri\r";
+"NSString24" = "Pronto";
+"NSString25" = "Nessuna connessione di rete";
+"NSStringAccountNotNull"="Account non può essere vuoto!";
+"NSStringPasswordNotNull"="La password non può essere vuoto!";
+"LocalStringAccountFormatError"="Account malformati";
+"LocalStringGetBaseInfoError"="Ottenere informazioni di base account sbagliato";
+"NSStringRegSuccess"="A registrazione avvenuta, messaggio di verifica è stato inviato al tuo telefono";
+"Yunping_logout" = "Uscire";
+"Yunping_edit" = "Modifica profilo";
+"YunPing_headimage" = "Testa ritratto";
+"YunPing_name" = "Nome";
+"YunPing_tel" = "Telefono";
+"YunPing_qq" = "QQ";
+"YunPing_aboutdesigner" = "Autointroduzione";
+"GotNewVersion" = "Una nuova versione, se aggiornare！";
+"Update" = "Aggiornamento";
+"UpdateVersion" = "Versione Aggiornamento";
+"NoNewVersion" = "Congratulazioni per la versione più recente della corrente";
+"Yunping_showDesigns" = "Visualizza il lavoro di progettazione";
+"Button_project"="Progetti locali";
+"baocun" = "Salva";
+"NSString18" = "Fotografia";
+"NSString19" = "Album Da";
+"NSString11" = "Impostazione della lingua";
+"User_OK" = "Rinfrescare";
+"User_Cancel" = "Cancellare";
+"Language_LanguageSettingsForSimplifiedChinese" = "%@/Impostazione della lingua";
+"Language_LanguageSettingsMessageForSimplifiedChinese" = "\n%@\n\n   Selezionare 'OK', il software passa alla schermata principale e nell'ambiente lingua corrispondente!";
+"Language_OKForSimplifiedChinese" = "%@/buono";
+"Language_LanguageSettingsForTraditionalChinese" = "%@/Impostazione della lingua";
+"Language_LanguageSettingsMessageForTraditionalChinese" = "\n%@\n\n   Selezionare 'OK', il software passa alla schermata principale e nell'ambiente lingua corrispondente!";
+"Language_OKForTraditionalChinese" = "%@/Buono";
+"Language_LanguageSettingsForEnglish" = "%@/Impostazione della lingua";
+"Language_LanguageSettingsMessageForeEnglish" = "\n%@\n\n   Selezionare 'OK', il software passa alla schermata principale e nell'ambiente lingua corrispondente!";
+"Language_OKForEnglish" = "%@/buono";
+"Language_LanguageSettingsForDeutsch" = "%@/Impostazione della lingua";
+"Language_LanguageSettingsMessageForDeutsch" = "\n%@\n\n   Rimanete sintonizzati!";
+"Language_OKForDeutsch" = "%@/buono";
+"Language_LanguageSettingsForFrench" = "%@/Impostazione della lingua";
+"Language_LanguageSettingsMessageForFrench" = "\n%@\n\n  Rimanete sintonizzati!";
+"Language_OKForFrench" = "%@/buono";
+
+//意大利语
+"Language_LanguageSettingsForItaliana" = "\n%@\n\n   Selezionare 'OK', il software passa alla schermata principale e nell'ambiente lingua corrispondente!";
+"Language_LanguageSettingsMessageForItaliana" = "\n%@\n\n  Rimanete sintonizzati!";
+"Language_OKForItaliana" = "%@/buono";
+"Language_LanguageSettingsForEspanish" = "%@/Impostazione della lingua";
+"Language_LanguageSettingsMessageForEspanish" = "\n%@\n\n   Rimanete sintonizzati!";
+"Language_OKForEspanish" = "%@/buono";
+"Language_LanguageSettingsForPycckNN" = "%@/Impostazione della lingua";
+"Language_LanguageSettingsMessageForPycckNN" = "\n%@\n\n   Rimanete sintonizzati!";
+"Language_OKForPycckNN" = "%@/buono";
+"Language_LanguageSettingsForPortugues" = "%@/Impostazione della lingua";
+"Language_LanguageSettingsMessageForPortugues" = "\n%@\n\n   Rimanete sintonizzati!";
+"Language_OKForPortugues" = "%@/buono";
+"Language_LanguageSettingsForJapanese" = "%@/Impostazione della lingua";
+"Language_LanguageSettingsMessageForJapanese" = "\n%@\n\n   Rimanete sintonizzati!";
+"Language_OKForJapanese" = "%@/buono";
+"Language_LanguageSettingsForKorean" = "%@/Impostazione della lingua";
+"Language_LanguageSettingsMessageForKorean" = "\n%@\n\n   Rimanete sintonizzati!";
+"Language_OKForKorean" = "%@/buono";
+"Language_LanguageSettingsForALB" = "%@/Impostazione della lingua";
+"Language_LanguageSettingsMessageForALB" = "\n%@\n\n   Rimanete sintonizzati!";
+"Language_OKForALB" = "%@/buono";
+"adedit_kouling" = "Si prega di inserire una password";
+
+//4.1.0 意大利
+"Online_Refresh" = "rinfrescare";
+"LED_Number" = "Numero di schermi";
+"adedit_benci" = "Le Impostazioni";
+
+"wirte_video" = "Si prega di inserire il nome del video";
+//*********************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//tabBarItems
+"NSStringHomepage" = "首页";
+"NSStringAccount" = "账户";
+"NSStringCommunity" = "社区";
+"NSStringSetting" = "设置";
+
+
+//产品页面
+"NSStringTechnicalParameters" = "技术参数";
+"NSStringProductFeatures" = "产品特点";
+"NSStringClose" = "关闭";
+
+"NSString1" = "客户管理";
+"NSString2" = "添加照片";
+"NSString4" = "公司";
+"NSString6" = "地址";
+"NSString8" = "邮箱";
+"NSString10" = "推送给客户";
+"NSString12" = "有选项为空!请填写完毕再注册!";
+"NSString13" = "请输入11位的手机号";
+"NSString15" = "请先填写用户名";
+"NSString16" = "选择";
+"NSString17" = "取消";
+"NSString20" = "添加";
+"NSString21" = "搜索";
+"NSString22" = "完成";
+"NSStringSaveEdit" = "提交";
+
+
+"NSString32" = "不了,谢谢";
+"NSString33" = "现在去评分";
+"NSString34" = "稍后再说";
+
+
+"NSString41" = "账号有误";
+"NSString42" = "登录成功";
+//"NSString43" = "有视频刷新了";
+"NSString44" = "点击登录...";
+"NSString45" = "登录账号得到更多服务";
+"NSString48" = "下拉刷新";
+"NSString49" = "最后更新";
+"NSString50" = "上拉加载";
+"NSString51" = "正在刷新";
+"NSString52" = "正在加载";
+"NSString53" = "释放刷新";
+"NSString54" = "释放加载更多";
+"NSString55" = "上拉加载更多";
+"NSString56" = "没有了哦";
+"NSString57" = "今天";
+"NSString58" = "昨天";
+"NSString59" = "前天";
+"NSString60" = "6~16位的密码";
+"NSString62" = "两次输入的密码不同!请正确输入!";
+"NSString63" = "注册成功，验证信息已发送当前所填邮箱";
+"NSString64" = "联系我们";
+"NSString65" = "服务热线";
+
+"NSString67" = "销售人员列表";
+"NSString68" = "获取销售人员详细信息";
+
+"NSString71" = "对不起,当前设备不支持拨号.";
+"NSString73" = "技术支持";
+
+"NSString81" = "推送的内容";
+"NSString82" = "授权登录";
+
+"NotAuth" = "尚未授权";
+"UserInfo" = "用户信息";
+"GotNewVersion" = "有新版本，是否升级！";
+"Update" = "升级";
+"SinaWeibo" = "新浪微博";
+"TencentWeibo" = "腾讯微博";
+"CheckUpdate" = "检查更新";
+"Version" = "V2.1.2";
+"NoNewVersion" = "暂无新版本";
+"GotNewVersionUpdate" = "有新版本，是否升级！";
+"PerformDate" = "yyyy年MM月dd日";
+"PerformDates" = "yyyy-MM-dd hh:mm";
+"PerformDateAndTime" = "yyyy-MM-dd hh:mm:ss";
+"PushRegister" = "推送注册";
+"VideoTitle" = "标题:---";
+"VideoLength" = "时长:---";
+"VideoSize" = "大小:---";
+"VideoTitles" = "%@";
+"VideoLengths" = "时长:%@";
+"VideoSizes" = "大小:%@";
+"VideoSegment" = "第%d段";
+"SaleManagement" = "销售管理";
+"AddCustomer" = "新增客户";
+"MyCustomer" = "我的客户";
+"SearchServersRecord" = "查看服务申请记录";
+"SearchComplaint" = "查看投诉";
+"AddressList" = "公司通讯录";
+"PersonalInfo" = "个人信息";
+"CustomerList" = "客户列表";
+"DetailInformation" = "详细信息";
+"PushApp" = "推送App";
+"RepairButton" = "维修单号";
+"ApplicationRecord" = "申请记录";
+
+"ServersCenter" = "服务中心";
+"RepairCenter" = "维修中心";
+"LiveSupport" = "现场支持";
+"RemoteSupport" = "远程支持";
+"MyFreinds" = "我的好友";
+
+
+"MyFavorites" = "我的收藏";
+"MyDownload" = "我的下载";
+"MySalesperson" = "我的销售员";
+"VCard" = "电子名片";
+
+"ServiceDescription" = "服务说明";
+"MaintenanceApplication" = "服务申请";
+"MaintenanceRecords" = "查看服务记录";
+
+
+///////////////////////////////////////////////////
+//需修改部分
+"ContactZQ" = "联系\"LED2Buy\"";
+"ZQSpecial" = "\"LED2Buy\"一下";
+"StartApp" = "使用\"LED2Buy\"";
+"NSString23" = "关于\"LED2Buy\"";
+"NSString28" = "给\"LED2Buy\"评分";
+"NSString30" = "为\"LED2Buy\"评分";
+"NSString31" = "如果您觉得\"LED2Buy\"很好用,可否为其评一个分数?评分过程只需花费很少的时间.感谢您的支持!";
+"NSString35" = "LED2Buy";
+"NSString37" = "如name@example.com";
+"NSString66" = "15989871168";
+"NSString70" = "manager@chipshow.com";
+"NSString74" = "深圳市LED2Buy子股份有限公司";
+"NSString75" = "电话:15989871168";
+"NSString76" = "传真:0755-82975893";
+"NSString77" = "邮箱:manager@chipshow.com";
+"NSString78" = "地址:深圳市宝安区石岩街道宝石路宝石科技园C栋";
+"NSString79" = "\"LED2Buy\"概况";
+///////////////////////////////////////////////////
+
+
+"NSStringContactLabel" = "通讯录";
+"NSStringDownloadLabel" = "离线下载";
+"NSStringMoreLabel" = "更多";
+"NSStringMemberCompany" = "会员企业";
+"NSStringCompanyApp" = "企业APP";
+"NSStringDownloadAPP" = "猛戳上方的图标,立即下载该企业APP!您还可以通过下方的按钮了解如何拥有自己的企业APP!";
+"NSStringNoAPP" = "TA还没有自己企业的APP!猛戳下方的按钮您将拥有自己的企业APP!";
+"NSStringMyCompanyApp" = "拥有自己的企业移动APP";
+"NSStringServiceReturnExecption" = "服务器异常，请稍后再试！";
+
+"NSStringPleaseLogin" = "请先登陆！";
+"Delete"="删除";
+
+"ZdecMoreSettingLabel"="离线下载";
+"NSStringClearCacheLabel"="清除缓存";
+"NSStringCheckVerLabel"="检查新版本";
+"NSStringLinkedLabel"="友情链接";
+"NSStringPingfenLabel"="给我们评分";
+"NSStringGongnengJieshaoLabel"="功能介绍";
+
+"NSStringNetExecption"="网络异常";
+"NSStringClearCacheSuc"="清除缓存成功";
+
+"RecentMyFreinds"="最近联系人";
+"FriendsListIncludeSale"="好友列表";
+"NSStringConfirmAddFriendLabel"="确认添加";
+
+"NSStringReadMessageListFaildLabel"="读取聊天记录失败！";
+"NSStringTaAddFriendsLabel"="TA添加你为好友";
+"NSStringJujueLabel"="拒绝";
+"NSStringConfirmLabel"="同意";
+"NSStringNetErrorConfirmFaildLabel"="网络故障，拒绝失败！";
+"NSStringFindPhotosFaild"="访问图片库错误";
+"NSStringUploadPhotoFaild"="上传图片失败";
+
+"forwardMainGaridButton"="首页";
+
+
+"NSStringSuccessCase"="成功案例";
+"NSStringNewsCenter"="新闻中心";
+"NSStringAboutString"="关于";
+
+"NSStringDeleteMessageList"="删除记录";
+"NSStringReadMessageListFaild"="读取消息列表失败!";
+"NSStringSendFaild"="网络故障，发送消息失败!";
+"Sendcontentscannotempty"="发送的内容不能为空！";
+
+"NSStringModifySuccess"="修改成功";
+"NSStringyuanmimahexinmimabuneng"="原密码和新密码不能相同";
+"NsstringMyaccount"="我的账号";
+
+"sz_zdec_map_img"="sz_zdec_map_img.png";
+"CompanyAddress"="公司地址";
+"button_image_back"="back.png";
+"nsstringRegisterButtonImage"="register.png";
+"NSStringNewMessageList"="有新消息!";
+"NSStringExit"="退出登录";
+"NSStringModifyPass"="修改密码";
+"NSStringFindFriend"="查找";
+"sellcenterButtonpng"="sellcenter.png";
+"servicecenterButtonpng"="servicecenter.png";
+
+"NSStringNewsTitle"="新闻";
+"NSStringCaseTitle"="案例";
+"NSStringProductTitle"="产品";
+"NSStringVideoTitle"="视频";
+"NSStringDocTitle"="资料";
+"NSStringNoPermission"="对不起，您没有此服务的权限！";
+"NSStringAddFailed"="添加失败";
+"NSStringSubmitApplication"="提交申请成功";
+"NSStringTimeStr"="时间";
+
+"NSStringRepairServiceTable"="维修申请表";
+"NSStringLoading"="加载中...";
+"NSStringselectOrientationLands"="选择横竖屏";
+"NSStringHorizontal"="横屏";
+"NSStringVertical"="竖屏";
+
+
+//ServersMaintenanceApplicationViewController
+"NSStringContactTitle"="*联系人";
+"NSStringContactTel"="*电话";
+"NSStringJiJianDanHao"="*寄件单号";
+"NSStringTuiLiaoDanHao"="退料单号";
+"NSStringCanPinMingCheng"="产品名称";
+"NSStringCanPinXingHao"="产品型号";
+"NSStringChuChanRiQi"="出产日期";
+"NSStringPCBBanHao"="PCB板号";
+"NSStringShuLiang"="数量";
+"NSStringXianXiangMiaoShu"="现象描述";
+"NSStringPrice"="购买价格（￥）";
+"NSStringXIANCHANGtable"="现场支持申请表";
+"NSStringYUANCHENtable"="远程支持申请表";
+"NSStringFuWuDiDian"="服务地点";
+"NSStringXianChangZhaoPian"="现场照片";
+"NSStringTime"="时间";
+"NSStringCanPinMiaoShu"="产品描述";
+"NSStringWenTiMiaoShu"="问题描述";
+"NSStringSet"="设置";
+"NSStringLianXiRen"="联系人";
+
+//ServersRepairRecordListShowViewController
+"NSStringCompanyName1"="公司名称";
+"NSStringContactTitle1"="联系人";
+"NSStringContactTel1"="电话";
+"NSStringJiJianDanHao1"="寄件单号";
+"NSStringWeiXiuJinDu"="维修进度";
+
+//ServersLiveSupportInformationViewController
+"NSStringNindemingzi"="您的名字";
+"NSStringnindedianhua"="您的电话";
+"NSStringxianchangzhaopian"="现场照片";
+"NSStringwentimiaoshu"="问题描述";
+
+//SalerMyCustomerViewController
+"NSStringCompany"="公司";
+"NSStringPosition"="职位";
+"NSStringUnlimited"="不限";
+
+//SalerMyCustomerDetailInfoShowViewController
+"NSStringEditButton"="editUserInfoButton.png";
+"NSStringSubmitButton"="submit.png";
+//SaleRepairRecordListShowViewController
+"NSStringRepairRecordList"="维修服务申请记录";
+"NSStringMaintenanceSchedule"="维修进度";
+"NSStringMaintenanceCosts"="维修费用";
+"NSStringfanchengkuaididan"="返程快递单";
+//SaleLiveSupportInformationViewController
+"NSStringjishufuwushenqing"="技术服务申请";
+"NSStringyuanchengfuwushenqing"="远程服务申请";
+"NSStringRepairing"="正在处理";
+"NSStringRepaired"="已处理";
+"NSStringTechServiceSchedule"="服务进度";
+//SalerViewComplaintDetailViewController
+"NSStringClient"="客户";
+"NSStringtusuneirong"="投诉内容";
+//SalerPersonalDetailInfoViewController
+"NSStringSignature"="个性签名";
+
+"NSStringgongxiangmingpian"="共享名片";
+
+
+"gongsimingchengbunengweikong"="公司名不能为空";
+"lianxirenbunengweikong"="联系人不能为空";
+"dianhuabunengweikong"="电话不能为空";
+"jidiandanhaobunengweikong"="寄件单号不能为空";
+"NsstringDanhao"="单号";
+"NSStringReadMessageFaildList"="网络错误";
+
+"NSStringOfflineDownloadSuccess"="离线下载完成";
+"NSStringOfflineDownloadFailed"="网络中断，请点击下载列表继续下载";
+"NSStringOfflineDownloadFail"="网络中断，点击继续";
+"NSStringOfflinedownload"="离线下载文字";
+
+"NSStringComplainteNotNull"="投诉内容不能为空";
+
+"NSStringusernameNotFaild"="用户名不能为空！";
+
+"NSStringDeleteMessageListFaild"="删除聊天记录失败！";
+"NSStringMessageListLoading"="消息列表加载中...";
+
+
+"NSStringNewserviceApplyList"="有新服务申请";
+"NSStringNewComplainList"="有新投诉";
+"NSStringDeleteNoti"="确定删除聊天记录吗？";
+"NSStringcomplaintStr"="我要投诉";
+"nsstringdownloadnews1"="下载新闻";
+"nsstringdownloadnews2"="下载案例";
+"nsstringdownloadnews3"="下载菜单";
+"nsstringdownloadnews4"="下载一级菜单";
+"nsstringdownloadnews5"="下载新闻";
+//modify yxm2014年03月04日16:44:24
+"nsstringdownloadunarchive"="解压数据";
+"NSStringapplyerCompanyLabel"="申请人公司";
+"NSStringapplyerLabel"="申请人";
+"NSStringapplyerPhoneLabel"="申请人电话";
+
+"NSStringTechServiceNumber"="技术服务单号";
+
+
+
+"NSStringComplaintToast"="感谢您的投诉，您的宝贵意见是我们前进的动力。我们将及时处理并回复！";
+"NSStringPersonInfomation"="个人资料";
+
+"NSStringInputPhoneOrEmail"="请输入手机/邮箱";
+
+
+"NSStringAddFriendSuccess"="好友请求信息已发出";
+
+"NSStringTelPhone"="手机";
+"NSStringOfflinedownloadPhoto"="离线下载图片";
+"NSStringOfflineDownloading"="下载中………";
+"toNextTimeLabel"="到";
+"NSSteingUpScrollIntoMain"="向上滑动进入首页";
+"NSStringWebDownload"="下载";
+"NSStringWebCollect"="收藏";
+"NSStringWebShare"="分享";
+"NSStringWebPush"="推送";
+"NSStringInputMessagePlaceHolder"="输入消息";
+"NSStringMessageSendButton"="发送";
+
+"NSStringPushPage"="推送页面";
+"NSStringisSclectCustomer"="已选客户";
+"NSStringSelectedContent"="已选内容";
+"NSStringConfirmPush"="确定推送";
+"NSStringPushSuccess"="推送成功";
+"NSStringPushList"="推送列表";
+
+"NSStringNotificationErrorFaild"="通知不可用";
+
+"NSStringMagazine" = "期刊";
+//分享下载
+"NSStringCollectSuccess"="收藏成功！";
+"NSStringSuccessfullycanceled"="取消收藏成功！";
+"NSStringDownloadDataSuccess"="下载数据成功!";
+
+"NSStringDownloading"="下载数据中!";
+
+"NSStringDownloaded"="已经下载了!";
+
+
+//产品页面
+"NSStringTechnicalParameters" = "技术参数";
+"NSStringProductFeatures" = "产品特点";
+
+"NSStringShareButton" = "分享";
+"NSStringSelectButton" = "选项";
+
+"NSStringDownload" = "下载";
+"NSStringCollect" = "收藏";
+"NSStringCalculatorLabel" = "计算器";
+
+
+//计算器
+
+"gongzhi_danwei"="公制";
+"yingzhi_danwei"="英制";
+"danwei_xuanze"="单位选择";
+"Cabinet_Parameters" = "箱体参数";
+"Screen_Physical_Parameters" = "屏体物理参数";
+"Screen_Performance_Parameters" = "屏体性能参数";
+"Other_Parameters" = "其他参数";
+
+"Cabinet_Width" = "箱体宽度";
+"Cabinet_Height" = "箱体高度";
+"Cabinet_Resolution" = "箱体分辨率";
+"Cabinet_Weight" = "箱体重量";
+"Average_Power_Area" = "平均功耗";
+"Total_Power_Area" = "最大功耗";
+
+"Screen_Width" = "屏体宽度";
+"Screen_Height" = "屏体高度";
+"Screen_Area" = "屏体面积";
+"Pixels_Wide" = "横向像素数";
+"Pixels_High" = "纵向像素数";
+"Aspect_Ratio" = "宽高比";
+"Total_Weight" = "总重量";
+
+"Pixel_Pitch" = "点间距";
+"Brightness" = "亮度";
+"Total_Power" = "总功耗";
+"Viewing_Angle" = "可视角度";
+"Minimum_Viewing_Distance" = "推荐最小观看距离";
+"LED_Type" = "LED规格";
+"Pixel_Configuration" = "像素组成";
+
+"Pixel_Configuration" = "亮度控制级别";
+"Gray_Scale" = "灰度等级";
+"Refresh_Frequency" = "刷新率";
+"Input_Power_Frequency" = "供电频率";
+"Input_Voltage" = "供电电压";
+"Ingress_Protection" = "防护等级";
+"Weather_Rating" = "使用环境";
+"Operating_Temperature" = "运行环境温度范围";
+"Operating_Humidity" = "运行环境湿度范围";
+
+"Cabinet_Width_Number" = "横向箱体数";
+"Cabinet_High_Number" = "竖向箱体数";
+
+"Total" = " 总计:";
+
+"NSStringCalculator" = "选屏计算器";
+
+//右侧下载收藏按钮
+"NSStringrightNews" = "新闻";
+"NSStringrightProduct" = "产品";
+"NSStringrightCase" = "案例";
+"NSStringrightPlan" = "方案";
+"NSStringrightVideo" = "视频";
+
+"NSStringrightTools" = "我的工具";
+"NSStringrightFavorites" = "收藏夹";
+"NSStringrightMyFavorites" = "我的收藏";
+"NSStringrightMyDownloads" = "我的下载";
+
+//视频下载
+"NSStringDownloadSuccess" = "下载成功";
+"NSStringDownloadFailed" = "视频下载失败";
+"NSStringDownloadFailedMessage" = "请检查网络，重新下载";
+"NSStringPleaseSelectList" = "请选择需要下载的视频";
+
+"NSStringOtherlogin"="您的账号在其他地方登陆了,已被迫下线！";
+
+"LocalStringModifyPasswodFaild"="修改失败";
+
+"LocalStringNotiUserUse"="您有一个星期未使用%@了,快去看看有什么新的动态吧！";
+
+
+"LocalStringEditButtonTitle"="编辑";
+
+"LocalStringClickSelectPhoto"="点击选取照片";
+
+"NSStringDownloaded" = "已下载";
+"NSStringFindFriendError" = "查找失败";
+
+//发邮件
+"LocalStringDotSupportedSendMail"="当前系统版本不支持应用内发送邮件功能";
+"LocalStringNoSettingMailAccount"="用户没有设置邮件账户";
+"LocalStringMessageHasBeenSent"="邮件已发送";
+"NSStringGoToSetting"= "去设置";
+"NSStringClose" = "关闭";
+
+"NSStringNetworkError" = "网络故障";
+"NSStringNetworkErrorMessage" = "网络出现故障, 请检查网络无误后继续操作。";
+
+"NSStringDataError" = "数据请求异常";
+"NSStringSlide" = "向左向右滑动试试看";
+
+//详细页面参数
+"YunPing_type" = "类型";
+"YunPing_size" = "分辨率";
+"YunPing_designer" = "设计者";
+"YunPing_description" = "描述";
+
+"YunPing_PhysicalSize" = "物理尺寸";
+"YunPing_Weight" = "重量";
+"YunPing_Brightness" = "亮度";
+"YunPing_Power" = "功耗";
+"YunPing_Install" = "安装方式";
+"YunPing_Price" = "价格";
+
+
+
+
+
+
+//详细页面参数
+"YunPing_type" = "类型";
+"YunPing_size" = "分辨率";
+"YunPing_designer" = "设计者";
+"YunPing_description" = "描述";
+
+"YunPing_PhysicalSize" = "物理尺寸";
+"YunPing_Weight" = "重量";
+"YunPing_Brightness" = "亮度";
+"YunPing_Power" = "功耗";
+"YunPing_Install" = "安装方式";
+"YunPing_Price" = "价格";
+
+
+"YunPing_headimage" = "头像";
+"YunPing_name" = "名字";
+"YunPing_tel" = "电话";
+"YunPing_qq" = "QQ";
+"YunPing_aboutdesigner" = "自我介绍";
+
+//密码判断
+"Mustbewithinrange" = "密码的长度范围不能小于8位大于16位";
+"Mustincludelowercasecharacter" = "密码必须包含小写字母";
+"Mustincludeuppercasecharacter" = "密码必须包含大写字母";
+"Mustincludedecimaldigitcharacter" = "密码必须包含数字";
+
+
+
+//论坛
+"YunPing_Forum"="论坛中心";
+
+
+
+"Yunping_showDesigns" = "查看设计作品";
+
+"Yunping_comments" = "相关评论";
+"Yunping_NOcomments" = "暂无评论";
+"Yunping_saySomething" = "说点儿什么";
+"Yunping_contentNil" = "评论内容不能为空";
+"Yunping_succeed" = "评论成功";
+"Yunping_failure" = "评论失败";
+"Yunping_pleaseLoginFirst" = "请登陆后再评论";

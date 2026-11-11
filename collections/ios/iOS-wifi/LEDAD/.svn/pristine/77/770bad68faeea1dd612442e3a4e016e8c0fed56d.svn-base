@@ -1,0 +1,55 @@
+
+
+设计师应用上传分为三步
+
+1上传应用基础信息
+http://www.ledmediasz.com/api_yunping/api_yingyong_uploadfiles.aspx
+参数
+type      步骤  传 “1”
+title     标题
+description  描述
+author    登录后用户（设计师）id
+Filedata  图片        
+
+成功
+"{\"msg\":\"1\",\"id\":\"" + maxid + "\"}"
+失败
+{\"msg\":\"0\"}
+
+
+2上传应用图片信息
+http://www.ledmediasz.com/api_yunping/api_yingyong_uploadfiles.aspx
+参数
+type      步骤  传 “2”
+parm1     参数1
+parm2     参数2
+parm3     参数3
+parm4     参数4
+id        第一步返回的id
+Filedata  图片   
+
+成功
+{\"msg\":\"1\"}
+失败
+{\"msg\":\"0\"}   
+
+
+3上传应用图片信息
+http://www.ledmediasz.com/api_yunping/api_yingyong_uploadfiles.aspx
+参数
+type      步骤  传 “3”
+id        第一步返回的id
+Filedata  xml 文件
+
+成功
+{\"msg\":\"1\"}
+失败
+{\"msg\":\"0\"}   
+
+
+
+
+
+
+
+

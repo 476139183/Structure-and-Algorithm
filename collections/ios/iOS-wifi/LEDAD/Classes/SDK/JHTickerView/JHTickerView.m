@@ -1,0 +1,254 @@
+//
+//  JHTickerView.m
+//  Ticker
+//
+//  Created by Jeff Hodnett on 03/05/2011.
+//  Copyright 2011 Applausible. All rights reserved.
+//
+
+#import "JHTickerView.h"
+#import <QuartzCore/QuartzCore.h>
+
+@interface JHTickerView(Private)
+-(void)setupView;
+-(void)animateCurrentTickerString;
+-(void)pauseLayer:(CALayer *)layer;
+-(void)resumeLayer:(CALayer *)layer;
+@end
+
+@implementation JHTickerView
+
+@synthesize tickerStrings;
+@synthesize tickerSpeed;
+@synthesize loops;
+@synthesize direction;
+@synthesize tickerFont;
+@synthesize tickerColor;
+@synthesize tickerLabel;
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        // Initialization code
+		[self setupView];
+    }
+    return self;
+}
+
+-(id)initWithCoder:(NSCoder *)aDecoder {
+	if( (self = [super initWithCoder:aDecoder]) ) {
+		// Initialization code
+		[self setupView];
+	}
+	return self;
+}
+
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect
+{
+    // Drawing code
+}
+*/
+
+- (void)dealloc
+{
+	[tickerLabel release];
+	[tickerStrings release];
+	
+    [super dealloc];
+}
+
+-(void)setupView {
+//	// Set background color to white
+//	[self setBackgroundColor:[UIColor whiteColor]];
+//	
+//	// Set a corner radius
+//	[self.layer setCornerRadius:5.0f];
+//	[self.layer setBorderWidth:2.0f];
+//	[self.layer setBorderColor:[UIColor blackColor].CGColor];
+	[self setClipsToBounds:YES];
+	
+	// Set the font
+//    if (!tickerFont) {
+//        tickerFont = [UIFont fontWithName:@"Marker Felt" size:22.0];
+//    }
+	
+    
+	
+	// Add the label (i'm gonna center it on the view - please feel free to do your own thing)
+	tickerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.frame.size.height / 4, self.frame.size.width, self.frame.size.height)];
+	[tickerLabel setBackgroundColor:[UIColor clearColor]];
+	[tickerLabel setNumberOfLines:1];
+//	[tickerLabel setFont:tickerFont];
+//    [tickerLabel setTextColor:tickerColor];
+	[self addSubview:tickerLabel];
+	
+	// Set that it loops by default
+	loops = YES;
+    
+    // Set the default direction
+    direction = JHTickerDirectionLTR;
+}
+
+-(void)animateCurrentTickerString
+{
+    [tickerLabel setTextColor:tickerColor];
+    [tickerLabel setFont:tickerFont];
+	NSString *currentString = [tickerStrings objectAtIndex:currentIndex];
+	if (!currentString) {
+        return;
+    }
+    if ([currentString length]<1) {
+        return;
+    }
+	// Calculate the size of the text and update the frame size of the ticker label
+	CGSize textSize = [currentString sizeWithFont:tickerFont constrainedToSize:CGSizeMake(9999, self.frame.size.height) lineBreakMode:NSLineBreakByWordWrapping];
+
+    // Setup some starting and end points
+	float startingX = 0.0f;
+    float endX = 0.0f;
+    switch (direction) {
+        case JHTickerDirectionRTL:
+            startingX = -textSize.width;
+            endX = self.frame.size.width;
+            break;
+        case JHTickerDirectionLTR:
+        default:
+            startingX = self.frame.size.width;
+            endX = -textSize.width;
+            break;
+    }
+
+	// Set starting position
+	[tickerLabel setFrame:CGRectMake(startingX, tickerLabel.frame.origin.y, textSize.width, textSize.height)];
+	
+	// Set the string
+	[tickerLabel setText:currentString];
+		
+	// Calculate a uniform duration for the item
+    if (tickerSpeed>0) {
+        float duration = (textSize.width + self.frame.size.width) / tickerSpeed;
+        
+        // Create a UIView animation
+        
+        [UIView beginAnimations:@"nihao" context:nil];
+        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+        [UIView setAnimationDuration:duration];
+        [UIView setAnimationDelegate:self];
+        [UIView setAnimationDidStopSelector:@selector(tickerMoveAnimationDidStop:finished:context:)];
+        
+        // Update end position
+        CGRect tickerFrame = tickerLabel.frame;
+        tickerFrame.origin.x = endX;
+        [tickerLabel setFrame:tickerFrame];
+        
+        [UIView commitAnimations];
+        
+        if (myTimer) {
+            if (myTimer.isValid) {
+                [myTimer invalidate],myTimer = nil;
+            }
+        }
+        
+        
+    }else{
+//        float duration = 0;
+        
+        // Create a UIView animation
+        
+//        [UIView beginAnimations:@"nihao" context:nil];
+//        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+//        [UIView setAnimationDuration:duration];
+//        [UIView setAnimationDelegate:self];
+////        [UIView setAnimationDidStopSelector:@selector(tickerMoveAnimationDidStop:finished:context:)];
+//        
+//        // Update end position
+//        [tickerLabel setFrame:CGRectMake(0, tickerLabel.frame.origin.y, textSize.width, textSize.height)];
+//        
+//        [UIView commitAnimations];
+        
+        [tickerLabel setFrame:CGRectMake(0, tickerLabel.frame.origin.y, textSize.width, textSize.height)];
+        myTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(tickerMoveAnimationDidStop:finished:context:) userInfo:nil repeats:NO];
+        
+    }
+}
+
+-(void)tickerMoveAnimationDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context
+{
+	// Update the index
+	currentIndex++;
+	
+	// Check the index count
+	if(currentIndex >= [tickerStrings count]) {
+		currentIndex = 0;
+
+		// Check if we should loop
+		if(!loops) {
+			// Set not running
+			running = NO;
+		
+			return;
+		}
+	}
+	
+	// Animate
+	[self animateCurrentTickerString];
+}
+
+#pragma mark - Ticker Animation Handling
+-(void)start {
+	
+	// Set the index to 0 on starting
+	currentIndex = 0;
+	
+	// Set running
+	running = YES;
+	
+	// Start the animation
+	[self animateCurrentTickerString];
+}
+
+-(void)pause {
+	
+	// Check if running
+	if(running) {
+		// Pause the layer
+		[self pauseLayer:self.layer];
+		
+		running = NO;
+	}
+}
+
+-(void)resume {
+
+	// Check not running
+	if(!running) { 
+		// Resume the layer
+		[self resumeLayer:self.layer];
+		
+		running = YES;
+	}
+}
+
+#pragma mark - UIView layer animations utilities
+-(void)pauseLayer:(CALayer *)layer
+{
+    CFTimeInterval pausedTime = [layer convertTime:CACurrentMediaTime() fromLayer:nil];
+    layer.speed = 0.0;
+    layer.timeOffset = pausedTime;
+}
+
+-(void)resumeLayer:(CALayer *)layer
+{
+    CFTimeInterval pausedTime = [layer timeOffset];
+    layer.speed = 1.0;
+    layer.timeOffset = 0.0;
+    layer.beginTime = 0.0;
+    CFTimeInterval timeSincePause = [layer convertTime:CACurrentMediaTime() fromLayer:nil] - pausedTime;
+    layer.beginTime = timeSincePause;
+}
+
+@end

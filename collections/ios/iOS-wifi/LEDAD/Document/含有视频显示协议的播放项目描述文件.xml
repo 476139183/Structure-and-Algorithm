@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project><projectName>测试10</projectName><text><textContent></textContent><textRColor>251</textRColor><textGColor>251</textGColor><textBColor>251</textBColor><textBackgroundRColor>2</textBackgroundRColor><textBackgroundGColor>5</textBackgroundGColor><textBackgroundBColor>2</textBackgroundBColor><textBackgroundAlpha>0.0100</textBackgroundAlpha><textFontSize>18</textFontSize><textFontName>Arial</textFontName><textRollingSpeed>2</textRollingSpeed><textX>0.0</textX><textY>98.0</textY><textW>512.0</textW><textH>46.0</textH></text><masterScreenFrame><masterScreenX>0</masterScreenX><masterScreenY>0</masterScreenY><masterScreenW>160</masterScreenW><masterScreenH>640</masterScreenH></masterScreenFrame>
+    <materialListElement><key>1004</key><listItemElement><itemIndex>item0</itemIndex><duration>5</duration><filename>af3f48389b543702121ab52facd4ab3e.png</filename><filetype>Photo</filetype><x>0</x><y>0</y><w>240</w><h>800</h><direction>2</direction><angle>0</angle><video_frame_list>
+
+        <frame>
+            <!--关键帧的索引-->
+
+            <i>0</i>
+            <!--关键帧中所截取的画面坐标x-->
+
+            <x>0</x><!--关键帧中所截取的画面坐标y-->
+
+            <y>0</y><!--关键帧中所截取的画面宽-->
+
+            <w>160</w><!--关键帧中所截取的画面高-->
+
+            <h>640</h>
+
+        </frame>
+        
+        <!--frame节点为关键帧-->
+        
+    </video_frame_list></listItemElement>
+        </materialListElement></project>

@@ -1,0 +1,1066 @@
+/* 
+  Localizable.strings
+  LEDAD
+
+  Created by LDY on 13-9-25.
+
+*/
+
+"Login_Account" = "User";
+"Login_Password" = "Password";
+"Login_RememberAccount" = "Use password when start";
+"Login_Login" = "Login";
+
+"Root_OnlineCheck" = "Monitor";
+"Root_ScreenSetting" = "LedSetting";
+"Root_EnvironmentMonitoring" = "ScoutSetting";
+"Root_AdvancedConfiguration" = "AdvanceSetting";
+"Root_UserManagement" = "UserSetting";
+"Root_VersionMessage" = "Version Information";
+"Root_ScreenOptions" = "Sign Options";
+"Root_PlaybackOptions" = "Playback Options";
+
+
+
+
+
+
+
+"User_UserLists" = "User lists";
+"User_UserAccount" = "User";
+"User_UserPassword" = "Password";
+"User_ConfirmPassword" = "Confirm password";
+"User_UserAuthenticationAtStartup" = "User authentication at startup";
+"User_CancellationAccount" = "Logout";
+"User_AddAccount" = "Add User";
+"User_ChangePassword" = "Change Pwd";
+"User_DeleteAccount" = "Delete";
+"User_Prompt" = "Prompt";
+"User_LogoffContent" = "Log off the current account will enter the login screen! Need to enter the correct account number and password to enter the software!";
+"User_SameUserName" = "User name has been registered";
+"User_Null" = "The input is empty";
+"User_Create_Success" = "Account created successfully";
+"User_Password_NotTheSame" = "The two passwords do not match";
+"User_Password_MofifyTheSame" = "The password entered is consistent with the original password";
+"User_Input_NewPassword" = "Please enter your new password";
+"User_Input_PasswordWrong" = "The password entered is inconsistent with the original password";
+"User_Password_Input" = "Please enter your login password";
+"User_Delete_Success" = "Delete account successfully";
+
+"User_Modify_Success" = "Change Password success";
+
+"Modify_OriginalPassword" = "Original password";
+"Modify_NewPassword" = "New password";
+
+
+
+
+
+
+"Screen_OpenTheBoxToAdjust" = "Open Cabinet Adjustment";
+"Screen_Open_by_pointCorrection" = "Open Correction";
+"Screen_LockScreen" = "Lock Screen";
+"Screen_CloseScreen" = "Close Screen";
+"Screen_LevelStartingPoint" = "Start %@";
+"Screen_VerticalStartingPoint" = "Start %@";
+"Screen_ScreenPositionSettings" = "Screen Setting";
+"Screen_Brightness" = "Brightness";
+"Screen_Contrast" = "Contrast";
+"Screen_ColorTemperatureSetting" = "Color temperature";
+"Screen_RGB_Manual_setting" = "RGB manual setting";
+"Screen_Save_LED_screen_display_setting_parameters" = "Save LED screen display setting parameters";
+"Screen_Save" = "Save";
+
+
+
+
+
+
+"Expert_LoadData" = "Load Data";
+"Expert_SUB_file_information_transmission" = "SUB file information transmission";
+"Expert_SUB_file_data_transfer" = "SUB file data transfer";
+"Expert_SUB_issued_the_command_data" = "SUB data retention";
+"Expert_SCN_file_information_transmission" = "SCN file information transmission";
+"Expert_SCN_file_data_transfer" = "SCN file data transfer";
+"Expert_SCN_issued_the_command_data" = "SCN data retention";
+"Expert_Correction_file_information_transmission" = "Correction file information transmission";
+"Expert_Correction_file_data_transfer" = "Correction file data transfer";
+"Expert_Correction_issued_the_command_data" = "Correction data retention";
+"Expert_Online_Upgrade_file_information_transmission" = "Online Upgrade file information transmission";
+"Expert_Online_Upgrade_file_data_transfer" = "Online Upgrade file data transfer";
+"Expert_Online_Upgrade_issued_the_command_data" = "Online Upgrade data retention";
+"Expert_get_record" = "Gets the record";
+
+
+
+
+"Disconnect" = "Disconnect";
+"NetworkCommunicationFailure" = "Network Communication Failure";
+
+
+"Success" = "Success!";
+"Failed" = "Failed!";
+"Exception_data_correction" = "Exception data correction";
+"On_a_command_is_being_executed" = "On a command is being executed!";
+"On_a_command_execution_error" = "On a command execution error!";
+"Unknown_error" = "Unknown error!";
+"No_sending_card" = "No sending card!";
+"No_receiver_card" = "No receiver card!";
+"No_accessory_equipment" = "No accessory equipment!";
+"No_sub_file_data" = "No 'sub' file data!";
+"No_scn_file_data" = "No 'scn' file data!";
+"Server_side_data_is_not_completely" = "Server-side data is not completely!";
+"No_calibration_file_data" = "No calibration file data!";
+"No_online_upgrade_file" = "No online upgrade file!";
+"Password_wrong" = "The password is uncorrect, input again!";
+"User_wrong" = "The user is uncorrect, input again!";
+"Brightness_max100" = "\"Brightness\" has reached the maximum \"100\"";
+"Brightness_min0" = "\"Brightness\" has reached the minimum \"0\"";
+"Contrast_max100" = "\"Contrast\" has reached the maximum \"100\"";
+"Contrast_min0" = "\"Contrast\" has reached the minimum \"0\"";
+"R_max250" = "\"R\" has reached the maximum \"255\"";
+"R_min0" = "\"R\" has reached the minimum \"0\"";
+"Unknown" = "Unknown";
+"View_online_test_report" = "View report";
+"Clear_History" = "Clear Record";
+"Normal" = "Normal";
+"Abnormal" = "Abnormal";
+"Already_Connect" = "Connected";
+
+"RvcardSeting" = "RvcardSeting";
+"LedConnectSet" = "LedConnectSet";
+"Pixel_level_adjust" = "Pixel-level adjust";
+"Upgrade_Online" = "Upgrade Online";
+
+"Load" = "Load";
+"Send" = "Send";
+"Save" = "Save";
+
+"Correction_mode" = "Correction Mode";
+"Correction_mode1" = "256*256 8bit Brightness correction";
+"Correction_mode2" = "128*128 8bit Color Correction";
+"Correction_mode3" = "96*96 16bit Color Correction";
+"Correction_mode4" = "128*128 16bit Color Correction";
+"Full_File" = "Full-screen correction file";
+"Box_File" = "Cabinet Correction file";
+"Cabinet_position" = "Cabinet position";
+"Row" = "Row";
+"Col" = "Col";
+
+
+"Screen_connection_files" = "Screen connection files";
+"Please_add_files" = "Please add files";
+"Please_add_files_Detail" = "You need to connect the computer to the specified file";
+"Receiver_card_configuration_files" = "Receiver card configuration files";
+"Correction_file" = "Correction file";
+"txt_Documents" = "txt Documents";
+"vu_Documents" = "vu Documents";
+"lpbp_Documents" = "lpbp Documents";
+"Monitor_file" = "Monitor file";
+"bit_Documents" = "bit Documents";
+"rbf_Documents" = "rbf Documents";
+
+
+
+"GotNewVersion" = "Got a new version.upgrade?";
+"NSString17" = "Cancel";
+"Update" = "Update";
+"User_Name_Not_Ex" = "User name not exist!";
+"User_Delete_Admin" = "Administrator account can not be edited!";
+"User_ChangePassword_Detail" = "After successful password change, please re-login!";
+"User_DeleteAccount_Detail" = "Can not be recovered after deletion account, please exercise caution!";
+"AlreadyConnected" = "Connected";
+"NotConnect" = "Not connected";
+"Nothing" = "Nothing";
+"Something" = "Have";
+"Open" = "Open";
+"Close" = "Close";
+"Not_Matching" = "type of information sent or feedback does not match";
+"XCloudConfig_Login_Config" = "Login authentication";
+"XCloudConfig_CurrentVersion" = "Current version";
+
+
+"ScreenOptions_TerminalName" = "Terminal";
+"ScreenOptions_ScreenResolution" = "Screen Resolution";
+"ScreenOptions_address" = "Address";
+
+
+"Playback_BasicSettings" = "Basic Settings";
+"Playback_PlaySet" = "Play Settings";
+"Playback_TextPlay" = "Text Play";
+"Playback_add" = "Add";
+"Playback_delete" = "Delete";
+"Playback_segment" = "定段播放";
+"Playback_from" = "From";
+"Playback_to" = "To";
+"Playback_time" = "定时播放";
+"Playback_at" = "At";
+"Playback_PlayWindowLocation" = "Window position";
+"Playback_Original" = "Origin";
+"Playback_Custom" = "Custom";
+"Playback_FullScreen" = "Full screen";
+"Playback_OriginalSize" = "Original size";
+"Playback_CustomSize" = "Custom size";
+"Playback_PlayWindowSize" = "Window size";
+"Playback_Play" = "Play";
+"Playback_Pause" = "Pause";
+"Playback_Restart" = "Restart";
+"Playback_PauseText" = "Static text";
+"Playback_Remove" = "Remove";
+"Playback_Speed" = "Speed";
+"Playback_Size" = "Size";
+"Playback_TextContent" = "Content";
+"Playback_TimeSet" = "Time";
+"Playback_Date" = "Date";
+"Playback_hour" = "Time";
+"NoNewVersion" = "No new version";
+"NSStringReloadButton"="Try Again";
+"GotNewVersionUpdate" = "A new version, whether to upgrade！";
+"CheckUpdate" = "Upgrade";
+"NSStringYes"="OK";
+"NSStringNO"="Cancel";
+"NSString25" = "No network connection";
+
+
+
+
+//*********************************************************************
+"adedit_tishi1" = "Please restart iLED Sign";
+"adedit_Projectcannotbeempty" = "Project cannot be null ";
+"adedit_saveprojectIMG_0024.mp4luntanerror" = "Project saving error ";
+"adedit_backguplod"="Uplaod Background";
+"adedit_downobjecting"="Loading ";
+"adedit_savezimu"="Add Subtitles";
+"adedit_NOprject" = "Upload a project for iLED Sign";
+"Button_Forum" = "BBS";
+"adedit_kouling" = "Please input license.";
+"Tips" = "Tips";
+"Root_LEDADSheZhi" = "Settings";
+"Root_LEDADKeFu" = "ServiceCenter";
+"adedit_tuichu" = "Have dropped out Please unplug the power cord";
+"adedit_chongqi1" = "Already restart please wait";
+"adedit_Uploaded_successfully"="Upload Success";
+"adedit_tishi" = "More exciting next version, please stay tuned! !";
+"adedit_guanji"="Quit LED";
+"adedit_brightness"="Brightness";
+"adedit_Complete_set" = "Finish Setting";
+"adedit_Last_Set" = "Last Setting";
+"adedit_Published" = "Published";
+"adedit_backgroundColor"="Background";
+"adedit_chongqi" = "Reboot LED";
+"adedit_back" = "Back";
+"Root_LanguageSettings" = "Language Settings";
+"adedit_Loadthedefaultmaterial" = "Load the default material";
+"adedit_LoadMultiscreendisplaysolutions" = "Load Multi-Region display solutions";
+"adedit_LoadSinglescreendisplaysolutions" = "Load Single-Region display solutions";
+"adedit_Region" = "Region";
+"adedit_Item" = "Item";
+"adedit_Text" = "Text";
+"adedit_Project" = "Project";
+"adedit_Speed" = "Speed:";
+"adedit_Size" = "Size:";
+"adedit_settingsucess" = "SettingSucess";
+"adedit_Presstosettextcolor" = "Press to set text color";
+"adedit_Presstosettextbackgroundcolor" = "Press to set text background color";
+"adedit_SaveChange" = "Save Change";
+"adedit_ProName" = "Proj Name";
+"adedit_SaveProject" = "Save Project";
+"adedit_QuitPlay" = "Quit Play";
+"adedit_DeleteProj" = "Delete Proj";
+"adedit_PublishProj" = "Publish Proj";
+"adedit_EditProj" = "Edit Proj";
+"adedit_SaveProjandQuitEdit" = "Save Proj & Quit Edit";
+"adedit_RemoveList" = "Remove List";
+"adedit_AddList" = "Add List";
+"adedit_CleanList" = "Clean List";
+"adedit_Duration" = "Duration";
+"adedit_Done" = "Done";
+"adedit_MasterScreenRegionLabel" = "Master-Screen Region Setting";
+"adedit_selectedRegion" = "Seleted Region ID";
+"adedit_CancelPublish" = "Cancel";
+"adedit_xcoludsprompt" = "LEDAD";
+"adedit_Pleaseselectanitem" = "Please select an Item";
+"adedit_Anerroroccurredwhenconvertingformats" = "An error occurred when converting formats";
+"adedit_Nonetwork" = "No network connection";
+"adedit_Reconnect" = "Reconnect";
+"adedit_Close" = "Close";
+"adedit_saveprojecterror" = " error Saving project！";
+"adedit_selectaneditregion" = "Please select an editable Region!";
+"adedit_loaddefaultfinished" = "Load Finished";
+"adedit_defaultText" = "ZDEC is specialized in developing and researching various products for LED display and lighting drivers, control equipments, and relevant technologies. It is also a unique and global company which combines the IC design, IC application,  controllers, and technology together. ";
+"adedit_repeatedloadingmaterial" = "Whether repeated loading material picture!";
+"adedit_quitplayafterswitch" = "Project is playing,Please Click the [Quit Play]";
+"adedit_sendCompleted" = "Project publish completed!";
+"adedit_durationnotnull" = "Duration can not be empty!";
+"adedit_videodontsetduration" = "Do not allow to manually set the duration for the video!";
+"adedit_projectnamenotnull" = "Project Name can not be empty !!";
+"adedit_Publishoperation" = "Publish operation will update the server";
+"adedit_selectanProject" = "Please select an Project";
+"adedit_suretodelete" = "Are you sure to delete ?";
+"adedit_closeColorPicker" = "Close Color Picker";
+"adedit_matrialloading" = "Matrial is Loading ……";
+"Successanddangqiangundong" = "Save Success";
+"adedit_xmlfilePath_isnull" = "Project file read error!";
+"adedit_netconnecterror" = "Network connection error!";
+"adedit_textRegioncanntselect" = "Text area can not add pictures!";
+"adedit_projecttransation" = "Data transmission, please wait";
+"adedit_promptyes" = "YES";
+"User_Cancel" = "Cancel";
+"adedit_promptno" = "NO";
+"User_OK" = "Refresh";
+"adedit_textfont" = "Font";
+"adedit_isediting" = "Please exit the edit mode";
+"Root_upgrade" = "Upgrade LED";
+"adedit_dontupgrade" = "Program for the latest version！";
+"adedit_clickupgrade" = "Click the [Upgrade] to go to the upgrade process！";
+"adedit_upgradefinish" = "The upgrade is complete！";
+"adedit_checkupdatepakcage" = "Check New Upgrade package！";
+"adedit_upgradeprogram" = "Upgrade";
+"adedit_downloadupgradefileerror" = "Download package error!";
+"adedit_downloadupgradefilefinish" = "Download package completed!";
+"adedit_initpromptlabel" = "Please connect to the Internet , click Check upgrade package";
+"adedit_upgradeneterror" = "A network error occurred";
+"adedit_internetconnecterror" = "An error occurred while connecting to the internet !";
+"adedit_screenheighterror" = "Height of the screen must be between 1-1024 !";
+"adedit_Projectnamecannotbeempty" = "Project Name can not be empty！";
+"adedit_Behind_scene" = "Behind Scene";
+"adedit_Before_scene" = "Before Scene";
+"adedit_CleanBeforeList" = "Clear list";
+"adedit_CellOptionButton" = "More";
+"adedit_moreivew_backbutton" = "Back to list";
+"adedit_moreivew_deletebutton" = "Delete the list row";
+"adedit_moreivew_direction" = "Direction  ";
+"adedit_direction_up_to_down" = "up";
+"adedit_direction_right_to_left" = "right";
+"adedit_direction_down_to_up" = "down";
+"adedit_direction_left_to_right" = "left";
+"adedit_direction_up_to_noanimation" = "No";
+"adedit_Projectcannotlittle2pic" = "Foreground and background lists can not be less than 2 pictures";
+"adedit_Projectcannotbehindequitebefore" = "Foreground and background must be equal to the number of list";
+"adedit_defaultRegiontitle" = "Set the default";
+"adedit_SearchPublishProj" = "Search";
+"adedit_projectsavesuccess" = "Project successfully saved！";
+"adedit_durationdonttoolittle" = "The duration can not be less than 1 second！";
+"adedit_creategroup" = "Create Group";
+"adedit_inputgroupname" = "Please enter a name for the group";
+"adedit_groupxmlsavesuccess" = "Grouping information saved successfully";
+"adedit_continuous_play" = "Continuous Play";
+"adedit_playsendCompleted" = "Continuous play command sent successfully";
+"adedit_yunpinMarket" = "LED Market";
+"adedit_resetscreenbutton" = "Reset Data";
+"adedit_resetScreenMachine" = "Reset the screen where the data start";
+"adedit_RestDataProject" = "CleanScreen";
+"adedit_uploadproject" = "Upload";
+"adedit_downloadproject" = "Download";
+"adedit_downloadisCompleted"="Download completed";
+"adedit_downloadisfailed"="Download failed";
+"adedit_uploadprojectcompleted"="Upload Success";
+"adedit_uploadprojectfailed"="Upload project failure , network failure";
+"adedit_rotation_45"="Angle of rotation 45";
+"adedit_grouppicdeletesuccess"="Deleted successfully";
+"adedit_grouppicdeletefailed"="Delete failed";
+"adedit_music_ctrl"="Audio";
+"ad_edit_alerady_selected_music"="Selected audio file name:";
+"ad_edit_duration_music"="Duration ( unit: seconds ) :";
+"ad_edit_text_area"="Text Area";
+"ad_edit_image_area"="Image Area";
+"adedit_cleare_music"="Clear Video";
+"adedit_inexistenceUpdateFile"="Local upgrade file does not exist , go to the web server to download the upgrade file !";
+"adedit_swipe_hiddenlist"="Slide hide list";
+"adedit_saveediterror"="Error saving changes !";
+"adedit_deleteprojectsuccess"="Deleted！";
+"adedit_deleteprojectfailed"="Delete failed！";
+"adedit_promptclearImageList"="Are you sure clear the list ?";
+"adedit_applyRegionbuttontitle"="Apply";
+"adedit_inputdontisnull"="Text boxes can not be empty";
+"adedit_publishprojecting"="Published in progress !";
+"adedit_musicpromptlast"="Audio file has been saved to the file in the current application folder, click [ audio ] see";
+"adedit_musicpromptbefore"="Name is";
+"adedit_video_editer_ctrl"="Video";
+"adedit_tryChangeTransType"="Click OK to try to change the transport protocol to transfer project";
+"adedit_addVideo"="Add";
+"adedit_setDefaultAppplyTitle"="Set the default size for";
+"adedit_SaveAndPublishButton"="Save";
+"adedit_loadingvideo"="Loading...";
+"adedit_selectvideo"="Select a video file";
+"adedit_selectphoto"="Select some photos";
+"adedit_cancelselect"="Cancel";
+"adedit_selectphotoprompt"="Material Type";
+"adedit_musicdelbutton"="Delete";
+"adedit_tryRestScreenSuccess"="Reset Success";
+"adedit_tryRestScreenfailed"="Reset Failed";
+"adedit_clearButtontitle"="Clear";
+"adedit_moreivew_Alpha"="Alpha";
+"adedit_touming"="transparence";
+"adedit_butouming"="white";
+"adedit_upgradeerror"="error";
+"adedit_batterylow"="Battery Low";
+"adedit_downloadbuttontitle"="Download V2.0";
+"adedit_upgradebuttontitle"="Upgrade";
+"adedit_upgradetimeout"="error！";
+"adedit_resettimeout"="error！";
+"adedit_resetscreenprompt"="Note: Make sure you’re connecting to the LED wifi！";
+"adedit_downloadupgradepackage"="Note: Make sure you’re connecting to the Internet, before you click A button and don’t leave this page until you finish download.";
+"adedit_uploadupgradepackage"="Note: Make sure you’re connecting to the LED wifi！";
+"adedit_hide"="Hide";
+"adedit_show"="Show";
+"adedit_screenpDetect" = "LED Detect";
+"adedit_tongbu" = "Synchronous";
+"adedit_NoipError" = "No connection device,Please select a iLED Sign decice connected！！！";
+"adedit_png" = "kefu1";
+"adedit_selflianjie" = "CurrentConnecting:";
+"adedit_background" = "background";
+"baocun" = "UPDATE";
+"Yunping_logout" = "LOGOUT";
+"Yunping_edit" = "EDIT";
+"Yunping_showDesigns" = "SHOW DESIGNS";
+"Button_project"="Local Proj";
+"adedit_localProjects"="Local Project list";
+"adedit_wifipasswordbutton"="Setting wifi password";
+"adedit_wifipasswordsubmitbutton"="Save";
+"button_title_settings"="Settings";
+"adedit_wifimanager"="LED screen WiFi management";
+"adedit_downloadbuttontitle11"="Download V4.0";
+"Soft_SoftVersion" = "Software Version";
+"Soft_Version" = "Version";
+"Root_LEDADEditer" = "Contents Editing";
+"adedit_screenplaylist" = "LEDProject";
+"adedit_wifiIPsubmitbutton" = "Modify the gateway IP";
+"adedit_tishiupdate" = "Please select a terminal";
+"ScreenOptions_updateName" = "Setting TerminalName";
+"ScreenOptions_saveName" = "Save TerminalName";
+"Button_Newest" = "Newest";
+"Button_Industry" = "Net Proj";
+"Button_Account" = "Account";
+"Button_screenMarket" = "Market";
+"Button_reAD" = "Screenshot";
+"Button_Training" = "Training";
+"YunPing_SelectPhoto" = "Select Photo";
+"YunPing_Get160" = "Get160*640";
+"YunPing_Get240" = "Get240*800";
+"YunPing_SelectPhotoFromAlbum" = "Select photo from album";
+"YunPing_TakePhoto" = "Take photo";
+"YunPing_ImageSaved" = "Image has been saved to album!";
+"Yunping_NOImage" = "NO Image";
+"Yunping_SelectImageFirst" = "Please select one image first, and then click";
+"NSString17" = "Cancel";
+"NSString36" = "Log In";
+"NSString39" = "Register";
+"NSString40" = "Log In";
+"NSStringTelSample" = "As 13812345678";
+"NSString38" = "\"LED2Buy\"Account password";
+"NSStringCompanyName"="*Companyname";
+"NSStringMustWrite"="required";
+"NSStringNickName"="Nickname:";
+"NSStringcompanynameLabel"="Company Name:";
+"NSStringtelphoneLabel"="Phone:";
+"NSStringpasswordLabel"="Password:";
+"NSStringconfirmpassLabel"="Confirm Password:";
+"NSStringoptionalLabel"="Optional";
+"NSStringemailLabel"="Email:";
+"NSStringcompanyaddressLabel"="Address:";
+"NSStringNickNamePlaceholder"="enter Nickname";
+"NSStringcompanynameLabelPlaceholder"="enter Company Name";
+"NSStringtelphoneLabelPlaceholder"="enter Phone";
+"NSStringpasswordLabelPlaceholder"="enter Password";
+"NSStringconfirmpassLabelPlaceholder"="enter Confirm Password";
+"NSStringemailLabelPlaceholder"="enter Email";
+"NSStringcompanyaddressLabelPlaceholder"="enter Address";
+"MJRefreshFooterPullToRefresh" = "Pull to load more data";
+"MJRefreshFooterReleaseToRefresh" = "Loosen to release more data";
+"MJRefreshFooterRefreshing" = "Loading Data...";
+"MJRefreshFooterEndLoad" = "The end";
+"MJRefreshHeaderPullToRefresh" = "Pull down to refresh";
+"MJRefreshHeaderReleaseToRefresh" = "Loosen to refresh";
+"MJRefreshHeaderRefreshing" = "Refreshing";
+"MJRefreshLastTimeNotie" = "Last Updated";
+"NSStringYouNotlogin"="You're not logged in,please login first!";
+"NSStringYes"="YES";
+"NSStringOKButtonTitle" = "OK";
+"NSStringNO"="NO";
+"nsstringLogout"="Log Out";
+"NSStringName"="Name";
+"NSStringNamePlaceholder"="enter Name";
+"NSStringpasswordLengthPlaceholder"="Password Length not less than 6";
+"NSStringpasswordisEqualPlaceholder"="Password and confirmation password does not equal";
+"NSStringnameLengthPlaceholder"="Name length not less than two -letter";
+"shoujihaomabunengweikong"="Phone number can not be empty";
+"youxiangbunengweikong"="Mail can not be empty";
+"NSStringPhoneNumError"="Phone Num Error";
+"NSStringCompanynameLengthError"="Company Name can not be empty";
+"NSStringphoneLengthError"="Phone number length is incorrect";
+"NSStringServiceErrorRegFaild"="Server is busy , the registration fails";
+"Mustbewithinrange" = "The password length cannot be less than 8 or greater than 16";
+"Mustincludelowercasecharacter" = "The password must include lowercase character";
+"Mustincludeuppercasecharacter" = "The password must include uppercase character";
+"Mustincludedecimaldigitcharacter" = "The password must include decimal digit character";
+"NSString24" = "Prompt";
+"NSString25" = "No network connection";
+"NSStringAccountNotNull"="Account can not be Empty!";
+"NSStringPasswordNotNull"="Password can not be Empty!";
+"LocalStringAccountFormatError"="Malformed Account";
+"LocalStringModifyPasswodFaild"="Modify Faild";
+"NSStringRegSuccess"="Reg Success";
+"YunPing_headimage" = "Head portrait";
+"YunPing_name" = "Name";
+"YunPing_tel" = "Tel";
+"YunPing_qq" = "QQ";
+"YunPing_aboutdesigner" = "Self-introduction";
+"GotNewVersion" = "A new version, whether to upgrade！";
+"Update" = "Upgrade";
+"UpdateVersion" = "Update Version";
+"NoNewVersion" = "Congratulations!";
+"NSString18" = "Camera";
+"NSString19" = "Choose from album";
+"NSStringphoneLabelPlaceholder"="enter Phone";
+"NSString11" = "Please fill in your E-mail address.";
+"Language_LanguageSettingsForSimplifiedChinese" = "%@/Language";
+"Language_LanguageSettingsMessageForSimplifiedChinese" = "\n%@\n\n   Select 'OK', the software will jump to the main screen and enter the corresponding language environment!";
+"Language_OKForSimplifiedChinese" = "%@/OK";
+"Language_LanguageSettingsForTraditionalChinese" = "%@/Language";
+"Language_LanguageSettingsMessageForTraditionalChinese" = "\n%@\n\n   Select 'OK', the software will jump to the main screen and enter the corresponding language environment!";
+"Language_OKForTraditionalChinese" = "%@/OK";
+"Language_LanguageSettingsForEnglish" = "%@/Language";
+"Language_LanguageSettingsMessageForeEnglish" = "\n%@\n\n   Select 'OK', the software will jump to the main screen and enter the corresponding language environment!";
+"Language_OKForEnglish" = "%@/OK";
+"Language_LanguageSettingsForDeutsch" = "%@/Language";
+"Language_LanguageSettingsMessageForDeutsch" = "\n%@\n\n Stay tuned!";
+"Language_OKForDeutsch" = "%@/OK";
+"Language_LanguageSettingsForFrench" = "%@/Language";
+"Language_LanguageSettingsMessageForFrench" = "\n%@\n\n   Stay tuned!";
+"Language_OKForFrench" = "%@/OK";
+"Language_LanguageSettingsForItaliana" = "%@/Language";
+"Language_LanguageSettingsMessageForItaliana" = "\n%@\n\n   Stay tuned!";
+"Language_OKForItaliana" = "%@/OK";
+"Language_LanguageSettingsForEspanish" = "%@/Language";
+"Language_LanguageSettingsMessageForEspanish" = "\n%@\n\n   Stay tuned!";
+"Language_OKForEspanish" = "%@/OK";
+"Language_LanguageSettingsForPycckNN" = "%@/Language";
+"Language_LanguageSettingsMessageForPycckNN" = "\n%@\n\n   Stay tuned!";
+"Language_OKForPycckNN" = "%@/OK";
+"Language_LanguageSettingsForPortugues" = "%@/Language";
+"Language_LanguageSettingsMessageForPortugues" = "\n%@\n\n   Stay tuned!";
+"Language_OKForPortugues" = "%@/OK";
+"Language_LanguageSettingsForJapanese" = "%@/Language";
+"Language_LanguageSettingsMessageForJapanese" = "\n%@\n\n   Stay tuned!";
+"Language_OKForJapanese" = "%@/OK";
+"Language_LanguageSettingsForKorean" = "%@/Language";
+"Language_LanguageSettingsMessageForKorean" = "\n%@\n\n   Stay tuned!";
+"Language_OKForKorean" = "%@/OK";
+"Language_LanguageSettingsForALB" = "%@/Language";
+"Language_LanguageSettingsMessageForALB" = "\n%@\n\n   Stay tuned!";
+"Language_OKForALB" = "%@/OK";
+
+//4.1.0
+"Online_Refresh" = "刷新";
+"LED_Number" = "云屏数量";
+"adedit_benci" = "本次设置";
+
+//*********************************************************************
+
+
+
+//tabBarItems
+"NSStringHomepage" = "Homepage";
+"NSStringAccount" = "Account";
+"NSStringCommunity" = "Community";
+"NSStringSetting" = "Setting";
+
+
+
+//产品页面
+"NSStringTechnicalParameters" = "Technical Parameters";
+"NSStringProductFeatures" = "Product Features";
+"NSStringClose" = "CLOSE";
+
+"NSString1" = "Client Management";
+"NSString2" = "Add photos";
+"NSString4" = "Campany";
+"NSString6" = "Address";
+"NSString8" = "E-mail";
+"NSString10" = "Pushed to the client";
+"NSString12" = "There option is empty! Please fill out the re-registration!";
+"NSString13" = "Please input 11-digit phone number.";
+"NSString14" = "Message";
+"NSString15" = "Username can’t be null";
+"NSString16" = "Select";
+"NSString20" = "Add";
+"NSString21" = "Search";
+"NSString22" = "Done";
+"NSStringSaveEdit" = "submit";
+
+
+"NSString32" = "No, thank you";
+"NSString33" = "Now go score";
+"NSString34" = "Talk later";
+
+
+"NSString35"="ZDEC";
+"NSString41" = "Account is incorrect";
+"NSString42" = "Login successful";
+"NSString43" = "A video refresh";
+"NSString44" = "Log In";
+"NSString45" = "Please login to get more service!";
+"NSString48" = "Pull to refresh";
+"NSString49" = "Last updated";
+"NSString50" = "Raja on upload";
+"NSString51" = "Refreshing";
+"NSString52" = "Loading";
+"NSString53" = "Refresh released";
+"NSString54" = "Load more releases";
+"NSString55" = "Upload more on LAC";
+"NSString56" = "Without";
+"NSString57" = "Today";
+"NSString58" = "Yesterday";
+"NSString59" = "The day before yesterday";
+"NSString60" = "password must be 6 characters long or more";
+"NSString62" = "Two passwords must be the same.!";
+"NSString63" = "Registration is successful, verify that the information has been filled in to send the current mailbox";
+"NSString64" = "Contact Us";
+"NSString65" = "Hotline";
+
+"NSString67" = "Sales List";
+"NSString68" = "Get more information salespeople";
+
+"NSString71" = "Sorry, this device does not support dial-up.";
+"NSString73" = "Technical Support";
+
+"NSString81" = "Push the contents of the";
+"NSString82" = "Authorized login";
+
+"NotAuth" = "Not authorized";
+"UserInfo" = "User Information";
+"SinaWeibo" = "Sina";
+"TencentWeibo" = "Tencent";
+"CheckUpdate" = "Updates";
+"Version" = "V2.1.2";
+"NoNewVersion" = "No new version";
+"GotNewVersionUpdate" = "A new version, whether to upgrade！";
+"PerformDate" = "yyyy/MM/dd";
+"PerformDates" = "yyyy/MM/dd/ K:mm:ss";
+"PerformDateAndTime" = "yyyy-MM-dd hh:mm:ss";
+"PushRegister" = "Push Register";
+"VideoTitle" = "Title:---";
+"VideoLength" = "Time:---";
+"VideoSize" = "Size:---";
+"VideoTitles" = "%@";
+"VideoLengths" = "Time:%@";
+"VideoSizes" = "Size:%@";
+"VideoSegment" = "The%1$dParagraph";
+"SaleManagement" = "Sales Management";
+"AddCustomer" = "New Client";
+"MyCustomer" = "My Clients";
+"SearchServersRecord" = "Services Records";
+"SearchComplaint" = "Complaints List";
+"AddressList" = "Address Book";
+"PersonalInfo" = "My Information";
+"CustomerList" = "Client List";
+"DetailInformation" = "Detail";
+"PushApp" = "push APP";
+"RepairButton" = "Repair Bill No";
+"ApplicationRecord" = "Application record";
+
+"ServersCenter" = "Service Center";
+"RepairCenter" = "Repairing Center";
+"LiveSupport" = "Technical Support";
+"RemoteSupport" = "Remote Support";
+"MyFreinds" = "My Friend";
+"ZQSpecial" = "ZDEC";
+
+"MyFavorites" = "My Favourite";
+"MyDownload" = "My Downloads";
+"MySalesperson" = "My Salesman";
+"VCard" = "E-cards";
+
+"ServiceDescription" = "After-sales Service Terms";
+"MaintenanceApplication" = "Service Request";
+"MaintenanceRecords" = "View Service Record";
+
+
+
+
+////////////////需修改部分/////////////////////////////////////
+
+"ContactZQ" = "Contact US";
+"ZQSpecial" = "LED2Buy";
+"StartApp" = "Experience it now";
+"NSString23" = "About\"LED2Buy\"";
+"NSString28" = "To\"LED2Buy\"Score";
+"NSString30" = "To\"LED2Buy\"Score";
+"NSString31" = "If you feel\"LED2Buy\"Useful, whether its assessment a fraction? Scoring process only takes a little time. Thank you for your support!";
+"NSString35" = "LED2Buy";
+"NSString37" = "as name@example.com";
+"NSString66" = "86-15989871168";
+"NSString70" = "manager@LED2Buy.com";
+"NSString74" = "Shenzhen Chip Optech Co.,Ltd.";
+"NSString75" = "TEL:86-15989871168";
+"NSString76" = "FAX:86-0755-82975893";
+"NSString77" = "Email:manager@LED2Buy.com";
+"NSString78" = "Address:Tower C , Baoshi Technological Park,Baoshi Road,Shiyan Street,Bao'an District.Shenzhen City China.";
+"NSString79" = "\"LED2Buy\"Overview";
+
+
+
+"NSStringContactLabel" = "Address Book";
+"NSStringDownloadLabel" = "Off-line Download";
+"NSStringMoreLabel" = "More";
+"NSStringMemberCompany" = "会员企业";
+"NSStringCompanyApp" = "企业APP";
+"NSStringDownloadAPP" = "猛戳上方的图标,立即下载该企业APP!您还可以通过下方的按钮了解如何拥有自己的企业APP!";
+"NSStringNoAPP" = "TA还没有自己企业的APP!猛戳下方的按钮您将拥有自己的企业APP!";
+"NSStringMyCompanyApp" = "拥有自己的企业移动APP";
+"NSStringServiceReturnExecption" = "Server exception, please try again later！";
+
+"NSStringPleaseLogin" = "Please Login！";
+"Delete"="Delete";
+
+"ZdecMoreSettingLabel"="Offline Download";
+"NSStringClearCacheLabel"="Clear Cache";
+"NSStringCheckVerLabel"="Updates";
+"NSStringLinkedLabel"="Links";
+"NSStringPingfenLabel"="Send Feedback";
+"NSStringGongnengJieshaoLabel"="Function";
+
+"NSStringNetExecption"="Network Anomaly";
+"NSStringClearCacheSuc"="Clear Cache Success";
+
+"RecentMyFreinds"="Recent Contact";
+"FriendsListIncludeSale"="Friends List";
+
+"NSStringConfirmAddFriendLabel"="Added confirmed";
+
+"NSStringReadMessageListFaildLabel"="Failed to read chats !";
+"NSStringTaAddFriendsLabel"="Add you as a friend";
+"NSStringJujueLabel"="Refuse";
+"NSStringConfirmLabel"="Agree";
+"NSStringNetErrorConfirmFaildLabel"="Network failure ,rejected failed!";
+"NSStringFindPhotosFaild"="Visit Photo Gallery Error";
+"NSStringUploadPhotoFaild"="Upload picture failed";
+
+"nsstringMyAccount"="My Account";
+
+"forwardMainGaridButton"="Main";
+
+
+"NSStringSuccessCase"="Case";
+"NSStringNewsCenter"="News";
+"NSStringAboutString"="About";
+
+"NSStringDeleteMessageList"="Delete Record";
+"NSStringReadMessageListFaild"="Read Record Faild!";
+"NSStringSendFaild"="Net Error,Send Faild";
+"Sendcontentscannotempty"="Send the contents can not be empty!";
+
+"NSStringModifySuccess"="Success";
+"NSStringyuanmimahexinmimabuneng"="Original and new passwords can not be the same";
+"NsstringMyaccount"="My Account";
+
+
+
+"sz_zdec_map_img"="sz_zdec_map_img.png";
+"CompanyAddress"="Company Address";
+"button_image_back"="back_en.png";
+"nsstringRegisterButtonImage"="register_en.png";
+"NSStringNewMessageList"="New message!";
+"NSStringExit"="Exit";
+"NSStringModifyPass"="Modify Password";
+"NSStringFindFriend"="Find";
+
+"sellcenterButtonpng"="sellcenter_en.png";
+"servicecenterButtonpng"="servicecenter_en.png";
+
+"NSStringNewsTitle"="News";
+"NSStringCaseTitle"="Case";
+"NSStringProductTitle"="Product";
+"NSStringVideoTitle"="Video";
+"NSStringDocTitle"="Doc";
+
+
+"NSStringNoPermission"="Sorry, you do not have permission for this service !";
+
+"NSStringAddFailed"="Add Failed";
+"NSStringSubmitApplication"="Submit the application is successful";
+"NSStringTimeStr"="Time";
+
+"NSStringRepairServiceTable"="Repair Service Table";
+"NSStringLoading"="Loading...";
+"NSStringselectOrientationLands"="Horizontal or vertical screen";
+"NSStringHorizontal"="Horizontal";
+"NSStringVertical"="Vertical";
+
+
+
+
+
+//ServersMaintenanceApplicationViewController
+"NSStringContactTitle"="*Linkman";
+"NSStringContactTel"="*Tel";
+"NSStringJiJianDanHao"="*Order no.";
+"NSStringTuiLiaoDanHao"="Rejected material no.";
+"NSStringCanPinMingCheng"="Product name";
+"NSStringCanPinXingHao"="Product model";
+"NSStringChuChanRiQi"="Date of production";
+"NSStringPCBBanHao"="PCB Board no.";
+"NSStringShuLiang"="Quantity";
+"NSStringXianXiangMiaoShu"="Phenomenal description";
+"NSStringPrice"="Price（￥）";
+"NSStringXIANCHANGtable"="On-site support request form";
+"NSStringYUANCHENtable"="Remote support application form";
+"NSStringFuWuDiDian"="Service location";
+"NSStringXianChangZhaoPian"="The scene photos";
+"NSStringTime"="Time";
+"NSStringCanPinMiaoShu"="Product description";
+"NSStringWenTiMiaoShu"="Problem description";
+"NSStringSet"="Set";
+"NSStringLianXiRen"="Linkman";
+//ServersRepairRecordListShowViewController
+"NSStringCompanyName1"="Companyname";
+"NSStringContactTitle1"="Linkman";
+"NSStringContactTel1"="Phone Number";
+"NSStringJiJianDanHao1"="Order no.";
+"NSStringWeiXiuJinDu"="The maintenance schedule";
+//ServersLiveSupportInformationViewController
+"NSStringNindemingzi"="Your name";
+"NSStringnindedianhua"="Your Tel";
+"NSStringxianchangzhaopian"="The scene photos";
+"NSStringwentimiaoshu"="Question description";
+//SalerMyCustomerViewController
+"NSStringCompany"="Company";
+"NSStringPosition"="Position";
+"NSStringUnlimited"="Unlimited";
+//SalerMyCustomerDetailInfoShowViewController
+"NSStringEditButton"="editUserInfoButton_en.png";
+"NSStringSubmitButton"="submit_en.png";
+//SaleRepairRecordListShowViewController
+"NSStringRepairRecordList"="Maintenance service request records";
+"NSStringMaintenanceSchedule"="Maintenance schedule";
+"NSStringMaintenanceCosts"="Maintenance costs";
+"NSStringfanchengkuaididan"="Return delivery list";
+//SaleLiveSupportInformationViewController
+"NSStringjishufuwushenqing"="Technical Service Application";
+"NSStringyuanchengfuwushenqing"="Remote Service Application";
+"NSStringRepairing"="Repairing";
+"NSStringRepaired"="Repaired";
+"NSStringTechServiceSchedule"="Service schedule";
+//SalerViewComplaintDetailViewController
+"NSStringClient"="Client";
+"NSStringtusuneirong"="The complaint content";
+//SalerPersonalDetailInfoViewController
+"NSStringSignature"="Signature";
+
+"NSStringgongxiangmingpian"="Sharing business cards";
+
+"gongsimingchengbunengweikong"="Company name cannot be empty";
+"lianxirenbunengweikong"="The contact cannot be empty";
+"dianhuabunengweikong"="The Tel cannot be empty";
+"jidiandanhaobunengweikong"="The Order no. cannot be empty";
+"NsstringDanhao"="No.";
+"NSStringReadMessageFaildList"="net error";
+
+"NSStringOfflineDownloadSuccess"="Download Complete";
+"NSStringOfflineDownloadFailed"="Download Failed, click the list to continue";
+"NSStringOfflineDownloadFail"="Click to continue";
+"NSStringOfflinedownload"="Offline download";
+"NSStringComplainteNotNull"="The complaint cannot be empty";
+
+"NSStringusernameNotFaild"="User name cannot be empty!";
+
+"NSStringDeleteMessageListFaild"="delete message faild！";
+"NSStringMessageListLoading"="Message Loading...";
+"NSStringNewserviceApplyList"="A new service application";
+"NSStringNewComplainList"="A new complaint";
+"NSStringDeleteNoti"="Sure to delete message list?";
+"NSStringcomplaintStr"="Complaint";
+
+"nsstringdownloadnews1"="Downloading News";
+"nsstringdownloadnews2"="Downloading Menu";
+"nsstringdownloadnews3"="Downloading Case";
+"nsstringdownloadnews4"="Downloading Menu";
+"nsstringdownloadnews5"="Downloading News";
+//modify yxm2014年03月04日16:44:24
+"nsstringdownloadunarchive"="Extracting Archive";
+
+"NSStringapplyerCompanyLabel"="Applicant company";
+"NSStringapplyerLabel"="Applicant";
+"NSStringapplyerPhoneLabel"="Applicant Phone";
+"NSStringTechServiceNumber"="Technical service No.";
+
+"NSStringTechServiceSchedule"="service schedule";
+"NSStringComplaintToast"="Thank you for your complaint, your opinion is our motivation. We will be handled promptly and reply!";
+"NSStringPersonInfomation"="Personal information";
+
+"NSStringInputPhoneOrEmail"="Please enter mobile/email";
+"NSStringAddFriendSuccess"="Friend request information issued";
+"NSStringTelPhone"="Phone";
+"NSStringOfflinedownloadPhoto"="Offline Download Photo";
+"NSStringOfflineDownloading"="Downloading………………";
+"toNextTimeLabel"="to";
+"NSSteingUpScrollIntoMain"="Slide into Home";
+"NSStringWebDownload"="Download";
+"NSStringWebCollect"="Collect";
+"NSStringWebShare"="Share";
+"NSStringWebPush"="Push";
+"NSStringInputMessagePlaceHolder"="Input Message";
+"NSStringMessageSendButton"="Send";
+
+"NSStringPushPage"="Push page";
+"NSStringisSclectCustomer"="Selected customers";
+"NSStringSelectedContent"="Selected content";
+"NSStringConfirmPush"="OK";
+"NSStringPushSuccess"="Push Success";
+"NSStringPushList"="Push List";
+
+"NSStringNotificationErrorFaild"="Notify unavailable";
+
+"NSStringMagazine" = "Magazine";
+//下载分享
+"NSStringCollectSuccess"="Success!";
+"NSStringSuccessfullycanceled"="Successfully Canceled！";
+"NSStringDownloadDataSuccess"="Download Success!";
+
+"NSStringDownloading"="Downloading....!";
+
+"NSStringDownloaded"="Downloaded!";
+
+
+//产品页面
+"NSStringTechnicalParameters" = "Technical Parameters";
+"NSStringProductFeatures" = "Product Features";
+
+"NSStringShareButton" = "Share";
+"NSStringSelectButton" = "Menu";
+
+
+"NSStringDownload" = "Download";
+"NSStringCollect" = "Collect";
+"NSStringCalculatorLabel" = "Calculator";
+
+
+//计算器
+"gongzhi_danwei"="Metric";
+"yingzhi_danwei"="Imperial";
+"danwei_xuanze"="Units";
+"Cabinet_Parameters" = "Cabinet Parameters";
+"Screen_Physical_Parameters" = "Screen Physical Parameters";
+"Screen_Performance_Parameters" = "Screen Performance Parameters";
+"Other_Parameters" = "Other Parameters";
+
+"Cabinet_Width" = "Cabinet Width";
+"Cabinet_Height" = "Cabinet Height";
+"Cabinet_Resolution" = "Cabinet Resolution";
+"Cabinet_Weight" = "Cabinet Weight";
+"Average_Power_Area" = "Average Power Area";
+"Total_Power_Area" = "Total Power Area";
+
+"Screen_Width" = "Screen Width";
+"Screen_Height" = "Screen Height";
+"Screen_Area" = "Screen Area";
+"Pixels_Wide" = "Pixels Wide";
+"Pixels_High" = "Pixels High";
+"Aspect_Ratio" = "Aspect Ratio";
+"Total_Weight" = "Total Weight";
+
+"Pixel_Pitch" = "Pixel Pitch";
+"Brightness" = "Brightness";
+"Total_Power" = "Total Power";
+"Viewing_Angle" = "Viewing Angle";
+"Minimum_Viewing_Distance" = "Minimum Viewing Distance";
+"LED_Type" = "LED Type";
+"Pixel_Configuration" = "Pixel Configuration";
+
+"Gray_Scale" = "Gray Scale";
+"Refresh_Frequency" = "Refresh Frequency";
+"Input_Power_Frequency" = "Input Power Frequency";
+"Input_Voltage" = "Input Voltage";
+"Ingress_Protection" = "Ingress Protection";
+"Weather_Rating" = "Weather Rating";
+"Operating_Temperature" = "Operating Temperature";
+"Operating_Humidity" = "Operating Humidity";
+
+"Cabinet_Width_Number" = "Cabinet Width";
+"Cabinet_High_Number" = "Cabinet High";
+
+"Total" = " Total:";
+
+"NSStringCalculator" = "Calculator";
+
+//右侧下载收藏按钮
+"NSStringrightNews" = "News";
+"NSStringrightProduct" = "Products";
+"NSStringrightCase" = "Cases";
+"NSStringrightPlan" = "Plans";
+"NSStringrightVideo" = "Videos";
+
+"NSStringrightTools" = "My Tools";
+"NSStringrightFavorites" = "Collection";
+"NSStringrightMyFavorites" = "My Favorites";
+"NSStringrightMyDownloads" = "My Downloads";
+
+
+//视频下载
+"NSStringDownloadSuccess" = "Download success";
+"NSStringDownloadFailed" = "Video download failure";
+"NSStringDownloadFailedMessage" = "Please try again later";
+"NSStringPleaseSelectList" = "Please select the video you want to download";
+
+
+"NSStringOtherlogin"="Your account landed elsewhere , has been forced off the assembly line !";
+
+
+"LocalStringNotiUserUse"="You have been there one week unused %@, and go see what the new dynamic of it!";
+
+"LocalStringGetBaseInfoError"="Obtain account information error";
+
+"MJRefreshFooterPullToRefresh" = "Pull to load more data";
+"MJRefreshFooterReleaseToRefresh" = "Loosen to release more data";
+"MJRefreshFooterRefreshing" = "Loading Data...";
+"MJRefreshFooterEndLoad" = "The end";
+
+"MJRefreshHeaderPullToRefresh" = "Pull down to refresh";
+"MJRefreshHeaderReleaseToRefresh" = "Loosen to refresh";
+"MJRefreshHeaderRefreshing" = "Refreshing";
+"MJRefreshLastTimeNotie" = "Last Updated";
+
+"LocalStringEditButtonTitle"="Edit";
+"LocalStringClickSelectPhoto"="Select Photo";
+
+"NSStringDownloaded" = "Downloaded";
+"NSStringFindFriendError" = "Find friends failed";
+
+//发邮件
+"LocalStringDotSupportedSendMail"="The current version does not support the application of the system to send e-mail feature";
+"LocalStringNoSettingMailAccount"="The user does not set up a mail account";
+"LocalStringMessageHasBeenSent"="Email has been sent";
+"NSStringGoToSetting"= "Go To Set";
+
+
+"NSStringNetworkError" = "Network failure";
+"NSStringNetworkErrorMessage" = "Network failure, please check the network.";
+
+"NSStringDataError" = "Data error";
+"NSStringSlide" = "Try to slide left or right";
+
+//详细页面参数
+"YunPing_type" = "Type";
+"YunPing_size" = "Resolution";
+"YunPing_designer" = "Desingner";
+"YunPing_description" = "Description";
+
+"YunPing_PhysicalSize" = "Size";
+"YunPing_Weight" = "Weight";
+"YunPing_Brightness" = "Brightness";
+"YunPing_Power" = "Power";
+"YunPing_Install" = "Install";
+"YunPing_Price" = "Price";
+
+
+
+
+
+"Yunping_comments" = "Comments";
+"Yunping_NOcomments" = "No Comments";
+"Yunping_saySomething" = "Say something";
+"Yunping_contentNil" = "Comment cannot be empty!";
+"Yunping_succeed" = "Succeed";
+"Yunping_failure" = "Failure";
+"Yunping_pleaseLoginFirst" = "Please go to login first";

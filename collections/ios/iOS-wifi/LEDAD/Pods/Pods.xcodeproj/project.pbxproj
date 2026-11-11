@@ -1,0 +1,962 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02918BF3CF424A10A516B98B /* UIImage+MRImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = F047D4EDC0A94680950422A1 /* UIImage+MRImageEffects.h */; };
+		0A902B70B23C4024897C6E79 /* ALAsset+accessibilityLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DDDADB89234D0282D7EDF1 /* ALAsset+accessibilityLabel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0ABA1DC88E554659BC557918 /* Pods-MRProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE247F453C614916BF1DEBFF /* Pods-MRProgress-dummy.m */; };
+		15A963EBCCB14E40AD2DBA4C /* MRProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E09CD1B5A8E14187A0A79665 /* MRProgressView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		1755AADB483949B8878CD2CE /* MRBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D86B77A517B4210A56BA415 /* MRBlurView.h */; };
+		19F750607121494C8A80B778 /* MRActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06469AC58ADA4E5AAA2A3977 /* MRActivityIndicatorView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		1AC90F39735240D992117354 /* CTAssetItemViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A38AE05E2C4B4C1C8943D5E7 /* CTAssetItemViewController.h */; };
+		1DCCE58C0B404C7EB5529935 /* CTAssetsGroupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 898C1787217540D9B58B7B2C /* CTAssetsGroupViewController.h */; };
+		21DD702F133A4C21A6D3BA7C /* ALAsset+accessibilityLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 28035BF9B30B44C080D52ADE /* ALAsset+accessibilityLabel.h */; };
+		25EF9182FE2F4D8397E7790B /* MRProgressHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B0D899FB0849EDBDB3ABAE /* MRProgressHelper.h */; };
+		2BC5DAE6A27844B39425A5F1 /* ALAssetsGroup+isEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9DF472515427798063C0D /* ALAssetsGroup+isEqual.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		36C344A449724E7E97D45A75 /* CTAssetsPickerConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC6807CAE204F2DA38523EB /* CTAssetsPickerConstants.h */; };
+		38A86F63763441369FC5211A /* MRProgressOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D59873B5ED2C4183ADBD3969 /* MRProgressOverlayView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		3DCBCC824A314ABCB1F3EE60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916B06B16EF34049A07E2CEA /* Foundation.framework */; };
+		44153407CC6D47BE833C6588 /* Pods-CTAssetsPickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E746024F2E1E406788020E27 /* Pods-CTAssetsPickerController-dummy.m */; };
+		4762C2F2822C4463A7C37335 /* MRNavigationBarProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 037A444D6C4B461C90273FFC /* MRNavigationBarProgressView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		4C7EFB0C85294153821BBEF9 /* CTAssetsGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA0215D546944579234942E /* CTAssetsGroupViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		4FCB027E4FA04D37996797C7 /* MRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE604ECE879946DEBD007202 /* MRBlurView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		54BC6993855B4327ADE3D6A5 /* CTAssetsSupplementaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA43BAD8C2064800843A3185 /* CTAssetsSupplementaryView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		5547A93691E54F06BBBE3EF0 /* CTAssetsSupplementaryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FD478296BFC482BA5C1278A /* CTAssetsSupplementaryView.h */; };
+		5CAC1FD5383E4F9C9683377E /* ALAsset+isEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = E68CB614C1514A7B8B477BAA /* ALAsset+isEqual.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		5F7B38E3B9CC404F893DB891 /* ALAsset+assetType.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C22CD17EC1456EA7B5F568 /* ALAsset+assetType.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		609EEC95A9C542CCA793A0DC /* MRProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 415BDC136D5F4C84AB51003F /* MRProgress.h */; };
+		6225C0BDD976423F9F9C5FF0 /* CTAssetsViewControllerTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 10A2860D7D92436C8830F391 /* CTAssetsViewControllerTransition.h */; };
+		6267840BBBAD4BE2811B7AB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916B06B16EF34049A07E2CEA /* Foundation.framework */; };
+		67A62275921A493286D6E9CA /* CTAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D36061301452680F10A7C /* CTAssetsPickerController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6C119E0C39F04F2C8EAA4220 /* MRStopButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E03233BF46475F8B69108A /* MRStopButton.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6E22DC6F40FC4A0E98CD7595 /* CTAssetItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2521A11F07854CE397F3785D /* CTAssetItemViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		716B431F754B4B30ADCA976F /* NSDateFormatter+timeIntervalFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F851B23FF4EB5B9613A9B /* NSDateFormatter+timeIntervalFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		7443AADEDBB34ACE9837B27C /* CTAssetsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AD2F5DA436FE46E183ABB8E3 /* CTAssetsViewController.h */; };
+		76F90A7FC0744A6EB4AD23E9 /* MRIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B4060A46456884E0A2E4 /* MRIconView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		771F0D33B9504F7E9F85FC52 /* MRProgressOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F26D83377B64267835DCC3A /* MRProgressOverlayView.h */; };
+		7DFFD9678E0042728B42D013 /* CTAssetsPickerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 92410DF51A1F4519A0303A17 /* CTAssetsPickerConstants.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		819F1AA9D12F406CB6A9F55B /* ALAssetsGroup+isEqual.h in Headers */ = {isa = PBXBuildFile; fileRef = F6733AC715084AF69F52AF5C /* ALAssetsGroup+isEqual.h */; };
+		8258663861844393BACA52EC /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE52894F80A4CFD9D040B8C /* Accelerate.framework */; };
+		82D7418FFB57400E9AF90AD9 /* CTAssetsPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 800A7DA327B64A3CAC4B779A /* CTAssetsPickerController.h */; };
+		85B20E3DE0AD4B3C9E7512CB /* MRProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 706F19DB921D49FDB6AD6DAF /* MRProgressView.h */; };
+		87553869C11848579B57D632 /* ALAsset+assetType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3681D4A2EE4B558B6D10DE /* ALAsset+assetType.h */; };
+		89B5AA5D9A5D4446B47E55AB /* ALAsset+isEqual.h in Headers */ = {isa = PBXBuildFile; fileRef = 002CC8B4A7794FEBA5FB082D /* ALAsset+isEqual.h */; };
+		8BCC55EFA7D14F4AABAAE724 /* libPods-CTAssetsPickerController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F262813D3DF94C3396B9BB01 /* libPods-CTAssetsPickerController.a */; };
+		8D06DD6C4CC540F0B346AA5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE8703121504A3B9F9B8382 /* CoreGraphics.framework */; };
+		8D899FE7A6374DA28C349ECC /* MRCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A96BC11A06A473C97A1F339 /* MRCircularProgressView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		8EA09CE25EA5490DA38C3B1F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FBA276F4884F8F92A99210 /* MediaPlayer.framework */; };
+		935B44AFA826411D8DC37F52 /* CTAssetsViewControllerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F26ECA297514BF39702CC90 /* CTAssetsViewControllerTransition.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		94AD79158845455B9F2DE770 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916B06B16EF34049A07E2CEA /* Foundation.framework */; };
+		96F55243109F45659D0211EA /* NSDateFormatter+timeIntervalFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 473C92A6C13D44D3B84D2EF0 /* NSDateFormatter+timeIntervalFormatter.h */; };
+		9928BB7E0E9F40C5A1D6BCB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F7E103D5414B62AD63B5D7 /* UIKit.framework */; };
+		9C5881A9CA8A4555853877CE /* MRCircularProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CD2D73F76CC43E2A5BDD129 /* MRCircularProgressView.h */; };
+		A06882D6C887462D8EB862DF /* MRNavigationBarProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B052EC206E64627A0B95AA6 /* MRNavigationBarProgressView.h */; };
+		A76EA1C7570B46289D72F4A8 /* MRStopableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 25A2290670EC4FD0B6617825 /* MRStopableView.h */; };
+		A8EFAF70A2504C668C1012DD /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA9C16413AA4721A3B827B7 /* Pods-dummy.m */; };
+		AC0FE250FF284EC793F9F194 /* CTAssetsGroupViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BAC65D58DA94F3FB0F3B72D /* CTAssetsGroupViewCell.h */; };
+		AE0E379671D94F40AE734B77 /* MRActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 604B888A4CBC440FA2996695 /* MRActivityIndicatorView.h */; };
+		AF3DF8054DE54CBE894F13A6 /* CTAssetsPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8070A559E2C049A29972E149 /* CTAssetsPageViewController.h */; };
+		AFA03ECD7D0B41CFAD7C1D5E /* CTAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDEFA6EAA27497AB4FAB7CC /* CTAssetsViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B49D1FD0E697442CA16E2EE0 /* CTAssetScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C79EE9B32B4524A9364701 /* CTAssetScrollView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B980E77EE8A4490C8EBF8F19 /* UIImage+MRImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 18514908DA4A4657B55A544B /* UIImage+MRImageEffects.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		BBD5DB81865B48468D34099E /* MRIconView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7F9FAB6044845EC96F6AEBC /* MRIconView.h */; };
+		C0398E4B13154CD08054359D /* CTAssetsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6858D385BF45F2830EB4D6 /* CTAssetsViewCell.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C11E54F22B534844910FD263 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79D617499AB4B09B2FCF9A3 /* QuartzCore.framework */; };
+		CCC290D587784EE0BA9419C5 /* libPods-MRProgress.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFFCF81D11A4920827C8611 /* libPods-MRProgress.a */; };
+		D5186A595494497AB45C589D /* CTAssetsGroupViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A87C5B4321419AB62BCCC2 /* CTAssetsGroupViewCell.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D9151C1209F645CA870C73E7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E002C60C1D9549618F88322F /* AssetsLibrary.framework */; };
+		DD2BEE3158A44A3FAFE81104 /* CTAssetsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3853F9182C0E4F65BB3F52E7 /* CTAssetsPageViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DD8963B9682E48B1AB27BF48 /* MRStopButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A438674BA5A642C1829BC6EF /* MRStopButton.h */; };
+		F8573B08B5534CD59DDF9EEB /* CTAssetsViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 33C9CA2FA4A74D10968DBD80 /* CTAssetsViewCell.h */; };
+		FA18225AF86D48508AD37BBC /* CTAssetScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A2C5EDD667E4DF88C12CED4 /* CTAssetScrollView.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0281988E4DEF446DAD427785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA0C8CD75554E94BBE53C9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 322A3876FFDE46F6B301D446;
+			remoteInfo = "Pods-MRProgress";
+		};
+		71CCB23BB2F8443DB959AAE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA0C8CD75554E94BBE53C9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 743FA0A7C4B84D75BA7832EB;
+			remoteInfo = "Pods-CTAssetsPickerController";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002CC8B4A7794FEBA5FB082D /* ALAsset+isEqual.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALAsset+isEqual.h"; path = "CTAssetsPickerController/ALAsset+isEqual.h"; sourceTree = "<group>"; };
+		00DDDADB89234D0282D7EDF1 /* ALAsset+accessibilityLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALAsset+accessibilityLabel.m"; path = "CTAssetsPickerController/ALAsset+accessibilityLabel.m"; sourceTree = "<group>"; };
+		03640F0A9171420291B4A7D8 /* Pods-CTAssetsPickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CTAssetsPickerController-prefix.pch"; sourceTree = "<group>"; };
+		037A444D6C4B461C90273FFC /* MRNavigationBarProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRNavigationBarProgressView.m; path = src/Components/MRNavigationBarProgressView.m; sourceTree = "<group>"; };
+		04B0D899FB0849EDBDB3ABAE /* MRProgressHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRProgressHelper.h; path = src/Utils/MRProgressHelper.h; sourceTree = "<group>"; };
+		06469AC58ADA4E5AAA2A3977 /* MRActivityIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRActivityIndicatorView.m; path = src/Components/MRActivityIndicatorView.m; sourceTree = "<group>"; };
+		09D509084FB242D08A7DD2DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A81962BD83E4BCB866BF409 /* CTAssetsPickerVideo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerVideo@2x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerVideo.imageset/CTAssetsPickerVideo@2x.png"; sourceTree = "<group>"; };
+		0BAC65D58DA94F3FB0F3B72D /* CTAssetsGroupViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsGroupViewCell.h; path = CTAssetsPickerController/CTAssetsGroupViewCell.h; sourceTree = "<group>"; };
+		10A2860D7D92436C8830F391 /* CTAssetsViewControllerTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsViewControllerTransition.h; path = CTAssetsPickerController/CTAssetsViewControllerTransition.h; sourceTree = "<group>"; };
+		18514908DA4A4657B55A544B /* UIImage+MRImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MRImageEffects.m"; path = "src/Blur/UIImage+MRImageEffects.m"; sourceTree = "<group>"; };
+		1ADEEA606F1A45F0A15F56BC /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		1E3681D4A2EE4B558B6D10DE /* ALAsset+assetType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALAsset+assetType.h"; path = "CTAssetsPickerController/ALAsset+assetType.h"; sourceTree = "<group>"; };
+		1EDF3572C5BF4366A8691480 /* Pods-MRProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MRProgress-prefix.pch"; sourceTree = "<group>"; };
+		2431D1A8D02E4104BBA5980C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2521A11F07854CE397F3785D /* CTAssetItemViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetItemViewController.m; path = CTAssetsPickerController/CTAssetItemViewController.m; sourceTree = "<group>"; };
+		25A2290670EC4FD0B6617825 /* MRStopableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRStopableView.h; path = src/Components/MRStopableView.h; sourceTree = "<group>"; };
+		28035BF9B30B44C080D52ADE /* ALAsset+accessibilityLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALAsset+accessibilityLabel.h"; path = "CTAssetsPickerController/ALAsset+accessibilityLabel.h"; sourceTree = "<group>"; };
+		2A2C5EDD667E4DF88C12CED4 /* CTAssetScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetScrollView.h; path = CTAssetsPickerController/CTAssetScrollView.h; sourceTree = "<group>"; };
+		2AC9891285FF459A981ABBC5 /* CTAssetsPickerPlay.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CTAssetsPickerPlay.png; path = CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerPlay.imageset/CTAssetsPickerPlay.png; sourceTree = "<group>"; };
+		2B1C54E6629B4EF58F5DB0AF /* Pods-MRProgress-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRProgress-Private.xcconfig"; sourceTree = "<group>"; };
+		2FD478296BFC482BA5C1278A /* CTAssetsSupplementaryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsSupplementaryView.h; path = CTAssetsPickerController/CTAssetsSupplementaryView.h; sourceTree = "<group>"; };
+		33C9CA2FA4A74D10968DBD80 /* CTAssetsViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsViewCell.h; path = CTAssetsPickerController/CTAssetsViewCell.h; sourceTree = "<group>"; };
+		3853F9182C0E4F65BB3F52E7 /* CTAssetsPageViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsPageViewController.m; path = CTAssetsPickerController/CTAssetsPageViewController.m; sourceTree = "<group>"; };
+		3A96BC11A06A473C97A1F339 /* MRCircularProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRCircularProgressView.m; path = src/Components/MRCircularProgressView.m; sourceTree = "<group>"; };
+		3D62192338A3484A9574C506 /* CTAssetsPickerLocked.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CTAssetsPickerLocked.png; path = CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerLocked.imageset/CTAssetsPickerLocked.png; sourceTree = "<group>"; };
+		3F26D83377B64267835DCC3A /* MRProgressOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRProgressOverlayView.h; path = src/Components/MRProgressOverlayView.h; sourceTree = "<group>"; };
+		415BDC136D5F4C84AB51003F /* MRProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRProgress.h; path = src/MRProgress.h; sourceTree = "<group>"; };
+		426D36061301452680F10A7C /* CTAssetsPickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsPickerController.m; path = CTAssetsPickerController/CTAssetsPickerController.m; sourceTree = "<group>"; };
+		473C92A6C13D44D3B84D2EF0 /* NSDateFormatter+timeIntervalFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+timeIntervalFormatter.h"; path = "CTAssetsPickerController/NSDateFormatter+timeIntervalFormatter.h"; sourceTree = "<group>"; };
+		4A06B4060A46456884E0A2E4 /* MRIconView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRIconView.m; path = src/Components/MRIconView.m; sourceTree = "<group>"; };
+		4BE8703121504A3B9F9B8382 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4DFFCF81D11A4920827C8611 /* libPods-MRProgress.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRProgress.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55FBA276F4884F8F92A99210 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		577709320994460AB0971D4B /* CTAssetsPickerEmptyAsset@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerEmptyAsset@2x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyAsset.imageset/CTAssetsPickerEmptyAsset@2x.png"; sourceTree = "<group>"; };
+		5894EF90E0E54EBABEE9D024 /* CTAssetsPickerChecked@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerChecked@2x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerChecked.imageset/CTAssetsPickerChecked@2x.png"; sourceTree = "<group>"; };
+		604B888A4CBC440FA2996695 /* MRActivityIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRActivityIndicatorView.h; path = src/Components/MRActivityIndicatorView.h; sourceTree = "<group>"; };
+		69C22CD17EC1456EA7B5F568 /* ALAsset+assetType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALAsset+assetType.m"; path = "CTAssetsPickerController/ALAsset+assetType.m"; sourceTree = "<group>"; };
+		6B1F851B23FF4EB5B9613A9B /* NSDateFormatter+timeIntervalFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+timeIntervalFormatter.m"; path = "CTAssetsPickerController/NSDateFormatter+timeIntervalFormatter.m"; sourceTree = "<group>"; };
+		706F19DB921D49FDB6AD6DAF /* MRProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRProgressView.h; path = src/Components/MRProgressView.h; sourceTree = "<group>"; };
+		71C79EE9B32B4524A9364701 /* CTAssetScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetScrollView.m; path = CTAssetsPickerController/CTAssetScrollView.m; sourceTree = "<group>"; };
+		7A5804487C674A67903E3D97 /* Pods-CTAssetsPickerController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTAssetsPickerController-Private.xcconfig"; sourceTree = "<group>"; };
+		7D86B77A517B4210A56BA415 /* MRBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRBlurView.h; path = src/Blur/MRBlurView.h; sourceTree = "<group>"; };
+		800A7DA327B64A3CAC4B779A /* CTAssetsPickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsPickerController.h; path = CTAssetsPickerController/CTAssetsPickerController.h; sourceTree = "<group>"; };
+		8070A559E2C049A29972E149 /* CTAssetsPageViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsPageViewController.h; path = CTAssetsPickerController/CTAssetsPageViewController.h; sourceTree = "<group>"; };
+		8742922468114A52BD12A76D /* CTAssetsPickerEmptyAsset.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CTAssetsPickerEmptyAsset.png; path = CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyAsset.imageset/CTAssetsPickerEmptyAsset.png; sourceTree = "<group>"; };
+		898C1787217540D9B58B7B2C /* CTAssetsGroupViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsGroupViewController.h; path = CTAssetsPickerController/CTAssetsGroupViewController.h; sourceTree = "<group>"; };
+		8B052EC206E64627A0B95AA6 /* MRNavigationBarProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRNavigationBarProgressView.h; path = src/Components/MRNavigationBarProgressView.h; sourceTree = "<group>"; };
+		8F26ECA297514BF39702CC90 /* CTAssetsViewControllerTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsViewControllerTransition.m; path = CTAssetsPickerController/CTAssetsViewControllerTransition.m; sourceTree = "<group>"; };
+		916B06B16EF34049A07E2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		92410DF51A1F4519A0303A17 /* CTAssetsPickerConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsPickerConstants.m; path = CTAssetsPickerController/CTAssetsPickerConstants.m; sourceTree = "<group>"; };
+		97A87C5B4321419AB62BCCC2 /* CTAssetsGroupViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsGroupViewCell.m; path = CTAssetsPickerController/CTAssetsGroupViewCell.m; sourceTree = "<group>"; };
+		9CD2D73F76CC43E2A5BDD129 /* MRCircularProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRCircularProgressView.h; path = src/Components/MRCircularProgressView.h; sourceTree = "<group>"; };
+		A38AE05E2C4B4C1C8943D5E7 /* CTAssetItemViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetItemViewController.h; path = CTAssetsPickerController/CTAssetItemViewController.h; sourceTree = "<group>"; };
+		A438674BA5A642C1829BC6EF /* MRStopButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRStopButton.h; path = src/Components/MRStopButton.h; sourceTree = "<group>"; };
+		A55F4A2C65924CAEABA24C67 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		A5B24CF12B1D461BB9DC08BC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = "<group>"; };
+		A79D617499AB4B09B2FCF9A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		ABD85987A7FE49DCB50D1A55 /* Pods-CTAssetsPickerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTAssetsPickerController.xcconfig"; sourceTree = "<group>"; };
+		ACA9C16413AA4721A3B827B7 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		AD2F5DA436FE46E183ABB8E3 /* CTAssetsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsViewController.h; path = CTAssetsPickerController/CTAssetsViewController.h; sourceTree = "<group>"; };
+		AD6858D385BF45F2830EB4D6 /* CTAssetsViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsViewCell.m; path = CTAssetsPickerController/CTAssetsViewCell.m; sourceTree = "<group>"; };
+		ADDEFA6EAA27497AB4FAB7CC /* CTAssetsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsViewController.m; path = CTAssetsPickerController/CTAssetsViewController.m; sourceTree = "<group>"; };
+		AE247F453C614916BF1DEBFF /* Pods-MRProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRProgress-dummy.m"; sourceTree = "<group>"; };
+		AE604ECE879946DEBD007202 /* MRBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRBlurView.m; path = src/Blur/MRBlurView.m; sourceTree = "<group>"; };
+		B29A895CF7A843C6A5AF27F0 /* CTAssetsPickerEmptyCell.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CTAssetsPickerEmptyCell.png; path = CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyCell.imageset/CTAssetsPickerEmptyCell.png; sourceTree = "<group>"; };
+		B350623523734ABA95C50647 /* Pods-MRProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRProgress.xcconfig"; sourceTree = "<group>"; };
+		B3DA1037BA6047AB90028ECC /* CTAssetsPickerVideo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CTAssetsPickerVideo.png; path = CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerVideo.imageset/CTAssetsPickerVideo.png; sourceTree = "<group>"; };
+		B6E03233BF46475F8B69108A /* MRStopButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRStopButton.m; path = src/Components/MRStopButton.m; sourceTree = "<group>"; };
+		BAC6D2F591014A728DE2870A /* CTAssetsPickerLocked@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerLocked@2x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerLocked.imageset/CTAssetsPickerLocked@2x.png"; sourceTree = "<group>"; };
+		CA43BAD8C2064800843A3185 /* CTAssetsSupplementaryView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsSupplementaryView.m; path = CTAssetsPickerController/CTAssetsSupplementaryView.m; sourceTree = "<group>"; };
+		CBC6807CAE204F2DA38523EB /* CTAssetsPickerConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsPickerConstants.h; path = CTAssetsPickerController/CTAssetsPickerConstants.h; sourceTree = "<group>"; };
+		CCA0215D546944579234942E /* CTAssetsGroupViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsGroupViewController.m; path = CTAssetsPickerController/CTAssetsGroupViewController.m; sourceTree = "<group>"; };
+		CFB569A8889246B7A5CD597C /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D59873B5ED2C4183ADBD3969 /* MRProgressOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRProgressOverlayView.m; path = src/Components/MRProgressOverlayView.m; sourceTree = "<group>"; };
+		D7F9FAB6044845EC96F6AEBC /* MRIconView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRIconView.h; path = src/Components/MRIconView.h; sourceTree = "<group>"; };
+		DABD8C6ABB16402E978A2293 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		DBCAB69C5A584FC8A7AD58D2 /* CTAssetsPickerPlay@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerPlay@2x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerPlay.imageset/CTAssetsPickerPlay@2x.png"; sourceTree = "<group>"; };
+		DCD9DF472515427798063C0D /* ALAssetsGroup+isEqual.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALAssetsGroup+isEqual.m"; path = "CTAssetsPickerController/ALAssetsGroup+isEqual.m"; sourceTree = "<group>"; };
+		DD4A11EA9810465ABEF5DA72 /* CTAssetsPickerChecked.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CTAssetsPickerChecked.png; path = CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerChecked.imageset/CTAssetsPickerChecked.png; sourceTree = "<group>"; };
+		E002C60C1D9549618F88322F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		E09CD1B5A8E14187A0A79665 /* MRProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRProgressView.m; path = src/Components/MRProgressView.m; sourceTree = "<group>"; };
+		E2E1A3E076E34AAE8A9766DD /* CTAssetsPickerEmptyCell@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerEmptyCell@2x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyCell.imageset/CTAssetsPickerEmptyCell@2x.png"; sourceTree = "<group>"; };
+		E68CB614C1514A7B8B477BAA /* ALAsset+isEqual.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALAsset+isEqual.m"; path = "CTAssetsPickerController/ALAsset+isEqual.m"; sourceTree = "<group>"; };
+		E746024F2E1E406788020E27 /* Pods-CTAssetsPickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CTAssetsPickerController-dummy.m"; sourceTree = "<group>"; };
+		F047D4EDC0A94680950422A1 /* UIImage+MRImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MRImageEffects.h"; path = "src/Blur/UIImage+MRImageEffects.h"; sourceTree = "<group>"; };
+		F262813D3DF94C3396B9BB01 /* libPods-CTAssetsPickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CTAssetsPickerController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6733AC715084AF69F52AF5C /* ALAssetsGroup+isEqual.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALAssetsGroup+isEqual.h"; path = "CTAssetsPickerController/ALAssetsGroup+isEqual.h"; sourceTree = "<group>"; };
+		F8F7E103D5414B62AD63B5D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FBE52894F80A4CFD9D040B8C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2619DC3D7AD844FDA3B896F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9151C1209F645CA870C73E7 /* AssetsLibrary.framework in Frameworks */,
+				3DCBCC824A314ABCB1F3EE60 /* Foundation.framework in Frameworks */,
+				8EA09CE25EA5490DA38C3B1F /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B75497DB4E342BE9539CDE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94AD79158845455B9F2DE770 /* Foundation.framework in Frameworks */,
+				8BCC55EFA7D14F4AABAAE724 /* libPods-CTAssetsPickerController.a in Frameworks */,
+				CCC290D587784EE0BA9419C5 /* libPods-MRProgress.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C5D08923844FC2A6D70E2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8258663861844393BACA52EC /* Accelerate.framework in Frameworks */,
+				8D06DD6C4CC540F0B346AA5A /* CoreGraphics.framework in Frameworks */,
+				6267840BBBAD4BE2811B7AB2 /* Foundation.framework in Frameworks */,
+				C11E54F22B534844910FD263 /* QuartzCore.framework in Frameworks */,
+				9928BB7E0E9F40C5A1D6BCB0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02AB280D3CFF4FCC9E1CB239 = {
+			isa = PBXGroup;
+			children = (
+				CFB569A8889246B7A5CD597C /* Podfile */,
+				294B2FC678C840AB946087DB /* Frameworks */,
+				4C200AE79249414ABB35464E /* Pods */,
+				B969D7FADD7649F089C24D96 /* Products */,
+				C102E3A299AC4F20A1159879 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		096802F89F8C492B8D2AC220 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABD85987A7FE49DCB50D1A55 /* Pods-CTAssetsPickerController.xcconfig */,
+				7A5804487C674A67903E3D97 /* Pods-CTAssetsPickerController-Private.xcconfig */,
+				E746024F2E1E406788020E27 /* Pods-CTAssetsPickerController-dummy.m */,
+				03640F0A9171420291B4A7D8 /* Pods-CTAssetsPickerController-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		15409D20047245ED80FBB737 /* Circular */ = {
+			isa = PBXGroup;
+			children = (
+				9CD2D73F76CC43E2A5BDD129 /* MRCircularProgressView.h */,
+				3A96BC11A06A473C97A1F339 /* MRCircularProgressView.m */,
+			);
+			name = Circular;
+			sourceTree = "<group>";
+		};
+		294B2FC678C840AB946087DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6947986906D0438EBAE09814 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DE509F25548407D9D7A9966 /* CTAssetsPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				28035BF9B30B44C080D52ADE /* ALAsset+accessibilityLabel.h */,
+				00DDDADB89234D0282D7EDF1 /* ALAsset+accessibilityLabel.m */,
+				1E3681D4A2EE4B558B6D10DE /* ALAsset+assetType.h */,
+				69C22CD17EC1456EA7B5F568 /* ALAsset+assetType.m */,
+				002CC8B4A7794FEBA5FB082D /* ALAsset+isEqual.h */,
+				E68CB614C1514A7B8B477BAA /* ALAsset+isEqual.m */,
+				F6733AC715084AF69F52AF5C /* ALAssetsGroup+isEqual.h */,
+				DCD9DF472515427798063C0D /* ALAssetsGroup+isEqual.m */,
+				A38AE05E2C4B4C1C8943D5E7 /* CTAssetItemViewController.h */,
+				2521A11F07854CE397F3785D /* CTAssetItemViewController.m */,
+				2A2C5EDD667E4DF88C12CED4 /* CTAssetScrollView.h */,
+				71C79EE9B32B4524A9364701 /* CTAssetScrollView.m */,
+				0BAC65D58DA94F3FB0F3B72D /* CTAssetsGroupViewCell.h */,
+				97A87C5B4321419AB62BCCC2 /* CTAssetsGroupViewCell.m */,
+				898C1787217540D9B58B7B2C /* CTAssetsGroupViewController.h */,
+				CCA0215D546944579234942E /* CTAssetsGroupViewController.m */,
+				8070A559E2C049A29972E149 /* CTAssetsPageViewController.h */,
+				3853F9182C0E4F65BB3F52E7 /* CTAssetsPageViewController.m */,
+				CBC6807CAE204F2DA38523EB /* CTAssetsPickerConstants.h */,
+				92410DF51A1F4519A0303A17 /* CTAssetsPickerConstants.m */,
+				800A7DA327B64A3CAC4B779A /* CTAssetsPickerController.h */,
+				426D36061301452680F10A7C /* CTAssetsPickerController.m */,
+				2FD478296BFC482BA5C1278A /* CTAssetsSupplementaryView.h */,
+				CA43BAD8C2064800843A3185 /* CTAssetsSupplementaryView.m */,
+				33C9CA2FA4A74D10968DBD80 /* CTAssetsViewCell.h */,
+				AD6858D385BF45F2830EB4D6 /* CTAssetsViewCell.m */,
+				AD2F5DA436FE46E183ABB8E3 /* CTAssetsViewController.h */,
+				ADDEFA6EAA27497AB4FAB7CC /* CTAssetsViewController.m */,
+				10A2860D7D92436C8830F391 /* CTAssetsViewControllerTransition.h */,
+				8F26ECA297514BF39702CC90 /* CTAssetsViewControllerTransition.m */,
+				473C92A6C13D44D3B84D2EF0 /* NSDateFormatter+timeIntervalFormatter.h */,
+				6B1F851B23FF4EB5B9613A9B /* NSDateFormatter+timeIntervalFormatter.m */,
+				78C3AC76E40D470FBDD939FC /* Resources */,
+				096802F89F8C492B8D2AC220 /* Support Files */,
+			);
+			path = CTAssetsPickerController;
+			sourceTree = "<group>";
+		};
+		3811CFBAC2674C75BE967F7D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				04B0D899FB0849EDBDB3ABAE /* MRProgressHelper.h */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		3E7B08E31B224B07A1B5D3CF /* NavigationBarProgress */ = {
+			isa = PBXGroup;
+			children = (
+				8B052EC206E64627A0B95AA6 /* MRNavigationBarProgressView.h */,
+				037A444D6C4B461C90273FFC /* MRNavigationBarProgressView.m */,
+			);
+			name = NavigationBarProgress;
+			sourceTree = "<group>";
+		};
+		47D06C475094467EBA88DCCD /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				D7F9FAB6044845EC96F6AEBC /* MRIconView.h */,
+				4A06B4060A46456884E0A2E4 /* MRIconView.m */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		4C200AE79249414ABB35464E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DE509F25548407D9D7A9966 /* CTAssetsPickerController */,
+				E0AD44C8F8D4460A9D15F698 /* MRProgress */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		67665E205BB748F2B261E11C /* Stopable */ = {
+			isa = PBXGroup;
+			children = (
+				A438674BA5A642C1829BC6EF /* MRStopButton.h */,
+				B6E03233BF46475F8B69108A /* MRStopButton.m */,
+				25A2290670EC4FD0B6617825 /* MRStopableView.h */,
+			);
+			name = Stopable;
+			sourceTree = "<group>";
+		};
+		6947986906D0438EBAE09814 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FBE52894F80A4CFD9D040B8C /* Accelerate.framework */,
+				E002C60C1D9549618F88322F /* AssetsLibrary.framework */,
+				4BE8703121504A3B9F9B8382 /* CoreGraphics.framework */,
+				916B06B16EF34049A07E2CEA /* Foundation.framework */,
+				55FBA276F4884F8F92A99210 /* MediaPlayer.framework */,
+				A79D617499AB4B09B2FCF9A3 /* QuartzCore.framework */,
+				F8F7E103D5414B62AD63B5D7 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		78C3AC76E40D470FBDD939FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD4A11EA9810465ABEF5DA72 /* CTAssetsPickerChecked.png */,
+				5894EF90E0E54EBABEE9D024 /* CTAssetsPickerChecked@2x.png */,
+				8742922468114A52BD12A76D /* CTAssetsPickerEmptyAsset.png */,
+				577709320994460AB0971D4B /* CTAssetsPickerEmptyAsset@2x.png */,
+				B29A895CF7A843C6A5AF27F0 /* CTAssetsPickerEmptyCell.png */,
+				E2E1A3E076E34AAE8A9766DD /* CTAssetsPickerEmptyCell@2x.png */,
+				3D62192338A3484A9574C506 /* CTAssetsPickerLocked.png */,
+				BAC6D2F591014A728DE2870A /* CTAssetsPickerLocked@2x.png */,
+				2AC9891285FF459A981ABBC5 /* CTAssetsPickerPlay.png */,
+				DBCAB69C5A584FC8A7AD58D2 /* CTAssetsPickerPlay@2x.png */,
+				B3DA1037BA6047AB90028ECC /* CTAssetsPickerVideo.png */,
+				0A81962BD83E4BCB866BF409 /* CTAssetsPickerVideo@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8976675E0C9A461C945E4F93 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				3F26D83377B64267835DCC3A /* MRProgressOverlayView.h */,
+				D59873B5ED2C4183ADBD3969 /* MRProgressOverlayView.m */,
+			);
+			name = Overlay;
+			sourceTree = "<group>";
+		};
+		8F57A5E92FCC484681172A83 /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				604B888A4CBC440FA2996695 /* MRActivityIndicatorView.h */,
+				06469AC58ADA4E5AAA2A3977 /* MRActivityIndicatorView.m */,
+			);
+			name = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		A7790B8D7AFF4CC297FA1C52 /* ProgressBaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				706F19DB921D49FDB6AD6DAF /* MRProgressView.h */,
+				E09CD1B5A8E14187A0A79665 /* MRProgressView.m */,
+			);
+			name = ProgressBaseClass;
+			sourceTree = "<group>";
+		};
+		B969D7FADD7649F089C24D96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09D509084FB242D08A7DD2DE /* libPods.a */,
+				F262813D3DF94C3396B9BB01 /* libPods-CTAssetsPickerController.a */,
+				4DFFCF81D11A4920827C8611 /* libPods-MRProgress.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C102E3A299AC4F20A1159879 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3DA596CB50D4FF1994209FF /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CEBB209F0888443483D14441 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B350623523734ABA95C50647 /* Pods-MRProgress.xcconfig */,
+				2B1C54E6629B4EF58F5DB0AF /* Pods-MRProgress-Private.xcconfig */,
+				AE247F453C614916BF1DEBFF /* Pods-MRProgress-dummy.m */,
+				1EDF3572C5BF4366A8691480 /* Pods-MRProgress-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		D3DA596CB50D4FF1994209FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5B24CF12B1D461BB9DC08BC /* Pods.xcconfig */,
+				2431D1A8D02E4104BBA5980C /* Pods-acknowledgements.markdown */,
+				1ADEEA606F1A45F0A15F56BC /* Pods-acknowledgements.plist */,
+				ACA9C16413AA4721A3B827B7 /* Pods-dummy.m */,
+				DABD8C6ABB16402E978A2293 /* Pods-environment.h */,
+				A55F4A2C65924CAEABA24C67 /* Pods-resources.sh */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E0AD44C8F8D4460A9D15F698 /* MRProgress */ = {
+			isa = PBXGroup;
+			children = (
+				415BDC136D5F4C84AB51003F /* MRProgress.h */,
+				8F57A5E92FCC484681172A83 /* ActivityIndicator */,
+				EB82FBDDBF404D4DA8725C80 /* Blur */,
+				15409D20047245ED80FBB737 /* Circular */,
+				3811CFBAC2674C75BE967F7D /* Helper */,
+				47D06C475094467EBA88DCCD /* Icons */,
+				3E7B08E31B224B07A1B5D3CF /* NavigationBarProgress */,
+				8976675E0C9A461C945E4F93 /* Overlay */,
+				A7790B8D7AFF4CC297FA1C52 /* ProgressBaseClass */,
+				67665E205BB748F2B261E11C /* Stopable */,
+				CEBB209F0888443483D14441 /* Support Files */,
+			);
+			path = MRProgress;
+			sourceTree = "<group>";
+		};
+		EB82FBDDBF404D4DA8725C80 /* Blur */ = {
+			isa = PBXGroup;
+			children = (
+				7D86B77A517B4210A56BA415 /* MRBlurView.h */,
+				AE604ECE879946DEBD007202 /* MRBlurView.m */,
+				F047D4EDC0A94680950422A1 /* UIImage+MRImageEffects.h */,
+				18514908DA4A4657B55A544B /* UIImage+MRImageEffects.m */,
+			);
+			name = Blur;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CC5276305BA341AB94886BCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21DD702F133A4C21A6D3BA7C /* ALAsset+accessibilityLabel.h in Headers */,
+				87553869C11848579B57D632 /* ALAsset+assetType.h in Headers */,
+				89B5AA5D9A5D4446B47E55AB /* ALAsset+isEqual.h in Headers */,
+				819F1AA9D12F406CB6A9F55B /* ALAssetsGroup+isEqual.h in Headers */,
+				1AC90F39735240D992117354 /* CTAssetItemViewController.h in Headers */,
+				FA18225AF86D48508AD37BBC /* CTAssetScrollView.h in Headers */,
+				AC0FE250FF284EC793F9F194 /* CTAssetsGroupViewCell.h in Headers */,
+				1DCCE58C0B404C7EB5529935 /* CTAssetsGroupViewController.h in Headers */,
+				AF3DF8054DE54CBE894F13A6 /* CTAssetsPageViewController.h in Headers */,
+				36C344A449724E7E97D45A75 /* CTAssetsPickerConstants.h in Headers */,
+				82D7418FFB57400E9AF90AD9 /* CTAssetsPickerController.h in Headers */,
+				5547A93691E54F06BBBE3EF0 /* CTAssetsSupplementaryView.h in Headers */,
+				F8573B08B5534CD59DDF9EEB /* CTAssetsViewCell.h in Headers */,
+				7443AADEDBB34ACE9837B27C /* CTAssetsViewController.h in Headers */,
+				6225C0BDD976423F9F9C5FF0 /* CTAssetsViewControllerTransition.h in Headers */,
+				96F55243109F45659D0211EA /* NSDateFormatter+timeIntervalFormatter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF90BBC4697C42F682B3C3D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0E379671D94F40AE734B77 /* MRActivityIndicatorView.h in Headers */,
+				1755AADB483949B8878CD2CE /* MRBlurView.h in Headers */,
+				9C5881A9CA8A4555853877CE /* MRCircularProgressView.h in Headers */,
+				BBD5DB81865B48468D34099E /* MRIconView.h in Headers */,
+				A06882D6C887462D8EB862DF /* MRNavigationBarProgressView.h in Headers */,
+				609EEC95A9C542CCA793A0DC /* MRProgress.h in Headers */,
+				25EF9182FE2F4D8397E7790B /* MRProgressHelper.h in Headers */,
+				771F0D33B9504F7E9F85FC52 /* MRProgressOverlayView.h in Headers */,
+				85B20E3DE0AD4B3C9E7512CB /* MRProgressView.h in Headers */,
+				DD8963B9682E48B1AB27BF48 /* MRStopButton.h in Headers */,
+				A76EA1C7570B46289D72F4A8 /* MRStopableView.h in Headers */,
+				02918BF3CF424A10A516B98B /* UIImage+MRImageEffects.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		322A3876FFDE46F6B301D446 /* Pods-MRProgress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 130ACFFBF4B74306BB9DECA5 /* Build configuration list for PBXNativeTarget "Pods-MRProgress" */;
+			buildPhases = (
+				C17DEC225E3343EB954F68A8 /* Sources */,
+				95C5D08923844FC2A6D70E2B /* Frameworks */,
+				FF90BBC4697C42F682B3C3D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MRProgress";
+			productName = "Pods-MRProgress";
+			productReference = 4DFFCF81D11A4920827C8611 /* libPods-MRProgress.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		743FA0A7C4B84D75BA7832EB /* Pods-CTAssetsPickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6461A18CBEEA401AA92331CC /* Build configuration list for PBXNativeTarget "Pods-CTAssetsPickerController" */;
+			buildPhases = (
+				EF8A5E6B6E8D4152A387359B /* Sources */,
+				2619DC3D7AD844FDA3B896F8 /* Frameworks */,
+				CC5276305BA341AB94886BCF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CTAssetsPickerController";
+			productName = "Pods-CTAssetsPickerController";
+			productReference = F262813D3DF94C3396B9BB01 /* libPods-CTAssetsPickerController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9C5F2435B94A4569B2DC4574 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA6BCBF4758145B59E2D22FD /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				57CB4093EA4149089609CFF0 /* Sources */,
+				7B75497DB4E342BE9539CDE0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE1904C8B6E940BE98027808 /* PBXTargetDependency */,
+				8F7CE18D551B408794E522DD /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 09D509084FB242D08A7DD2DE /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AA0C8CD75554E94BBE53C9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 90F977CC6585400991FDB6D2 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 02AB280D3CFF4FCC9E1CB239;
+			productRefGroup = B969D7FADD7649F089C24D96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C5F2435B94A4569B2DC4574 /* Pods */,
+				743FA0A7C4B84D75BA7832EB /* Pods-CTAssetsPickerController */,
+				322A3876FFDE46F6B301D446 /* Pods-MRProgress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57CB4093EA4149089609CFF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8EFAF70A2504C668C1012DD /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C17DEC225E3343EB954F68A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F750607121494C8A80B778 /* MRActivityIndicatorView.m in Sources */,
+				4FCB027E4FA04D37996797C7 /* MRBlurView.m in Sources */,
+				8D899FE7A6374DA28C349ECC /* MRCircularProgressView.m in Sources */,
+				76F90A7FC0744A6EB4AD23E9 /* MRIconView.m in Sources */,
+				4762C2F2822C4463A7C37335 /* MRNavigationBarProgressView.m in Sources */,
+				38A86F63763441369FC5211A /* MRProgressOverlayView.m in Sources */,
+				15A963EBCCB14E40AD2DBA4C /* MRProgressView.m in Sources */,
+				6C119E0C39F04F2C8EAA4220 /* MRStopButton.m in Sources */,
+				0ABA1DC88E554659BC557918 /* Pods-MRProgress-dummy.m in Sources */,
+				B980E77EE8A4490C8EBF8F19 /* UIImage+MRImageEffects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8A5E6B6E8D4152A387359B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A902B70B23C4024897C6E79 /* ALAsset+accessibilityLabel.m in Sources */,
+				5F7B38E3B9CC404F893DB891 /* ALAsset+assetType.m in Sources */,
+				5CAC1FD5383E4F9C9683377E /* ALAsset+isEqual.m in Sources */,
+				2BC5DAE6A27844B39425A5F1 /* ALAssetsGroup+isEqual.m in Sources */,
+				6E22DC6F40FC4A0E98CD7595 /* CTAssetItemViewController.m in Sources */,
+				B49D1FD0E697442CA16E2EE0 /* CTAssetScrollView.m in Sources */,
+				D5186A595494497AB45C589D /* CTAssetsGroupViewCell.m in Sources */,
+				4C7EFB0C85294153821BBEF9 /* CTAssetsGroupViewController.m in Sources */,
+				DD2BEE3158A44A3FAFE81104 /* CTAssetsPageViewController.m in Sources */,
+				7DFFD9678E0042728B42D013 /* CTAssetsPickerConstants.m in Sources */,
+				67A62275921A493286D6E9CA /* CTAssetsPickerController.m in Sources */,
+				54BC6993855B4327ADE3D6A5 /* CTAssetsSupplementaryView.m in Sources */,
+				C0398E4B13154CD08054359D /* CTAssetsViewCell.m in Sources */,
+				AFA03ECD7D0B41CFAD7C1D5E /* CTAssetsViewController.m in Sources */,
+				935B44AFA826411D8DC37F52 /* CTAssetsViewControllerTransition.m in Sources */,
+				716B431F754B4B30ADCA976F /* NSDateFormatter+timeIntervalFormatter.m in Sources */,
+				44153407CC6D47BE833C6588 /* Pods-CTAssetsPickerController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F7CE18D551B408794E522DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 322A3876FFDE46F6B301D446 /* Pods-MRProgress */;
+			targetProxy = 0281988E4DEF446DAD427785 /* PBXContainerItemProxy */;
+		};
+		FE1904C8B6E940BE98027808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 743FA0A7C4B84D75BA7832EB /* Pods-CTAssetsPickerController */;
+			targetProxy = 71CCB23BB2F8443DB959AAE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14CD68A4662746D0B89C7B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A5804487C674A67903E3D97 /* Pods-CTAssetsPickerController-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-CTAssetsPickerController-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2C2681BAB8F44587879982CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B1C54E6629B4EF58F5DB0AF /* Pods-MRProgress-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-MRProgress-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E62CC39229D4543AE07D941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5B24CF12B1D461BB9DC08BC /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		546AAFFCCE9B471AA325A2E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		5694CE67157340A1B9D9B116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5B24CF12B1D461BB9DC08BC /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		843C6533716D4D3683856A00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A5804487C674A67903E3D97 /* Pods-CTAssetsPickerController-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-CTAssetsPickerController-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C40AFCA20FFF4D35A9A7223E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B1C54E6629B4EF58F5DB0AF /* Pods-MRProgress-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-MRProgress-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D56AAAE08E264604BA9CF4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		130ACFFBF4B74306BB9DECA5 /* Build configuration list for PBXNativeTarget "Pods-MRProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C40AFCA20FFF4D35A9A7223E /* Debug */,
+				2C2681BAB8F44587879982CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6461A18CBEEA401AA92331CC /* Build configuration list for PBXNativeTarget "Pods-CTAssetsPickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14CD68A4662746D0B89C7B76 /* Debug */,
+				843C6533716D4D3683856A00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90F977CC6585400991FDB6D2 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				546AAFFCCE9B471AA325A2E2 /* Debug */,
+				D56AAAE08E264604BA9CF4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA6BCBF4758145B59E2D22FD /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5694CE67157340A1B9D9B116 /* Debug */,
+				4E62CC39229D4543AE07D941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AA0C8CD75554E94BBE53C9F /* Project object */;
+}

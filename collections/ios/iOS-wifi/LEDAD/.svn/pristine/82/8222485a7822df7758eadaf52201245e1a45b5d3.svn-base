@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1DE544A7-9CFA-4543-A5EB-C7FB9D7E4BD9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LEDAD</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>870302aa-83b8-5a4c-ac7a-16655e55cd75++4639</key>
+		<string>https://192.168.1.99/svn/XcloudsManager/iOS/LEDAD(iPhoneAdaptive)</string>
+		<key>fbc03708-cdcd-7a4f-a6d8-cb9739f19deb++6093</key>
+		<string>https://192.168.1.99/svn/LEDAD/iOS/LEDAD</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LEDAD.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>870302aa-83b8-5a4c-ac7a-16655e55cd75++4639</key>
+		<string>../..(iPhoneAdaptive)</string>
+		<key>fbc03708-cdcd-7a4f-a6d8-cb9739f19deb++6093</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>870302aa-83b8-5a4c-ac7a-16655e55cd75++4639</key>
+		<string>https://192.168.1.99/svn/XcloudsManager</string>
+		<key>fbc03708-cdcd-7a4f-a6d8-cb9739f19deb++6093</key>
+		<string>https://192.168.1.99/svn/LEDAD</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.1.99/svn/LEDAD/iOS/LEDAD/LEDAD.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>fbc03708-cdcd-7a4f-a6d8-cb9739f19deb++6093</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>fbc03708-cdcd-7a4f-a6d8-cb9739f19deb++6093</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LEDAD</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>870302aa-83b8-5a4c-ac7a-16655e55cd75++4639</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LEDAD(iPhoneAdaptive)</string>
+		</dict>
+	</array>
+</dict>
+</plist>

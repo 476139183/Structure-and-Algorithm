@@ -1,0 +1,14 @@
+//
+//  LedNewConfig.h
+//  SideBarDemo
+//
+//  Created by LDY on 13-8-12.
+//  Copyright (c) 2013年 JianYe. All rights reserved.
+//
+
+#ifndef NEWLED_LedNewConfig_h
+#define NEWLED_LedNewConfig_h
+
+extern BOOL usernameauthentication;
+extern NSString *usernameauthenticationid;
+#endif

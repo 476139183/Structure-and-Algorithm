@@ -1,0 +1,553 @@
+//
+//  CX_WIFISetViewController.m
+//  LEDAD
+//
+//  Created by chengxu on 15/7/9.
+//  Copyright (c) 2015年 yxm. All rights reserved.
+//
+
+#import "CX_WIFISetViewController.h"
+#import "YXM_WiFiManagerViewController.h"
+#import "Config.h"
+#import "GDataXMLNode.h"
+#import "AHReach.h"
+#import "NSString+MD5.h"
+
+
+@interface CX_WIFISetViewController ()<ASIHTTPRequestDelegate>
+{
+
+    YXM_WiFiManagerViewController *cx;
+
+
+    UIButton *btn;
+    UIButton *btn1;
+    UIButton *btn2;
+    UIButton *btn5;
+    UIImageView *imageview;
+    BOOL isone;
+    NSString* luyouList;
+    NSMutableArray *arrlist;
+    NSString *khlist;
+    NSMutableArray *khdhcplist;
+    NSMutableArray *maclist;
+    AHReach *defaultHostReach;
+    NSInteger num;
+    NSString *ssid;
+    NSString *ssid1;
+    NSMutableArray *iparr;
+    NSMutableArray *ssidarr;
+    NSMutableArray *ledip;
+
+
+    BOOL istrue;
+
+}
+@end
+
+@implementation CX_WIFISetViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    iparr = [[NSMutableArray alloc]init];
+    ssidarr = [[NSMutableArray alloc]init];
+    ledip = [[NSMutableArray alloc]init];
+    num = 1;
+    [self hqsj];
+    self.view.backgroundColor = [UIColor whiteColor];
+    cx = [[YXM_WiFiManagerViewController alloc]init];
+
+    isone = YES;
+    [self viewload];
+    // Do any additional setup after loading the view.
+}
+
+//视图加载
+-(void)viewload{
+    UIButton *closeButton = [[UIButton alloc]initWithFrame:CGRectMake(5, 2, 40, 40)];
+    [closeButton addTarget:self action:@selector(removeSelfView:) forControlEvents:UIControlEventTouchUpInside];
+    [closeButton setBackgroundImage:[UIImage imageNamed:@"backToMainButton"] forState:UIControlStateNormal];
+    if (DEVICE_IS_IPAD) {
+        [self.view addSubview:closeButton];
+    }
+    imageview = [[UIImageView alloc]initWithFrame:CGRectMake((self.view.frame.size.width-825)/2, 100, 825, 70)];
+    [imageview setImage:[UIImage imageNamed:@"a1"]];
+    [self.view addSubview:imageview];
+    UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(imageview.frame.origin.x, imageview.frame.origin.y + imageview.frame.size.height + 50, 300, 50)];
+    lab.text = [NSString stringWithFormat:@"%@%ld%@：",[Config DPLocalizedString:@"adedit_jhyp1"],(long)fangannum,[Config DPLocalizedString:@"adedit_jhyp2"]];
+    [self.view addSubview:lab];
+    UILabel *lab1 = [[UILabel alloc]initWithFrame:CGRectMake(lab.frame.origin.x, lab.frame.origin.y + lab.frame.size.height + 30, 300, 50)];
+    lab1.text = [Config DPLocalizedString:@"adedit_jhyp3"];
+    [self.view addSubview:lab1];
+    UILabel *lab2 = [[UILabel alloc]initWithFrame:CGRectMake(lab1.frame.origin.x, lab1.frame.origin.y + lab1.frame.size.height + 5, 300, 50)];
+    lab2.text = [Config DPLocalizedString:@"adedit_jhyp4"];
+    [self.view addSubview:lab2];
+    UILabel *lab3 = [[UILabel alloc]initWithFrame:CGRectMake(lab2.frame.origin.x, lab2.frame.origin.y + lab2.frame.size.height + 80, 300, 50)];
+    lab3.text = [Config DPLocalizedString:@"adedit_jhyp5"];
+    [self.view addSubview:lab3];
+
+    UIImageView *image = [[UIImageView alloc]initWithFrame:CGRectMake(imageview.frame.origin.x + imageview.frame.size.width - 260, lab.frame.origin.y, 200, 260)];
+    image.image = [UIImage imageNamed:@"kk"];
+    [self.view addSubview:image];
+    UIView *shwoview = [[UIView alloc]initWithFrame:CGRectMake(imageview.frame.origin.x + imageview.frame.size.width - 260, lab.frame.origin.y, 200, 260)];
+    UILabel *slab = [[UILabel alloc]initWithFrame:CGRectMake(10, 0, shwoview.frame.size.width - 20, shwoview.frame.size.height/7)];
+    slab.text = [Config DPLocalizedString:@"adedit_jhyp6"];
+    [shwoview addSubview:slab];
+    for (int i = 0; i<6; i++) {
+       UILabel *ssidlab = [[UILabel alloc]initWithFrame:CGRectMake(slab.frame.origin.x, (slab.frame.size.height)*(i+1), shwoview.frame.size.width - 20, shwoview.frame.size.height/7)];
+        ssidlab.text = [Config DPLocalizedString:@"adedit_jhyp7"];
+        ssidlab.tag = i+1;
+        [shwoview addSubview:ssidlab];
+    }
+    [self.view addSubview:shwoview];
+    btn  = [[UIButton alloc]initWithFrame:CGRectMake(500, 550, 100, 50)];
+    [btn setTitle:[Config DPLocalizedString:@"adedit_jhyp8"] forState:0];
+    [btn setTitleColor:[UIColor blackColor] forState:0];
+    [btn addTarget:self action:@selector(hqssid) forControlEvents:UIControlEventTouchUpInside];
+    [btn setBackgroundImage:[UIImage imageNamed:@"2"] forState:0];
+    [self.view addSubview:btn];
+
+
+    btn1  = [[UIButton alloc]initWithFrame:CGRectMake(500, 550, 100, 50)];
+    [btn1 setTitle:[Config DPLocalizedString:@"adedit_jhyp11"] forState:0];
+    [btn1 setTitleColor:[UIColor blackColor] forState:0];
+    [btn1 addTarget:self action:@selector(next) forControlEvents:UIControlEventTouchUpInside];
+    [btn1 setBackgroundImage:[UIImage imageNamed:@"2"] forState:0];
+    [self.view addSubview:btn1];
+    btn1.hidden = YES;
+
+    btn2  = [[UIButton alloc]initWithFrame:CGRectMake(500, 550, 100, 50)];
+    [btn2 setTitle:[Config DPLocalizedString:@"adedit_jhyp13"] forState:0];
+    [btn2 setTitleColor:[UIColor blackColor] forState:0];
+    [btn2 addTarget:self action:@selector(wancheng) forControlEvents:UIControlEventTouchUpInside];
+    [btn2 setBackgroundImage:[UIImage imageNamed:@"2"] forState:0];
+    [self.view addSubview:btn2];
+    btn2.hidden = YES;
+
+    btn5  = [[UIButton alloc]initWithFrame:CGRectMake(500, 550, 100, 50)];
+    [btn5 setTitle:[Config DPLocalizedString:@"adedit_jhyp12"] forState:0];
+    [btn5 setTitleColor:[UIColor blackColor] forState:0];
+    [btn5 addTarget:self action:@selector(bangding) forControlEvents:UIControlEventTouchUpInside];
+    [btn5 setBackgroundImage:[UIImage imageNamed:@"2"] forState:0];
+    [self.view addSubview:btn5];
+    btn5.hidden = YES;
+
+    UIButton *btn3  = [[UIButton alloc]initWithFrame:CGRectMake(400, 550, 100, 50)];
+    [btn3 setTitle:[Config DPLocalizedString:@"adedit_jhyp10"] forState:0];
+    [btn3 setTitleColor:[UIColor blackColor] forState:0];
+    [btn3 addTarget:self action:@selector(cz) forControlEvents:UIControlEventTouchUpInside];
+    [btn3 setBackgroundImage:[UIImage imageNamed:@"2"] forState:0];
+    [self.view addSubview:btn3];
+}
+-(void)wancheng{
+    [self cx_yy];
+    [self ProgramName];
+}
+
+-(void)ProgramName{
+    UIView *view = [self.view viewWithTag:3000];
+    if (view) {
+        UIAlertView *aletview = [[UIAlertView alloc]initWithTitle:[Config DPLocalizedString:@"User_Prompt"] message:[Config DPLocalizedString:@"adedit_jhyp16"] delegate:self cancelButtonTitle:[Config DPLocalizedString:@"NSStringYes"] otherButtonTitles: nil];
+        aletview.tag = 7000;
+        aletview.alertViewStyle = UIAlertViewStylePlainTextInput;
+        [aletview show];
+    }
+}
+//重置
+-(void)cz{
+    [cx hf];
+}
+-(void)bangding{
+    [self hqkhd];
+    btn5.hidden = YES;
+    btn2.hidden = NO;
+}
+
+//返回上界面
+
+-(void)removeSelfView:(UIButton *)sender{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+//生成xml
+-(void)createxml{
+    GDataXMLElement *rootElement = [GDataXMLNode elementWithName:@"LEDS"];
+    GDataXMLElement *numberip = [GDataXMLNode elementWithName:@"numberip"];
+
+    GDataXMLElement *explanation = [GDataXMLNode elementWithName:@"explanation"];
+    [numberip addChild:explanation];
+    DLog(@"%@",fanganname);
+    GDataXMLElement *name = [GDataXMLNode elementWithName:@"name" stringValue:[NSString stringWithFormat:@"%@",fanganname]];
+    [numberip addChild:name];
+    GDataXMLElement *NUM = [GDataXMLNode elementWithName:@"num" stringValue:[NSString stringWithFormat:@"%ld",(long)fangannum]];
+    [numberip addChild:NUM];
+
+    [rootElement addChild:numberip];
+    for (int i = 0; i<iparr.count; i++) {
+        GDataXMLElement *play = [GDataXMLNode elementWithName:@"play"];
+        GDataXMLElement *explanation = [GDataXMLNode elementWithName:@"explanation"];
+        [play addChild:explanation];
+        GDataXMLElement *dataip = [GDataXMLNode elementWithName:@"dataip" stringValue:iparr[i]];
+        [play addChild:dataip];
+        GDataXMLElement *dataname = [GDataXMLNode elementWithName:@"dataname" stringValue:ssidarr[i]];
+        [play addChild:dataname];
+        GDataXMLElement *dataledip = [GDataXMLNode elementWithName:@"dataledip" stringValue:ledip[i]];
+        [play addChild:dataledip];
+        GDataXMLElement *dataid;
+        if (i == 0) {
+            dataid = [GDataXMLNode elementWithName:@"dataid" stringValue:@"1"];
+
+        }else{
+            dataid = [GDataXMLNode elementWithName:@"dataid" stringValue:@"0"];
+        }
+        [play addChild:dataid];
+        [rootElement addChild:play];
+    }
+
+    //使用根节点创建xml文档
+    GDataXMLDocument *rootDoc = [[GDataXMLDocument alloc] initWithRootElement:rootElement];
+    DLog(@"11111%@",rootDoc);
+    //设置使用的xml版本号
+    [rootDoc setVersion:@"1.0"];
+    //设置xml文档的字符编码
+    [rootDoc setCharacterEncoding:@"utf-8"];
+    //获取并打印xml字符串
+    NSString *XMLDocumentString = [[NSString alloc] initWithData:rootDoc.XMLData encoding:NSUTF8StringEncoding];
+    DLog(@"22%@",XMLDocumentString);
+    //文件字节大小
+    NSInteger fileSize = [rootDoc.XMLData length];
+    DLog(@"%ld",(long)fileSize);
+
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *documentsDirectoryPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+
+    NSString *myname = [self getNowdateString];
+    myname = [myname md5Encrypt];
+
+
+    NSString *xmlfilePath = [[NSString alloc]initWithFormat:@"%@/%@.xml",documentsDirectoryPath,myname];
+
+    DLog(@"------%@",xmlfilePath);
+
+    NSError *error = nil;
+    BOOL writeFileBool = [XMLDocumentString writeToFile:xmlfilePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
+    NSArray *files = [fileManager subpathsAtPath: documentsDirectoryPath];
+    NSLog(@"%@",files);
+    NSDictionary * dict = [fileManager attributesOfItemAtPath:xmlfilePath error:nil];
+    //方法一:
+
+    NSLog(@"22222222size = %lld",[dict fileSize]);
+    if (writeFileBool) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
+//获取时间字符串
+-(NSString *)getNowdateString{
+    NSDateFormatter* formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"YYYYMMddhhmmss"];
+    return [formatter stringFromDate:[NSDate date]];
+}
+
+//下一步按钮响应
+-(void)next{
+    num ++;
+    [self hqsj];
+    [imageview setImage:[UIImage imageNamed:[NSString stringWithFormat:@"a%ld",(long)num]]];
+    btn.hidden = NO;
+    btn1.hidden = YES;
+}
+
+//验证wifi是否连上
+-(void)yanzheng{
+    NSString *rootLoginString = [NSString stringWithFormat:@"http://%@",NULL];
+    NSURL *url = [NSURL URLWithString:rootLoginString];
+    ASIHTTPRequest *getRootInfo = [[ASIHTTPRequest alloc]initWithURL:url];
+    
+    [getRootInfo setCompletionBlock:^{
+        
+        NSString *responseString = [getRootInfo responseString];
+        
+        if (responseString != nil) {
+            for (NSArray *arr in arrlist) {
+                if ([ssid isEqualToString:arr[0]]) {
+                    DLog(@"%@",arr);
+                    //                                                    showlable.text = @"桥接 4/4";
+                    [cx WANsub:arr[0] lyid:arr[2] wifipwd:@"12345678"];
+                    sleep(10);
+                    [cx WANsub:arr[0] lyid:arr[2] wifipwd:@"12345678"];
+                    if (num == fangannum) {
+                        sleep(10);
+                        [cx alert:[Config DPLocalizedString:@"User_Prompt"] alertMsg:[Config DPLocalizedString:@"adedit_wifi11"]];
+                    }
+
+
+                }
+            }
+        }
+    }];
+    [getRootInfo setFailedBlock:^{
+        DLog(@"没数据");
+    }];
+    [getRootInfo startAsynchronous];
+}
+
+-(void)wifi{
+    defaultHostReach = [AHReach reachForDefaultHost];
+    [defaultHostReach startUpdatingWithBlock:^(AHReach *reach) {
+        [self updateAvailabilityField:nil withReach:reach];
+    }];
+    [self updateAvailabilityField:nil withReach:defaultHostReach];
+}
+
+- (void)updateAvailabilityField:(UITextField *)field withReach:(AHReach *)reach {
+    if([reach isReachableViaWiFi]){
+        DLog(@"已连接wifi");
+        if (isone) {
+            //            showlable.text = @"密码 4/4";
+            [cx editPassword];
+            isone = NO;
+        }else{
+            if (num > 1) {
+                [self yanzheng];
+                //                if (num == fangannum) {
+                //                    sleep(40);
+                //                    [self hqkhd];
+                //                }
+            }
+
+        }
+        UIView *view = [self.view viewWithTag:3000];
+        if (view) {
+            [view removeFromSuperview];
+        }
+        if (num==fangannum) {
+            btn1.hidden = YES;
+            btn.hidden = YES;
+            btn2.hidden = YES;
+            btn5.hidden = NO;
+        }else{
+            btn1.hidden = NO;
+            btn.hidden = YES;
+        }
+        UILabel *lab = (UILabel *)[self.view viewWithTag:num];
+        lab.text = [NSString stringWithFormat:@"%@",ssid1];
+
+    }else{
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:[Config DPLocalizedString:@"User_Prompt"] message:[Config DPLocalizedString:@"adedit_jhyp14"] delegate:self cancelButtonTitle:nil otherButtonTitles:[Config DPLocalizedString:@"adedit_jhyp15"], nil];
+        alert.delegate = self;
+        alert.tag = 1000;
+        [alert show];
+    }
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+
+    if (alertView.tag == 7000) {
+        if (buttonIndex == 0) {
+            UITextField *myfid = [alertView textFieldAtIndex:0];
+            fanganname = myfid.text;
+            [self createxml];
+        }
+    }
+    
+}
+
+//一键桥接
+-(void)setting{
+    [iparr addObject:[NSString stringWithFormat:@"192.168.0.%ld",(long)num]];
+    [ssidarr addObject:ssid1];
+    [ledip addObject:[NSString stringWithFormat:@"192.168.0.%ld",(long)(188 + num * 10)]];
+    if (isone) {
+        //        showlable.text = @"信道 1/4";
+        [cx submitButtonClicked:ssid];
+        sleep(30);
+        //        showlable.text = @"dhcp 2/4";
+        [cx dhpc:@"192.168.0.100" IP2:@"192.168.0.190"];
+        sleep(30);
+        //        showlable.text = @"MAC地址 3/4";
+        [self wifi];
+
+    }else{
+        //        showlable.text = @"修改IP 1/4";
+        [cx editIP:[NSString stringWithFormat:@"192.168.0.%ld",(long)num]];
+        sleep(30);
+        [self wifi];
+
+    }
+}
+
+//获取数据
+-(void)hqsj{
+
+    NSString *rootLoginString1 = [NSString stringWithFormat:@"http://%@/goform/WDSScan",NULL];
+    DLog(@"%@",rootLoginString1);
+    NSURL *url1 = [NSURL URLWithString:rootLoginString1];
+    ASIHTTPRequest *getRootInfo1 = [[ASIHTTPRequest alloc]initWithURL:url1];
+
+    [getRootInfo1 setCompletionBlock:^{
+        DLog(@"%@",[getRootInfo1 responseString]);
+        luyouList = [getRootInfo1 responseString];
+        [self hqmac];
+
+    }];
+    [getRootInfo1 startAsynchronous];
+    
+}
+//获取dhcp mac绑定
+-(void)hqmac{
+    NSArray *arr = [[NSArray alloc]init];
+    arr =[luyouList componentsSeparatedByString:@"\r"];
+    arrlist = [[NSMutableArray alloc]init];
+    for (int i =0; i<arr.count; i++) {
+        NSArray *arr1 = [arr[i] componentsSeparatedByString:@"\t"];
+        [arrlist addObject:arr1];
+        DLog(@"%@",arr1);
+    }
+    DLog(@"%@",arrlist);
+}
+
+//获取客户端列表
+-(void)hqdhcp{
+    khdhcplist = [[NSMutableArray alloc]init];
+    maclist = [[NSMutableArray alloc]init];
+    NSArray *arr = [khlist componentsSeparatedByString:@"("];
+    DLog(@"%@",arr);
+    NSArray *arr1 = [arr[1] componentsSeparatedByString:@")"];
+    DLog(@"%@",arr1);
+    NSArray *arr2 = [arr1[0] componentsSeparatedByString:@"'"];
+    DLog(@"%@",arr2);
+    for (int i = 0; i < arr2.count; i ++) {
+        if (i % 2 != 0) {
+            NSArray * arr3 = [arr2[i] componentsSeparatedByString:@";"];
+            DLog(@"%@",arr3);
+            if ([arr3[0] componentsSeparatedByString:@"ledmedia"].count > 1) {
+                [khdhcplist addObject:arr3];
+            }
+        }
+    }
+    if (khdhcplist.count!=fangannum) {
+        [self hqkhd];
+    }else{
+        [cx dhcpList:khdhcplist];
+    }
+    DLog(@"%@",khdhcplist);
+    //    NSArray *arr4 = [khlist componentsSeparatedByString:@"StaticList = new Array"];
+    //    NSArray *arr5 = [arr4[1] componentsSeparatedByString:@"("];
+    //    DLog(@"%@",arr5);
+    //    NSArray *arr6 = [arr5[1] componentsSeparatedByString:@")"];
+    //    DLog(@"%@",arr6);
+    //    NSArray *arr7 = [arr6[0] componentsSeparatedByString:@"'"];
+    //    DLog(@"%@",arr7);
+    //    for (int i = 0; i< arr7.count; i++) {
+    //        if (i % 2 != 0) {
+    //            NSArray *arr8 = [arr7[i] componentsSeparatedByString:@";"];
+    //            DLog(@"%@",arr8);
+    //            [maclist addObject:arr8];
+    //        }
+    //    }
+    //    DLog(@"%@",maclist);
+}
+
+//获取客户端列表
+-(void)hqkhd{
+    NSString *rootLoginString = [NSString stringWithFormat:@"http://%@/lan_dhcp_clients.asp",@"192.168.0.1"];
+    DLog(@"%@",rootLoginString);
+    NSURL *url = [NSURL URLWithString:rootLoginString];
+    ASIHTTPRequest *getRootInfo = [[ASIHTTPRequest alloc]initWithURL:url];
+
+    [getRootInfo setCompletionBlock:^{
+        DLog(@"%@",[getRootInfo responseString]);
+        khlist = [getRootInfo responseString];
+        [self hqdhcp];
+    }];
+    [getRootInfo startAsynchronous];
+}
+
+//获取wifi名字
+-(void)hqssid{
+
+    if (fangannum == 0) {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请输入需要激活的屏的个数" delegate:self cancelButtonTitle:nil otherButtonTitles:[Config DPLocalizedString:@"NSStringYes"], nil];
+        [alert show];
+    }else{
+        //        cxdown = [[CX_CountdownViewController alloc]init];
+        //        [self presentViewController:cxdown animated:YES completion:nil];
+        //        cxview = [[CX_CountdownView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+        //        [self.view addSubview:cxview];
+        [self cx_yy];
+        NSString *rootLoginString = [NSString stringWithFormat:@"http://%@",NULL];
+        NSURL *url = [NSURL URLWithString:rootLoginString];
+        ASIHTTPRequest *getRootInfo = [[ASIHTTPRequest alloc]initWithURL:url];
+        [getRootInfo setCompletionBlock:^{
+            DLog(@"%@",[getRootInfo responseString]);
+            NSString *responseString = [getRootInfo responseString];
+            [self settingWifiInfo:[self infoAnaylis:responseString]];
+        }];
+        [getRootInfo startAsynchronous];
+    }
+    
+}
+
+//阴影层
+-(void)cx_yy{
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    view.tag = 3000;
+    view.backgroundColor = [UIColor blackColor];
+    view.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.8];
+    [self.view addSubview:view];
+}
+
+
+-(void)settingWifiInfo:(NSDictionary *)infoDict{
+    if (num == 1) {
+        ssid = [infoDict objectForKey:@"name"];
+    }
+    ssid1 = [infoDict objectForKey:@"name"];
+    [self setting];
+}
+
+-(NSDictionary *)infoAnaylis:(NSString *)responseString{
+    /*---------------在串中搜索子串----------------*/
+    DLog(@"%@",responseString);
+
+    NSString *string1 = @"def_wirelesspassword";
+    NSRange range = [responseString rangeOfString:string1];
+    NSInteger location = range.location;
+
+
+    //-substringFromIndex: 以指定位置开始（包括指定位置的字符），并包括之后的全部字符
+    NSString *string2 = [responseString substringFromIndex:location];
+
+
+    NSString *string3 = @"\";";
+    NSRange range3 = [string2 rangeOfString:string3];
+    NSInteger location3 = range3.location;
+
+
+    NSString *string4 = [string2 substringWithRange:NSMakeRange(0, location3)];
+    DLog(@"string4 = %@",string4);
+
+    NSArray *string4Array = [string4 componentsSeparatedByString:@"\""];
+    DLog(@"string4Array = %@",string4Array);
+    NSString *password = [string4Array objectAtIndex:1];
+    NSString *wifiname = [string4Array lastObject];
+    NSDictionary *wifiinfoDict = [[NSDictionary alloc]initWithObjectsAndKeys:password,@"pwd",wifiname,@"name",nil];
+    return wifiinfoDict;
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end
