@@ -1,12 +1,12 @@
 # RetroRampage
 
-[打开归档目录](../collections/development/RetroRampage/) · [原 Fork](https://github.com/476139183/RetroRampage)
+[打开归档目录](../collections/development/RetroRampage/) · 原 Fork（已删除）：`https://github.com/476139183/RetroRampage`
 
 - 上游：https://github.com/nicklockwood/RetroRampage
 - 固定来源：`master` / `e8c639744a40edc0b783be346ace629f25fc3f32`
 - 文件数：224
 - 许可证：`MIT`；以原目录内的许可证与版权声明为准。
-- 原 Fork 状态：完成远端校验后删除。
+- 原 Fork 状态：文件、各分支和标签校验后已删除。
 
 ## 分支与标签历史
 

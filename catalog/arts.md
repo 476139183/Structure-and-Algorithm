@@ -1,12 +1,12 @@
 # arts
 
-[打开归档目录](../collections/development/arts/) · [原 Fork](https://github.com/476139183/arts)
+[打开归档目录](../collections/algorithms/arts/) · 原 Fork（已删除）：`https://github.com/476139183/arts`
 
 - 上游：https://github.com/iweisi/arts
 - 固定来源：`master` / `54c6473f8179f19dc7b38437832ad8f04781605f`
 - 文件数：642
 - 许可证：`未识别`；以原目录内的许可证与版权声明为准。
-- 原 Fork 状态：完成远端校验后删除。
+- 原 Fork 状态：文件、各分支和标签校验后已删除。
 
 ## 分支与标签历史
 

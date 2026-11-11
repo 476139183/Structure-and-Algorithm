@@ -28,7 +28,7 @@
 | [iOS-SimpleFTPClinet](collections/ios/iOS-SimpleFTPClinet/) | iOS 示例与组件 | 原库已删除 | [详情](catalog/iOS-SimpleFTPClinet.md) |
 | [iOS-wifi](collections/ios/iOS-wifi/) | iOS 示例与组件 | 原库已删除 | [详情](catalog/iOS-wifi.md) |
 | [iOS_AR](collections/ios/iOS_AR/) | iOS 示例与组件 | 原库已删除 | [详情](catalog/iOS_AR.md) |
-| [homemade-machine-learning](collections/algorithms/homemade-machine-learning/) | 算法与刷题 | 待校验后删除 | [详情](catalog/homemade-machine-learning.md) |
-| [RetroRampage](collections/development/RetroRampage/) | 开发资料 | 待校验后删除 | [详情](catalog/RetroRampage.md) |
-| [arts](collections/development/arts/) | 开发资料 | 待校验后删除 | [详情](catalog/arts.md) |
-| [open-source-ios-apps](collections/development/open-source-ios-apps/) | 开发资料 | 待校验后删除 | [详情](catalog/open-source-ios-apps.md) |
+| [homemade-machine-learning](collections/algorithms/homemade-machine-learning/) | 算法与刷题 | 原库已删除 | [详情](catalog/homemade-machine-learning.md) |
+| [RetroRampage](collections/development/RetroRampage/) | 开发资料 | 原库已删除 | [详情](catalog/RetroRampage.md) |
+| [arts](collections/algorithms/arts/) | 算法与刷题 | 原库已删除 | [详情](catalog/arts.md) |
+| [open-source-ios-apps](collections/development/open-source-ios-apps/) | 开发资料 | 原库已删除 | [详情](catalog/open-source-ios-apps.md) |

@@ -12,3 +12,4 @@
 | [leetcode-zhuli](leetcode-zhuli/) | Fork | Leetcode revision. | [来源记录](../../catalog/leetcode-zhuli.md) |
 | [swift-algorithm-club-cn](swift-algorithm-club-cn/) | Fork | swift-algorithm-club的翻译。使用Swift学习算法和数据结构。 | [来源记录](../../catalog/swift-algorithm-club-cn.md) |
 | [homemade-machine-learning](homemade-machine-learning/) | Fork | 🤖 Python examples of popular machine learning algorithms with interactive Jupyter demos and math being explained | [来源记录](../../catalog/homemade-machine-learning.md) |
+| [arts](arts/) | Fork | 每周一道算法一本书 | [来源记录](../../catalog/arts.md) |

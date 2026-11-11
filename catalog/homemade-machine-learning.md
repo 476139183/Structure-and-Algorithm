@@ -1,12 +1,12 @@
 # homemade-machine-learning
 
-[打开归档目录](../collections/algorithms/homemade-machine-learning/) · [原 Fork](https://github.com/476139183/homemade-machine-learning)
+[打开归档目录](../collections/algorithms/homemade-machine-learning/) · 原 Fork（已删除）：`https://github.com/476139183/homemade-machine-learning`
 
 - 上游：https://github.com/trekhleb/homemade-machine-learning
 - 固定来源：`master` / `abf6d986255add4fc297fa16525df68135ca9a06`
 - 文件数：184
 - 许可证：`MIT`；以原目录内的许可证与版权声明为准。
-- 原 Fork 状态：完成远端校验后删除。
+- 原 Fork 状态：文件、各分支和标签校验后已删除。
 
 ## 分支与标签历史
 

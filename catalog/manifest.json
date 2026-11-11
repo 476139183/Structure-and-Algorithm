@@ -3,7 +3,7 @@
   "created_at": "2026-11-11T09:42:54.580038+00:00",
   "target": "https://github.com/476139183/Structure-and-Algorithm",
   "original_target_commit": "05af1157af7cff7af21bcf6d7ef26a9c5373f5d5",
-  "scope": "Source snapshots with per-source history and original-repository status recorded below; newly imported sources retain all branches and tags. See cleanup and pending_cleanup.",
+  "scope": "Source snapshots and per-source Git history preserved as recorded below. Original repository cleanup state is recorded in each source and cleanup.",
   "sources": [
     {
       "name": "algorithm-base",
@@ -79926,7 +79926,7 @@
       "history_tags": {
         "refs/tags/legacy/homemade-machine-learning/branches/master": "abf6d986255add4fc297fa16525df68135ca9a06"
       },
-      "original_repository_status": "retained_pending_verification",
+      "original_repository_status": "deleted",
       "tracked_files": [
         {
           "path": ".gitignore",
@@ -81074,7 +81074,7 @@
         "refs/tags/legacy/RetroRampage/tags/Part9": "fbca72149c55c81bdd1955641239b0024d252221",
         "refs/tags/legacy/RetroRampage/tags/Start": "6ba99d66906e440e7b00d7416fa90c61d7e992f9"
       },
-      "original_repository_status": "retained_pending_verification",
+      "original_repository_status": "deleted",
       "tracked_files": [
         {
           "path": ".gitignore",
@@ -82434,7 +82434,7 @@
       "description": "每周一道算法一本书",
       "files": 642,
       "bytes": 1663068,
-      "destination": "collections/development/arts",
+      "destination": "collections/algorithms/arts",
       "source_url": "https://github.com/476139183/arts",
       "verification": "All tracked default-branch blobs match Git object hashes",
       "gitlinks": [],
@@ -82484,7 +82484,7 @@
         "refs/tags/legacy/arts/branches/init": "12996380b957768ae37d2a85b3ce1e61d02aa066",
         "refs/tags/legacy/arts/branches/master": "54c6473f8179f19dc7b38437832ad8f04781605f"
       },
-      "original_repository_status": "retained_pending_verification",
+      "original_repository_status": "deleted",
       "tracked_files": [
         {
           "path": "README.md",
@@ -86398,7 +86398,7 @@
         "refs/tags/legacy/open-source-ios-apps/tags/2.8": "3a7e117f4b93a03ea7162e5de9c27a8588a7ef8a",
         "refs/tags/legacy/open-source-ios-apps/tags/2.9": "a9cb3386bfbd3f8fcd3c185c747985ab8b587aa6"
       },
-      "original_repository_status": "retained_pending_verification",
+      "original_repository_status": "deleted",
       "tracked_files": [
         {
           "path": ".circleci/config.yml",
@@ -86586,17 +86586,20 @@
     }
   ],
   "cleanup": {
-    "recorded_at": "2026-11-11T09:51:23.977339+00:00",
+    "recorded_at": "2026-11-11T10:22:17.014478+00:00",
     "deleted": [
       "CodingInterviewChinese2",
       "CustomProgressView",
       "Learning-iOS",
       "LoopBannerView",
       "ReactiveCocoaLearn",
+      "RetroRampage",
       "TimLiu-iOS",
       "algorithm-base",
+      "arts",
       "fucking-algorithm",
       "hello-algorithm",
+      "homemade-machine-learning",
       "iOS-Demos",
       "iOS-InterviewQuestion-collection",
       "iOS-SimpleFTPClinet",
@@ -86608,6 +86611,7 @@
       "leetbook",
       "leetcode-zhuli",
       "my-git",
+      "open-source-ios-apps",
       "study",
       "swift-algorithm-club-cn"
     ],
@@ -86616,11 +86620,5 @@
       "YTToolPortal": "Published CocoaPods versions still use the original repository address"
     }
   },
-  "updated_at": "2026-11-11T10:11:57.939833+00:00",
-  "pending_cleanup": [
-    "homemade-machine-learning",
-    "RetroRampage",
-    "arts",
-    "open-source-ios-apps"
-  ]
+  "updated_at": "2026-11-11T10:11:57.939833+00:00"
 }

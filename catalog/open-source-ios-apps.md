@@ -1,12 +1,12 @@
 # open-source-ios-apps
 
-[打开归档目录](../collections/development/open-source-ios-apps/) · [原 Fork](https://github.com/476139183/open-source-ios-apps)
+[打开归档目录](../collections/development/open-source-ios-apps/) · 原 Fork（已删除）：`https://github.com/476139183/open-source-ios-apps`
 
 - 上游：https://github.com/dkhamsing/open-source-ios-apps
 - 固定来源：`master` / `fb6820d5aeb9f2f91365e7336a348e03c07e4af0`
 - 文件数：28
 - 许可证：`MIT`；以原目录内的许可证与版权声明为准。
-- 原 Fork 状态：完成远端校验后删除。
+- 原 Fork 状态：文件、各分支和标签校验后已删除。
 
 ## 分支与标签历史
 
