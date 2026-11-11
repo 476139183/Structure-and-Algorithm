@@ -3,7 +3,7 @@
   "created_at": "2026-11-11T09:42:54.580038+00:00",
   "target": "https://github.com/476139183/Structure-and-Algorithm",
   "original_target_commit": "05af1157af7cff7af21bcf6d7ef26a9c5373f5d5",
-  "scope": "Default-branch file snapshots of 24 repositories; all branch histories of 11 self-created sources retained as legacy tags. Source repositories have not been deleted.",
+  "scope": "Default-branch snapshots of 24 repositories; all branch histories of 11 self-created sources retained as legacy tags. 22 original repositories deleted after verification; Learn-GCD and YTToolPortal retained for active Pages/CocoaPods compatibility.",
   "sources": [
     {
       "name": "algorithm-base",
@@ -707,7 +707,8 @@
           "source_blob": "fcdb8c54cbf0f61b72f0aabd04878b14b75dc1ae",
           "imported_blob": "fcdb8c54cbf0f61b72f0aabd04878b14b75dc1ae"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "fucking-algorithm",
@@ -3535,7 +3536,8 @@
           "source_blob": "d541e839a24f93efa3c08df226fd0d3f32de18cb",
           "imported_blob": "d541e839a24f93efa3c08df226fd0d3f32de18cb"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "hello-algorithm",
@@ -14133,7 +14135,8 @@
           "source_blob": "be466d72f51c05b5e4f857b8f78d9264da9e036b",
           "imported_blob": "be466d72f51c05b5e4f857b8f78d9264da9e036b"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "leetCode",
@@ -14167,7 +14170,8 @@
           "source_blob": "15fca0c1553184ab4649616315d629a647806539",
           "imported_blob": "15fca0c1553184ab4649616315d629a647806539"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "leetbook",
@@ -15957,7 +15961,8 @@
           "source_blob": "4e872aa82f5de9bf24d0f42e439485ba3969dd1c",
           "imported_blob": "4e872aa82f5de9bf24d0f42e439485ba3969dd1c"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "leetcode-zhuli",
@@ -20021,7 +20026,8 @@
           "source_blob": "c7d4b1050e49473065027b369480df5042cee3b0",
           "imported_blob": "c7d4b1050e49473065027b369480df5042cee3b0"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "swift-algorithm-club-cn",
@@ -24751,7 +24757,8 @@
           "source_blob": "8b84c28bf3efbba5a13e67da6a96351ac3396602",
           "imported_blob": "8b84c28bf3efbba5a13e67da6a96351ac3396602"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "TimLiu-iOS",
@@ -24801,7 +24808,8 @@
           "source_blob": "a87e6161fd93b0d40438612b254f8fd1421f9553",
           "imported_blob": "a87e6161fd93b0d40438612b254f8fd1421f9553"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "iOS-Source-Probe",
@@ -25403,7 +25411,8 @@
           "source_blob": "055d8aeb34a36dcaaf7d7c07e9d1fbffd2e798be",
           "imported_blob": "055d8aeb34a36dcaaf7d7c07e9d1fbffd2e798be"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "my-git",
@@ -25945,7 +25954,8 @@
           "source_blob": "3eb18608c5f4490e0f5688b2aa174f659d80ebe7",
           "imported_blob": "3eb18608c5f4490e0f5688b2aa174f659d80ebe7"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "study",
@@ -30045,7 +30055,8 @@
           "source_blob": "fad49c1e1424209b444671140dde9cfe90296adf",
           "imported_blob": "fad49c1e1424209b444671140dde9cfe90296adf"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "CodingInterviewChinese2",
@@ -31643,7 +31654,8 @@
           "source_blob": "6e448f9ed3931acf958f45dc58cb9cdf60114663",
           "imported_blob": "6e448f9ed3931acf958f45dc58cb9cdf60114663"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "iOS-InterviewQuestion-collection",
@@ -35791,7 +35803,8 @@
           "source_blob": "fa748020a99d035a4a35ea7d219f19c83e0d3b7c",
           "imported_blob": "fa748020a99d035a4a35ea7d219f19c83e0d3b7c"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "interview",
@@ -35985,7 +35998,8 @@
           "source_blob": "bea5949a17a31a29f6f372b505579f3080bc73b1",
           "imported_blob": "bea5949a17a31a29f6f372b505579f3080bc73b1"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "CustomProgressView",
@@ -36139,7 +36153,8 @@
           "source_blob": "61b4b24f57709cd8c2ea5f03b26dc42524c51dd1",
           "imported_blob": "61b4b24f57709cd8c2ea5f03b26dc42524c51dd1"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "Learn-GCD",
@@ -36559,7 +36574,8 @@
           "source_blob": "997798f728bfd00e616c7df5d5cde18016783070",
           "imported_blob": "997798f728bfd00e616c7df5d5cde18016783070"
         }
-      ]
+      ],
+      "original_repository_status": "retained_for_compatibility"
     },
     {
       "name": "Learning-iOS",
@@ -40889,7 +40905,8 @@
           "source_blob": "fe92bb458a33444b9912530f0d0200a0d30a2858",
           "imported_blob": "fe92bb458a33444b9912530f0d0200a0d30a2858"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "LoopBannerView",
@@ -41799,7 +41816,8 @@
           "source_blob": "84134ce3566accbdf97140cf95780a6ed5fb74ff",
           "imported_blob": "84134ce3566accbdf97140cf95780a6ed5fb74ff"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "ReactiveCocoaLearn",
@@ -56107,7 +56125,8 @@
           "source_blob": "98d5297f53affef051e504263a3faf08c9f67549",
           "imported_blob": "98d5297f53affef051e504263a3faf08c9f67549"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "YTToolPortal",
@@ -56339,7 +56358,8 @@
           "source_blob": "69d4c044bdf48601c16710b8dd534089e3b1e159",
           "imported_blob": "69d4c044bdf48601c16710b8dd534089e3b1e159"
         }
-      ]
+      ],
+      "original_repository_status": "retained_for_compatibility"
     },
     {
       "name": "iOS-Demos",
@@ -58251,7 +58271,8 @@
           "source_blob": "be06088fee8f9ff7bae9eacda43617105d492742",
           "imported_blob": "be06088fee8f9ff7bae9eacda43617105d492742"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "iOS-SimpleFTPClinet",
@@ -58411,7 +58432,8 @@
           "source_blob": "1dbf4102fa1aadd916677c7fe4716009962665be",
           "imported_blob": "1dbf4102fa1aadd916677c7fe4716009962665be"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "iOS-wifi",
@@ -76691,7 +76713,8 @@
           "source_blob": "b6b0aa44cdb408516bf2f4ca9a8a9513a7bdcbd5",
           "imported_blob": "b6b0aa44cdb408516bf2f4ca9a8a9513a7bdcbd5"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     },
     {
       "name": "iOS_AR",
@@ -79875,7 +79898,8 @@
           "source_blob": "8e6d58928a8d9afa50bee52a56412ecece520001",
           "imported_blob": "8e6d58928a8d9afa50bee52a56412ecece520001"
         }
-      ]
+      ],
+      "original_repository_status": "deleted"
     }
   ],
   "link_rewrites": [
@@ -79891,5 +79915,36 @@
       "imported_blob": "346e795bc17a9a27f40d95073374f3fe9b1db657",
       "reason": "Repair source-root links and migrated-repository file URLs"
     }
-  ]
+  ],
+  "cleanup": {
+    "recorded_at": "2026-11-11T09:51:23.977339+00:00",
+    "deleted": [
+      "CodingInterviewChinese2",
+      "CustomProgressView",
+      "Learning-iOS",
+      "LoopBannerView",
+      "ReactiveCocoaLearn",
+      "TimLiu-iOS",
+      "algorithm-base",
+      "fucking-algorithm",
+      "hello-algorithm",
+      "iOS-Demos",
+      "iOS-InterviewQuestion-collection",
+      "iOS-SimpleFTPClinet",
+      "iOS-Source-Probe",
+      "iOS-wifi",
+      "iOS_AR",
+      "interview",
+      "leetCode",
+      "leetbook",
+      "leetcode-zhuli",
+      "my-git",
+      "study",
+      "swift-algorithm-club-cn"
+    ],
+    "retained": {
+      "Learn-GCD": "Active GitHub Pages site at https://476139183.github.io/Learn-GCD/",
+      "YTToolPortal": "Published CocoaPods versions still use the original repository address"
+    }
+  }
 }
