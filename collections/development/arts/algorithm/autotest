@@ -1,0 +1,111 @@
+#!/bin/sh
+
+#
+# Copyright (C) Philon <hi@philon.cn>
+# 2018-11-11
+#
+
+success_echo() {
+  echo "\033[32m$1\033[0m"
+}
+failed_echo() {
+  echo "\033[31m$1\033[0m"
+}
+
+c_test() {
+  cc -std=c99 *.c -o test && ./test
+  state=$?
+  rm -f ./test
+  return $state
+}
+
+cpp_test() {
+  c++ -std=c++14 *.cpp -o test && ./test
+  state=$?
+  rm -f ./test
+  return $state
+}
+
+csharp_test() {
+  dotnet test
+  state=$?
+  rm -rf bin obj
+  return $state
+}
+
+go_test() {
+  go test
+}
+
+java_test() {
+  javac *.java && java -ea Test
+  state=$?
+  rm -f *.class
+  return $state
+}
+
+javascript_test() {
+  node test.js
+}
+
+kotlin_test () {
+  kotlinc *.kt -include-runtime -d test.jar && java -ea -jar test.jar
+  state=$?
+  rm -f test.jar
+  return $state
+}
+
+python_test() {
+  python -m unittest test
+  state=$?
+  rm -f *.pyc
+  return $state
+}
+
+python3_test() {
+  python3 -m unittest test
+  state=$?
+  rm -rf __pycache__
+  return $state
+}
+
+ruby_test() {
+  ruby test.rb
+  echo $errlog
+}
+
+scala_test() {
+  scalac *.scala -d test.jar  && scala -cp test.jar Test
+  state=$?
+  rm -f test.jar
+  return $state
+}
+
+swift_test() {
+  swiftc main.swift solution.swift -o test && ./test
+  state=$?
+  echo "hello world"
+  rm -f ./test
+  return $state
+}
+
+test() {
+  local home=$PWD
+  local srcdir=$(dirname $1)
+  local lang=${srcdir##*/}
+
+  cd $srcdir && echo "Test $srcdir ... \c"
+  ${lang}_test $srcdir 1>/dev/null 2>error.log
+  [ 0 -eq $? ] && success_echo PASS || failed_echo "FAIL: $(cat error.log)"
+  rm -rf error.log && cd $home
+}
+
+if [ -z $1 ]
+then
+  test `find . -mmin -5 -iname solution.*`
+else
+  for src in `find $1 -iname solution.*`
+  do
+    test $src
+  done
+fi
