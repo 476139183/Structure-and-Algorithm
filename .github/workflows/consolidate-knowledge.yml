@@ -1,0 +1,47 @@
+name: Consolidate knowledge sources
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: consolidate-knowledge
+  cancel-in-progress: false
+
+jobs:
+  migrate:
+    if: github.actor == '476139183'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+      KNOWLEDGE_ROOT: ${{ github.workspace }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: master
+          fetch-depth: 0
+      - name: Import fixed source snapshots
+        run: |
+          cp scripts/migration/inventory.json /tmp/knowledge-sources-inventory.json
+          python3 scripts/migration/import_snapshots.py
+      - name: Preserve all branches of self-created sources
+        run: python3 scripts/migration/preserve_histories.py
+      - name: Build category indexes and source records
+        run: python3 scripts/migration/build_catalog.py
+      - name: Verify every imported file and history reference
+        run: python3 scripts/verify_collections.py
+      - name: Commit and publish the verified consolidation
+        run: |
+          git config user.name '476139183'
+          git config user.email '476139183@users.noreply.github.com'
+          mkdir -p .git/info
+          echo 'collections/** -text -filter -ident' >> .git/info/attributes
+          git -c core.autocrlf=false add --force collections catalog README.md SOURCES.md scripts/verify_collections.py
+          python3 scripts/migration/verify_staged.py
+          if ! git diff --cached --quiet; then
+            git commit -m '归纳合并算法、面试、开发资料及旧iOS项目'
+          fi
+          git push --atomic origin HEAD:refs/heads/master 'refs/tags/legacy/*:refs/tags/legacy/*'
